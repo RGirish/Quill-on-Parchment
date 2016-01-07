@@ -1,0 +1,393 @@
+<html>
+<head>
+<title>Store</title>
+<link rel="icon" type="image/png" href="../Images/favicon.png">
+<link rel="stylesheet" type="text/css" href="../mycss.css">
+<link rel="stylesheet" href="../alertify.core.css" />
+<link rel="stylesheet" href="../alertify.default.css" id="toggleCSS" />
+
+<style>
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+     background:rgba(0,0,0,0.5);
+     border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+
+
+img{ 
+-webkit-filter: drop-shadow(-1px 1px 1px #000); 
+filter: drop-shadow(-1px 1px 1px #000); 
+}
+
+.design{
+background-image:url("../Images/store.jpg");
+width:80%;
+box-shadow:-5px 5px 5px #000;
+}
+
+ul.enlarge{
+list-style-type:none; /*remove the bullet point*/
+margin-left:0;
+}
+ul.enlarge li{
+display:inline-block; /*places the images in a line*/
+position: relative;
+z-index: 0; /*resets the stack order of the list items - later we'll increase this*/
+margin:10px 40px 0 20px;
+}
+ul.enlarge img{
+background-color:#eae9d4;
+padding: 6px;
+-webkit-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+-moz-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+-webkit-border-radius: 4px; 
+-moz-border-radius: 4px; 
+border-radius: 4px; 
+}
+ul.enlarge span{
+position:absolute;
+left: -9999px;
+background-color:#eae9d4;
+padding: 10px;
+font-family: 'Droid Sans', sans-serif;
+font-size:.9em;
+text-align: center; 
+color: #495a62; 
+-webkit-box-shadow: 0 0 20px rgba(0,0,0, .75));
+-moz-box-shadow: 0 0 20px rgba(0,0,0, .75);
+box-shadow: 0 0 20px rgba(0,0,0, .75);
+-webkit-border-radius: 8px; 
+-moz-border-radius: 8px; 
+border-radius:8px;
+}
+ul.enlarge li:hover{
+z-index: 50;
+cursor:pointer;
+}
+ul.enlarge span img{
+padding:2px;
+background:#ccc;
+}
+ul.enlarge li:hover span{ 
+top: -300px; /*the distance from the bottom of the thumbnail to the top of the popup image*/
+left: -20px; /*distance from the left of the thumbnail to the left of the popup image*/
+}
+ul.enlarge li:hover:nth-child(2) span{
+left: -100px; 
+}
+ul.enlarge li:hover:nth-child(3) span{
+left: -200px; 
+}
+/**IE Hacks - see http://css3pie.com/ for more info on how to use CS3Pie and to download the latest version**/
+ul.enlarge img, ul.enlarge span{
+behavior: url(pie/PIE.htc); 
+}
+
+.input
+{
+background:#b17d2a;
+margin-left:20px;
+color:#1a0d04;
+text-transform:capitalize;
+width:250px;
+height:30px;
+padding-left:10px;
+font-family:Nyala;
+font-size:1.4em;
+box-shadow:0px 6px 6px #000;
+border:0px;
+}
+
+.inputt
+{
+background:#b17d2a;
+margin-left:20px;
+color:#1a0d04;
+width:250px;
+height:30px;
+padding-left:10px;
+font-family:Nyala;
+font-size:1.4em;
+box-shadow:0px 6px 6px #000;
+border:0px;
+}
+
+.submt
+{
+background-image:url("../Images/order.png");
+width:150px;
+height:40px;
+box-shadow:0px 6px 6px #000;
+border:0px;
+}
+.submt:active
+{
+box-shadow:-0px 3px 3px #000;
+}
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51930404-1', 'quillonparchment.in');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body link="#000000" vlink="#000000" alink="#000000" background="../Images/parch.jpg" style="background-repeat:repeat;">
+
+<center>
+
+<br>
+<table>
+<tr>
+<td><img src="../Images/logo.png" width=150 height=150/></td>
+<td><img src="../Images/name.png" width=700 height=150/></td>
+</tr>
+</table>
+
+<?php include '../tabs1.php'; ?>
+
+<br><br>
+
+<div class="design">
+<br><br>
+
+<h4 style="color:#fff;font-family:Hand;font-size:2em;"><u>Mascot T-Shirt</u></h4>
+
+<ul class="enlarge">
+<li><img src="../Images/shirt2.png" width="150px" height="100px" alt="T-Shirt" /><span><img src="../Images/shirt2.png" alt="T-Shirt" /><br /></span></li>
+<li><img src="../Images/shirt2.png" width="150px" height="100px" alt="T-Shirt" /><span><img src="../Images/shirt2.png" alt="T-Shirt" /><br /></span></li>
+<li><img src="../Images/shirt2.png" width="150px" height="100px" alt="T-Shirt" /><span><img src="../Images/shirt2.png" alt="T-Shirt" /><br /></span></li>
+</ul>
+
+<br><br>
+<font style="color:#fff;font-family:Hand;font-size:1.5em;">Colors Available: </font>
+<input title="Red" type="button" style="background:#700;border:0px;width:20px;height:20px;"><br>
+
+<font style="color:#fff;font-family:Hand;font-size:1.5em;">Type: </font> <font style="color:#fff;font-family:Hand;font-size:1.8em;">With Collar</font><br>
+<font style="color:#fff;font-family:Hand;font-size:1.5em;">Fabric: </font> <font style="color:#fff;font-family:Hand;font-size:1.8em;">100% Cotton</font><br>
+<font style="color:#fff;font-family:Hand;font-size:1.5em;">Sizes Available:</font> <font style="color:#fff;font-family:Hand;font-size:1.8em;">S, M, L, XL</font><br>
+<font style="color:#fff;font-family:Hand;font-size:1.5em;">Maintenance:</font> <font style="color:#fff;font-family:Hand;font-size:1.8em;">Wash in warm water. Do not dry directly under the sunlight.</font><br>
+<font style="color:#fff;font-family:Hand;font-size:1.5em;">Sleeve Type:</font> <font style="color:#fff;font-family:Hand;font-size:1.8em;">Half-hand</font><br><br><br><br>
+<font style="color:#fff;font-family:Hand;font-size:1.5em;">Price: </font> <font style="color:#fff;font-family:Hand;font-size:2em;">Rs.500/-</font><font style="color:#fff;font-family:Hand;font-size:1.5em;"> per t-shirt</font><br><br><br>
+<font style="color:#fff;font-family:Hand;font-size:1.5em;">[ Payment through CASH ON DELIVERY! No need to give us your Bank Account Details! ]</font><br><br><br><br>
+
+
+<input id="order" name="order" type="button" class="submt" style="cursor:hand;"><br><br>
+
+<div name="orderdiv" id="orderdiv" style="display:none">
+
+<h1 style="color:#fff;font-family:Hand;font-size:2em;"><u>PLACE ORDER</u></h1><br>
+
+<form name="myform" id="myform" action="placeorder.php" method="post">
+
+<input type="text" name="pno" value="3" style="display:none">
+
+<font style="color:#fff;font-family:Hand;font-size:1.5em;">NAME:</font>
+<input id="name" name="name" type="text" class="input" spellcheck="false"><br><br>
+<font style="color:#fff;font-family:Hand;font-size:1.5em;">ADDRESS LINE 1:</font>
+<input id="address1" name="address1" type="text" class="input" spellcheck="false"><br><br>
+<font style="color:#fff;font-family:Hand;font-size:1.5em;">ADDRESS LINE 2:</font>
+<input id="address2" name="address2" type="text" class="input" spellcheck="false"><br><br>
+<font style="color:#fff;font-family:Hand;font-size:1.5em;">AREA:</font>
+<input id="area" name="area" type="text" class="input" spellcheck="false"><br><br>
+<font style="color:#fff;font-family:Hand;font-size:1.5em;">CITY:</font>
+<input id="city" name="city" type="text" class="input" spellcheck="false"><br><br>
+<font style="color:#fff;font-family:Hand;font-size:1.5em;">STATE:</font>
+<input id="state" name="state" type="text" class="input" spellcheck="false"><br><br>
+<font style="color:#fff;font-family:Hand;font-size:1.5em;">PINCODE:</font>
+<input id="pincode" name="pincode" type="text" class="input" spellcheck="false" onkeypress="return isNumber(event)" maxlength="6"><br><br>
+<font style="color:#fff;font-family:Hand;font-size:1.5em;">LANDMARK:</font>
+<input id="landmark" name="landmark" type="text" class="input" spellcheck="false"><br><br>
+<font style="color:#fff;font-family:Hand;font-size:1.5em;">EMAIL ID:</font>
+<input id="email" name="email" type="text" class="inputt" spellcheck="false"><br><br>
+<font style="color:#fff;font-family:Hand;font-size:1.5em;">PHONE:</font>
+<input id="phone" name="phone" type="text" class="input" spellcheck="false" onkeypress="return isNumber(event)" maxlength="10"><br><br>
+
+<font style="color:#fff;font-family:Hand;font-size:1.5em;">T-SHIRT SIZE:</font>
+<select name="size" id="size" class="input">
+<option value="none" selected>-</option>
+<option value="s">S</option>
+<option value="m">M</option>
+<option value="l">L</option>
+<option value="x">XL</option>
+</select><br><br>
+
+<font style="color:#fff;font-family:Hand;font-size:1.5em;">QUANTITY:</font>
+<select name="quantity" id="quantity" class="input">
+<option value="none" selected>-</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select><br><br><br><br><br>
+
+<font style="color:#fff;font-family:Hand;font-size:1.5em;">TOTAL AMOUNT PAYABLE</font><div id="cost"><font style="color:#fff;font-family:Hand;font-size:2.5em;">-</font></div><br><br><br>
+
+<input id="abcd" name="abcd" type="button" value="" class="submt" style="cursor:hand;"><br><br>
+
+</form>
+</div>
+
+<br><br><br>
+</div>
+
+<br><br>
+<a href="#top" style="font-family:Hand;font-size:1.2em;text-shadow:-0.5px 0.5px 0.5px">Back to top</a>
+
+</center>
+
+<script src="../Scripts/jquery-1.9.1.min.js"></script>
+<script src="../Scripts/alertify.min.js"></script>
+
+<script>
+
+var cost=500;
+$("#order").click(function()
+{
+document.getElementById("orderdiv").style.display="block";
+document.getElementById("order").style.display="none";
+});
+</script>
+
+<script>
+$("#quantity").change(function(evnt)
+{
+$("#cost").empty();
+if(this.value=="1") $("#cost").append("<font style=\"color:#fff;font-family:Hand;font-size:2.5em;\">Rs."+ cost*1 +"/-</font>");
+else if(this.value=="2") $("#cost").append("<font style=\"color:#fff;font-family:Hand;font-size:2.5em;\">Rs."+ cost*2 +"/-</font>");
+else if(this.value=="3") $("#cost").append("<font style=\"color:#fff;font-family:Hand;font-size:2.5em;\">Rs."+ cost*3 +"/-</font>");
+else if(this.value=="4") $("#cost").append("<font style=\"color:#fff;font-family:Hand;font-size:2.5em;\">Rs."+ cost*4 +"/-</font>");
+else if(this.value=="5") $("#cost").append("<font style=\"color:#fff;font-family:Hand;font-size:2.5em;\">Rs."+ cost*5 +"/-</font>");
+else if(this.value=="none") $("#cost").append("<font style=\"color:#fff;font-family:Hand;font-size:2.5em;\">-</font>");
+
+});
+
+</script>
+
+<script>
+$("#tab_store").addClass("current");
+</script>
+
+<script>
+$("#signout").on("click",function()
+{
+alertify.confirm("Are you sure you want to Sign Out?", function (e) {
+    if (e) {
+        window.open("../signout.php","_self");
+    }
+});
+});
+</script>
+
+<script>
+$("#abcd").click(function()
+{
+if(document.myform.name.value=="")
+{
+alertify.alert("Enter your Full Name!");
+return false;
+}
+if(document.myform.address1.value=="")
+{
+alertify.alert("Enter your Address!");
+return false;
+}
+if(document.myform.area.value=="")
+{
+alertify.alert("Enter your Area / Locality!");
+return false;
+}
+if(document.myform.city.value=="")
+{
+alertify.alert("Enter your City!");
+return false;
+}
+if(document.myform.state.value=="")
+{
+alertify.alert("Enter your State!");
+return false;
+}
+if(document.myform.pincode.value=="")
+{
+alertify.alert("Enter your Pincode!");
+return false;
+}
+if(document.myform.pincode.value.length<6)
+{
+alertify.alert("Enter a valid Pincode!");
+return false;
+}
+if(document.myform.email.value=="")
+{
+alertify.alert("Enter your Email Address!");
+return false;
+}
+var x=document.forms["myform"]["email"].value;
+var atpos=x.indexOf("@");
+var dotpos=x.lastIndexOf(".");
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+{
+  alertify.alert("Enter a valid Email Address!");
+  return false;
+}
+if(document.myform.phone.value=="")
+{
+alertify.alert("Enter your Phone number!");
+return false;
+}
+if(document.myform.phone.value.length<10)
+{
+alertify.alert("Enter a valid Phone number!");
+return false;
+}
+if(document.myform.size.value=="none")
+{
+alertify.alert("Select a size for the T-Shirt!");
+return false;
+}
+if(document.myform.quantity.value=="none")
+{
+alertify.alert("Select a Quantity!");
+return false;
+}
+
+alertify.confirm("Are you sure you want to place the Order?", function (e) {
+    if (e) {
+        $("#myform").submit();
+    }
+});
+return true;
+});
+</script>
+
+
+<script>
+function isNumber(evt) {
+    evt = (evt) ? evt : window.event;
+    var charCode = (evt.which) ? evt.which : evt.keyCode;
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+        return false;
+    }
+    return true;
+}
+</script>
+
+</body>
+</html>

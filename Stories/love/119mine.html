@@ -1,0 +1,517 @@
+<?php
+session_start();
+$_SESSION['aid']=119;
+?>
+<html>
+<head>
+
+
+<link rel="icon" type="image/png" href="../../Images/favicon.png">
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5397319a7ce18a61"></script>
+<script type="text/JavaScript">
+function killCopy(e){
+return false
+}
+function reEnable(){
+return true
+}
+document.onselectstart=new Function("return false")
+if (window.sidebar){
+document.onmousedown=killCopy
+document.onclick=reEnable
+}
+</script>
+
+
+<title>Stories - Mine!</title>
+<link rel="stylesheet" type="text/css" href="../../mycss.css">
+<link rel="stylesheet" href="../../alertify.core.css" />
+<link rel="stylesheet" href="../../alertify.default.css" id="toggleCSS" />
+
+<style>
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+     background:rgba(0,0,0,0.5);
+     border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+
+}
+img{ 
+-webkit-filter: drop-shadow(-1px 1px 1px #000); 
+filter: drop-shadow(-1px 1px 1px #000); 
+}
+
+.design{
+background-image:url("../../Images/texture.jpg");
+background-repeat:repeat;
+box-shadow: -5px 5px 5px #000;
+padding:60px;
+}
+
+.likebtn{
+background:#1a0d04;
+-webkit-filter: drop-shadow(-5px 5px 5px #000); 
+filter: drop-shadow(-5px 5px 5px #000); 
+color:#fff;
+font-family:Hand;
+font-size:1.8em;
+width:100px;
+height:50px;
+border:0px;
+}
+
+.likebtn:active{
+-webkit-filter: drop-shadow(-3px 3px 3px #000); 
+filter: drop-shadow(-3px 3px 3px #000); 
+}
+
+
+.tarea
+{
+    background:#1a0d04;
+    box-shadow: 0px 3px 3px #000;
+    color:#9b6c28; 
+    border:0px;
+    padding:15px;
+    font-family: Hand,serif;
+    font-size:20px;
+}
+.tarea:focus{
+   outline: 0;
+}
+
+.submt
+{
+background:#1a0d04;
+font-family:Hand;
+font-size:1.2em;
+color:#9b6c28;
+width:100px;
+height:40px;
+box-shadow:0px 6px 6px #000;
+border:0px;
+}
+.submt:active
+{
+box-shadow:-0px 3px 3px #000;
+}
+
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51930404-1', 'quillonparchment.in');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body link="#000000" vlink="#000000" alink="#000000" background="../../Images/parch.jpg" style="background-repeat:repeat;">
+<center>
+
+<br>
+<table>
+<tr>
+<td><img src="../../Images/logo.png" width=150 height=150/></td>
+<td><img src="../../Images/name.png" width=700 height=150/></td>
+</tr>
+</table>
+
+<?php include '../../tabs2.php'; ?>
+
+<div class="design">
+<br><br>
+
+<h1 style="font-family:Hand;font-size:4em;color:#000;text-shadow:-3px 3px 3px #000"><?php include '../../returntitle.php'; ?></h1>
+
+<h4 style="font-family:Hand;font-size:1.8em;color:#000;">
+- <a href="../../profile.html?id=<?php include '../../returnauthorid.php'; ?>"><?php include '../../returnauthor.php'; ?></a>
+</h4>
+
+<h3 style="font-family:Hand">( Published on: <?php include '../../returndate.php'; ?> )</h3>
+<br>
+
+<!-- THE IMAGE -->
+<img src="../../Images/119.jpg" style="border:6px black solid" width=500 height=352/>
+
+<!-- CREDITS -->
+<br><strong><font style="font-family:Hand;font-size:1em;">
+<a href="https://www.flickr.com/photos/69187071@N02/14648182507/in/photolist-7ukg4U-ojpLjP-arhy4Q-j9mvNG-bVCHH8-bVCwZg-8R9yZT-NmRZ-nDP2cJ-5mqkfG-ksXvAE-7hDmEL-4iCRW5-ipiSTu-fXLtGC-vWuen-63K1cg-bSWn4B-6huhax-8ggHZ7-8Q7SmZ-a3Lr9K-4wdzzW-6d8TSA-dLzBf3-dr8q6h-5d4Wd5-nvenp3-ax5PLL-zPtZ2-8bUGb1-ar8tbZ-9baL15-mmJK9X-ay96KQ-6rkLsR-8bAVc4-dtNqa-4L39w5-pJTJh-oh94en-h8hmPr-njjXUw-4onbFX-5tsUrJ-gm4DNT-7d539Y-jXSKVK-dJpaCw-arvFFS">Photo</a> by 
+<a href="https://www.flickr.com/photos/69187071@N02/">Author</a> is licensed under 
+<a href="https://creativecommons.org/licenses/by-nd/2.0/">CC BY 2.0</a></font></strong><br><br>
+
+
+
+<br>
+
+<h4 style="text-align:justify;font-family:Nyala;font-size:1.3em;color:#000;">
+
+
+
+
+
+
+
+
+<!-- PASTE THE ARTICLE WITH P TAGS BELOW THIS LINE -->
+
+<p>It happened to be a very cozy day. The flavor of cold coffee and ice-cream that we just had, was still lingering around my tongue. It was I, who insisted on a walk, which turned out to be long one.</p><p>I always had this craze for long walks. I walk when I am sad, I walk when I am happy, I walk when I am frustrated, I walk anytime and every time. And that day, I was happy.</p><p>It grew a bit dark some time later and I insisted upon going back home. But he enjoyed my long walk routines and wanted to go a bit further. That was when I started my taunts to madden him,</p><p>'It's really growing dark. I am walking back.’ I said in a worried tone.</p><p>'Stay. I am with you. What are you scared at?'</p><p>'Uh? What do you exactly mean, 'you are with me'?', I mocked at him.</p><p>'Well, I am a man. I can save you in case of tragedies.’ he teased me back.</p><p> 'Ah! You are no superman or spider man to save me. You don't even go to the gym regularly, lazy bones. How can I feel safe with you?'</p><p>'See I got arms!’ he started showing gestures.</p><p>'Grr...I am tired of it! Cut it down baby.' I winked.</p><p>I actually felt the safest when I was with him. But I didn't want to reveal it that soon. He was protective like my brother, caring like my dad and annoying like a little sibling. But I have never told any of this to him.</p><p>I swapped to another topic which I wanted to talk with him for long, </p><p>'You have the habit of reading newspapers? Know the Delhi rape case? She was raped even as she had a male company. Are you, going to marry me suppose I am raped? And...'</p><p>'Yes, I will!'</p><p>'What?'</p><p>'I said, I will marry you even if you were raped. That will not happen, but still, I will marry...'</p><p>'Oh shut up! You don't have to lie.'</p><p>'Do I look like I am joking?'</p><p>'Not exactly, but still..'</p><p>'Still?'</p><p>'Come on, you don't have to marry me then.'</p><p>'Why is that so?'</p><p>'It's just so.'</p><p>Silence was all that flowed between us for a few moments.</p><p>'You know what? I don't love you for what you have. I love you for what you are!' he said.</p><p>'But what about your parents? Do you think they will allow their son to marry a rape victim? Never!'</p><p>'Excuse me, I am going to marry a girl whom I love, no matter what her past is. Why must they decide upon this?'</p><p>'All this is good for an argument. But only for an argument!' I said.</p><p>'Well, if that is all you believe me...'</p><p>'I never said so!'</p><p>'Then stop asking me these stupid questions and let's walk back home. It's getting late.' he bit his tongue.</p><p>'Boss?' I mimicked him.</p><p>'Yes.'</p><p>'What did I tell you a minute before? Was that Greek or Latin?'</p><p>'Well...uh...err....please, let's walk back. I am cold!'</p><p>As we started walking back home, I could not help but think only about the very words he said. I don't know if he really meant it, but his eyes were unmistakably serious. </p><p>I whispered a slow love you, under my breath which was barely audible. </p><p>'You are still thinking about it. Aren't you?'</p><p>'Uh..No, it's just, I am growing cold too.' I managed a tiny little smile.</p><p>'Then race me down!'</p><p>'What?'</p><p>'I am serious. I will buy you one of those summer collection dresses if you win!' he shouted half running.</p><p>'Don't cheat. Wait for me!' I ran behind.</p><p>I could never remember a better day in my life, with him. As we ran down the street, putting back all those thoughts behind, our heart pacing like a rocket, grew my never ending love for him.</p><p>I often turn back to that day, that moment, when we have hard times. And that is what keeps me going now! </p><p></p><p></p><p>P.S:</p><p><q>Do you remember, we were sitting there by the water?</p><p>You put your arm around me for the first time.</p><p>You made a rebel of a careless man's careful daughter. </p><p>You are the best thing that's ever been MINE!"</p><p>-Taylor Swift's MINE.</p><p></q></p>
+
+
+
+
+
+
+
+
+
+
+</h4>
+<br><br>
+<h3 style="font-family:Hand">---End Of Story---</h3>
+<br>
+
+
+<div style="position:relative;">
+<input type="submit" id="likebtn" value="Like" class="likebtn"><br><br>
+
+
+<!--Rating-->
+
+<div id="ratingstuff">
+<br><br>
+<h3 style="font-family:Hand;font-size:1.4em"><div id="ratethestory">Rate the Story!</div></h3>
+<img src="../../Images/star.png" id="star1"/>
+<img src="../../Images/star.png" id="star2"/>
+<img src="../../Images/star.png" id="star3"/>
+<img src="../../Images/star.png" id="star4"/>
+<img src="../../Images/star.png" id="star5"/>
+</div>
+
+<br>
+<h3 style="font-family:Hand;font-size:1.4em"><div>Average Viewer Rating</div></h3>
+<h3 style="font-family:Hand;font-size:1.4em;position:relative;top:-10px"><?php include '../../returnaverage.php'; ?><font style="font-size:2em"> / 5</font></h3>
+
+<h3 style="position:absolute;top:-15px;left:190px;font-family:Hand;font-size:1.4em"><tot>Total Likes<br><div id="likediv"><?php include '../../returnlikes.php'; ?></div></tot></h3>
+<h3 style="position:absolute;top:-15px;left:1000px;font-family:Hand;font-size:1.4em"><tot>Total Views<br><?php include '../../returnreads.php'; ?></tot></h3>
+</div>
+
+<br><br>
+<div style="text-align:center"><h3 style="font-family:Hand"><a href="#top">Back to Top</a></h3></div>
+<br>
+
+<h3 style="font-size:1.5em;font-family:Hand"><u>COMMENTS</u></h3>
+
+<div id="thediv" style="text-align:left;height:300px;width:850px;border:1px solid #000;overflow:auto;background:#1a0d04;padding:20px;box-shadow:0px 2px 2px #000;font-size:1.2em;font-family:Hand;color:#9b6c28">
+
+</div>
+
+<br>
+<textarea class="tarea" id="ctarea" name="ctarea" rows="3" cols="40" spellcheck="false" style="resize:none">
+</textarea>
+<br>
+<input type="submit" id="cbtn" value="Comment" class="submt" >
+
+<br><br>
+<h3 style="font-family:Hand"><a href="#top">Back to Top</a></h3></div>
+
+</center>
+
+
+
+
+
+
+<script src="../../Scripts/jquery-1.9.1.min.js"></script>
+<script src="../../Scripts/alertify.min.js"></script>
+
+<script>
+function update()
+{
+$.get("../../displaycomments.php",{aid:119} ,function(data)
+{
+$("#thediv").html(data);
+window.setTimeout(update,10000);
+ });
+}
+</script>
+
+
+<script>
+$("#cbtn").on("click",function()
+{
+var cmtvar=document.getElementById("ctarea");
+var pbox=$('thediv');
+
+if(cmtvar.value!="")
+{
+$.post("../../sendcomment.php", {comment:cmtvar.value,aid:119} ,function(){});
+$("#thediv").append('<br><name style="font-size:1.3em;text-shadow:-5px 5px 5px #000">' + '<u><?php echo $_SESSION['firstname']; ?>:</u></name> ' + cmtvar.value + '<br>');
+$("#thediv").stop().animate({scrollTop: $("#thediv")[0].scrollHeight},800);
+
+cmtvar.value="";
+}
+
+});
+</script>
+
+<script>
+$("#likebtn").on("click",function()
+{
+
+if(this.value=="Like")
+{
+this.value="Liked";
+this.style.color="#b67d2d";
+$.get("../../likestory.php",{aid:119}, function(data)
+{
+$("#likediv").html(data);
+});
+}
+else if(this.value=="Liked")
+{
+this.value="Like";
+this.style.color="#fff";
+$.get("../../unlikestory.php",{aid:119}, function(data)
+{
+$("#likediv").html(data);
+});
+}
+
+});
+</script>
+
+<script>
+var hover=true;
+$("#tab_stories").addClass("current");
+$(document).ready(function()
+{
+var likebtn=document.getElementById("likebtn");
+var ctarea=document.getElementById("ctarea");
+var cbtn=document.getElementById("cbtn");
+var rating=document.getElementById("ratingstuff");
+
+$.get("../../checksession.php", function(data)
+{
+if(data!=1)
+{
+	likebtn.style.display="none";
+	ctarea.style.display="none";
+	cbtn.style.display="none";	
+	rating.style.display="none";
+}
+});
+
+$.get("../../updatereads.php" , {abc:'7'} , function(data){});
+
+$.get("../../checklike.php" , {abc:'7'} , function(data)
+{
+if(data==1)
+{
+document.getElementById("likebtn").value="Liked";
+document.getElementById("likebtn").style.color="#b67d2d";
+}
+else
+{
+document.getElementById("likebtn").value="Like";
+document.getElementById("likebtn").style.color="#fff";
+}
+});
+
+$("#thediv").scrollTop($("#thediv")[0].scrollHeight);
+update();
+
+$.ajax( {url:"../../getrating.php", success:function(data)
+{
+if(data==1)
+{
+hover=false;
+$("#ratethestory").html('Your Rating!');
+$("#star1").attr("src","../../Images/star2.png");
+}
+else if(data==2)
+{
+hover=false;
+$("#ratethestory").html('Your Rating!');
+$("#star1").attr("src","../../Images/star2.png");
+$("#star2").attr("src","../../Images/star2.png");
+}
+else if(data==3)
+{
+hover=false;
+$("#ratethestory").html('Your Rating!');
+$("#star1").attr("src","../../Images/star2.png");
+$("#star2").attr("src","../../Images/star2.png");
+$("#star3").attr("src","../../Images/star2.png");
+}
+else if(data==4)
+{
+hover=false;
+$("#ratethestory").html('Your Rating!');
+$("#star1").attr("src","../../Images/star2.png");
+$("#star2").attr("src","../../Images/star2.png");
+$("#star3").attr("src","../../Images/star2.png");
+$("#star4").attr("src","../../Images/star2.png");
+}
+else if(data==5)
+{
+hover=false;
+$("#ratethestory").html('Your Rating!');
+$("#star1").attr("src","../../Images/star2.png");
+$("#star2").attr("src","../../Images/star2.png");
+$("#star3").attr("src","../../Images/star2.png");
+$("#star4").attr("src","../../Images/star2.png");
+$("#star5").attr("src","../../Images/star2.png");
+}
+}});
+
+
+});
+</script>
+
+<script>
+$("#signout").on("click",function()
+{
+alertify.confirm("Are you sure you want to Sign Out?", function (e) {
+    if (e) {
+        window.open("../../signout.php","_self");
+    }
+});
+});
+</script>
+
+<script>
+$("#star1").hover(
+function(){
+if(hover==true) $("#star1").attr("src","../../Images/star2.png");
+},
+function(){
+if(hover==true) $("#star1").attr("src","../../Images/star.png");
+}
+);
+
+$("#star2").hover(
+function(){
+if(hover==true){
+$("#star1").attr("src","../../Images/star2.png");
+$("#star2").attr("src","../../Images/star2.png");
+}
+},
+function(){
+if(hover==true){
+$("#star1").attr("src","../../Images/star.png");
+$("#star2").attr("src","../../Images/star.png");
+}
+}
+);
+
+
+$("#star3").hover(
+function(){
+if(hover==true){
+$("#star1").attr("src","../../Images/star2.png");
+$("#star2").attr("src","../../Images/star2.png");
+$("#star3").attr("src","../../Images/star2.png");
+}
+},
+function(){
+if(hover==true){
+$("#star1").attr("src","../../Images/star.png");
+$("#star2").attr("src","../../Images/star.png");
+$("#star3").attr("src","../../Images/star.png");
+}
+}
+);
+
+
+
+$("#star4").hover(
+function(){
+if(hover==true){
+$("#star1").attr("src","../../Images/star2.png");
+$("#star2").attr("src","../../Images/star2.png");
+$("#star3").attr("src","../../Images/star2.png");
+$("#star4").attr("src","../../Images/star2.png");
+}
+},
+function(){
+if(hover==true){
+$("#star1").attr("src","../../Images/star.png");
+$("#star2").attr("src","../../Images/star.png");
+$("#star3").attr("src","../../Images/star.png");
+$("#star4").attr("src","../../Images/star.png");
+}
+}
+);
+
+
+
+$("#star5").hover(
+function(){
+if(hover==true){
+$("#star1").attr("src","../../Images/star2.png");
+$("#star2").attr("src","../../Images/star2.png");
+$("#star3").attr("src","../../Images/star2.png");
+$("#star4").attr("src","../../Images/star2.png");
+$("#star5").attr("src","../../Images/star2.png");
+}
+},
+function(){
+if(hover==true){
+$("#star1").attr("src","../../Images/star.png");
+$("#star2").attr("src","../../Images/star.png");
+$("#star3").attr("src","../../Images/star.png");
+$("#star4").attr("src","../../Images/star.png");
+$("#star5").attr("src","../../Images/star.png");
+}
+}
+);
+
+
+
+$('#star1').click(function()
+{
+if(hover==true) $.get("../../sendrating.php", {rate:'1' , aid:119 } , function(){});
+hover=false;
+});
+
+$('#star2').click(function()
+{
+if(hover==true) $.get("../../sendrating.php", {rate:'2' , aid:119 } , function(){});
+hover=false;
+});
+
+$('#star3').click(function()
+{
+if(hover==true) $.get("../../sendrating.php", {rate:'3' , aid:119 } , function(){});
+hover=false;
+});
+
+$('#star4').click(function()
+{
+if(hover==true) $.get("../../sendrating.php", {rate:'4' , aid:119 } , function(){});
+hover=false;
+});
+
+$('#star5').click(function()
+{
+if(hover==true) $.get("../../sendrating.php", {rate:'5' , aid:119 } , function(){});
+hover=false;
+});
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<?php
+session_start();
+?>
+<html>
+<head>
+
+<title>Cornucopia '14 Official Results - Quill on Parchment</title>
+
+<link rel="icon" type="image/png" href="Images/favicon.png">
+<link rel="stylesheet" type="text/css" href="mycss.css">
+<link rel="stylesheet" href="alertify.core.css" />
+<link rel="stylesheet" href="alertify.default.css" id="toggleCSS" />
+
+<style>
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+     background:rgba(0,0,0,0.5);
+     border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+
+}
+
+.bg{
+background-image:url("Images/pen.jpg");
+width:1000px;
+height:674px;
+}
+
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51930404-1', 'quillonparchment.in');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body link="#000000" vlink="#000000" alink="#000000" background="Images/parch.jpg" style="background-repeat:repeat;">
+
+<center>
+
+<br>
+<table>
+<tr>
+<td><img src="Images/logo.png" width=150 height=150/></td>
+<td><img src="Images/name.png" width=700 height=150/></td>
+</tr>
+</table>
+
+<?php include 'tabs.php'; ?>
+
+<br>
+<font style="font-family:Quill;font-size:4em">Creative Writing Contest @ Cornucopia </font><font style="font-family:Quill;font-size:3em">2014</font><br>
+<br><br>
+<div class="bg" style="box-shadow: -2px 2px 2px #000;text-align:left;">
+
+<table>
+<tr>
+<td><img style="padding-left:30px;padding-top:30px;" src="Images/cc1.png" width=100 height=100></td>
+<td><font style="font-family:Quill;font-size:3em"> Kavya Kumar</font><br><font style="font-family:Stylis;font-size:1.2em">1st Year, B.Sc. Psychology</font></td>
+</tr>
+
+<tr>
+<td><img style="padding-left:30px;padding-top:30px;" src="Images/cc2.png" width=100 height=100></td>
+<td><font style="font-family:Quill;font-size:3em"> Michelle Neha</font><br><font style="font-family:Stylis;font-size:1.2em">2nd Year, B.Sc. Vis. Com.</font></td>
+</tr>
+
+<tr>
+<td><img style="padding-left:30px;padding-top:30px;" src="Images/cc3.png" width=100 height=100></td>
+<td><font style="font-family:Quill;font-size:3em"> B. Gayathri Nair</font><br><font style="font-family:Stylis;font-size:1.2em">3rd Year, B.Sc. Mathematics with C.A.</font></td>
+</tr>
+
+</table>
+
+<div style="padding:50px;text-align:justify;">
+<font style="font-family:Stylis;font-size:1.3em">
+
+Cornucopia is an annual Literary Fest held by the 'Literary Club' of Ethiraj College for Women. As part of the Creative Writing Contest, the participants were given an initial paragraph and their task was to complete that into a story in the given time of one hour. Out of umpteen entries, three were judged The Best. Here are the links to their articles-
+<br><br>
+<center>
+<a href="cckavya.html"><b>Kavya Kumar's</b></a> 
+<a style="margin-left:30px" href="ccneha.html"><b>Michelle Neha's</b></a> 
+<a style="margin-left:30px" href="ccnair.html"><b>Gayathri Nair's</b></a>
+</center>
+
+<br><br>
+
+</div>
+</font>
+</div>
+<script src="Scripts/jquery-1.9.1.min.js"></script>
+<script src="Scripts/alertify.min.js"></script>
+
+<script>
+
+$("#tab_home").addClass("current");
+
+$("#signout").on("click",function()
+{
+alertify.confirm("Are you sure you want to Sign Out?", function (e) {
+    if (e) {
+        window.open("signout.php","_self");
+    }
+});
+});
+</script>
+
+</body>
+</html>

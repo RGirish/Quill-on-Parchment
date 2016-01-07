@@ -1,0 +1,467 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>Register With QoP</title>
+
+<link rel="icon" type="image/png" href="Images/favicon.png">
+<link rel="stylesheet" type="text/css" href="mycss.css">
+<link rel="stylesheet" href="alertify.core.css" />
+<link rel="stylesheet" href="alertify.default.css" id="toggleCSS" />
+
+<script src="Scripts/jquery-1.9.1.min.js"  type="text/javascript" language="javascript"></script>
+<script src="Scripts/alertify.min.js"></script>
+
+<style>
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+     background:rgba(0,0,0,0.5);
+     border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+
+}
+
+img{ 
+-webkit-filter: drop-shadow(-1px 1px 1px #000); 
+filter: drop-shadow(-1px 1px 1px #000); 
+}
+
+.input
+{
+    height:40px;
+    width:200px;
+    background:#f7eddb;
+    color:#000; 
+    border:1px outset #000;
+    padding-left:15px;
+    padding-right:15px; 
+    font-family: Hand,serif;
+    font-size:21px;
+}
+
+.inputa
+{
+    height:40px;
+    width:200px;
+    background:#f7eddb;
+    color:#000; 
+    border:1px outset #000;
+    padding-left:15px;
+    padding-right:15px; 
+    font-family: Hand,serif;
+    font-size:21px;
+}
+
+.inputyo
+{
+    height:40px;
+    width:90px;
+    background:#f7eddb;
+    color:#000; 
+    border:1px outset #000;
+    padding-left:15px;
+    padding-right:15px; 
+    font-family: Hand,serif;
+    font-size:21px;
+}
+
+.submt
+{
+    height:30px;
+    width:100px;
+    background:#f7e8cc;
+    color:#000;
+    box-shadow: -5px 5px 5px #000;
+    border:0px;
+    padding-left:15px;
+    padding-right:15px; 
+    font-family: Hand,serif;
+    font-size:18px;
+}
+
+.submt:active{
+    background:#1f0300;
+    color:#fff;
+}
+
+.submt2
+{
+background-image:url("Images/register.png");
+width:180px;
+height:40px;
+box-shadow:0px 6px 6px #000;
+border:0px;
+}
+
+.submt2:active
+{
+box-shadow:-0px 3px 3px #000;
+}
+
+.burn{
+background-image:url("Images/burn.png");
+width:575px;
+height:1900px;
+}
+
+
+</style>
+
+<script type="text/javascript">
+
+var $_GET = {};
+
+document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function () {
+    function decode(s) {
+        return decodeURIComponent(s.split("+").join(" "));
+    }
+
+    $_GET[decode(arguments[1])] = decode(arguments[2]);
+});
+
+    function myfunc(q,s) { 
+        s = s ? s : window.location.search; 
+        var re = new RegExp('&'+q+'(?:=([^&]*))?(?=&|$)','i'); 
+        return (s=s.replace(/^?/,'&').match(re)) ? (typeof s[1] == 'undefined' ? '' : decodeURIComponent(s[1])) : undefined; 
+    } 
+</script>
+
+<script type="text/javascript"  type="text/javascript" language="javascript">
+
+
+function validate()
+{
+if(document.myform.firstname.value=="")
+{
+alertify.alert("Enter your First Name!");
+return false;
+}
+if(document.myform.lastname.value=="")
+{
+alertify.alert("Enter your Last Name!");
+return false;
+}
+if(document.myform.date.value=="none" || document.myform.month.value=="none" || document.myform.year.value=="")
+{
+alertify.alert("Enter your Date of Birth!");
+return false;
+}
+if(isNaN(document.myform.year.value) || document.myform.year.value.length!=4 || document.myform.year.value>2014)
+{
+alertify.alert("Enter a valid Date of Birth!");
+return false;
+}
+if(document.myform.country.value=="")
+{
+alertify.alert("Enter your Country's name!");
+return false;
+}
+if(document.myform.city.value=="")
+{
+alertify.alert("Enter your City's name!");
+return false;
+}
+if(document.myform.email.value=="")
+{
+alertify.alert("Enter your Email Address!");
+return false;
+}
+var x=document.forms["myform"]["email"].value;
+var atpos=x.indexOf("@");
+var dotpos=x.lastIndexOf(".");
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+{
+  alertify.alert("Enter a valid Email Address!");
+  return false;
+}
+
+if(document.myform.username.value=="")
+{
+alertify.alert("Enter an Username for your Account!");
+return false;
+}
+if(document.myform.username.value.length<5)
+{
+alertify.alert("Username should be 5 characters or more!");
+return false;
+}
+var s=document.myform.username.value;
+if(/\s/.test(s))
+{
+alertify.alert("Username can not contain spaces!");
+return false;
+}
+
+if(document.myform.pass.value=="")
+{
+alertify.alert("Enter a Password for your Account!");
+return false;
+}
+if(document.myform.password.value=="")
+{
+alertify.alert("Enter a Password for your Account!");
+return false;
+}
+if(document.myform.pass.value.length<5 || document.myform.password.value.length<5)
+{
+alertify.alert("Password should be 5 characters or more!");
+return false;
+}
+if(document.myform.password.value != document.myform.pass.value)
+{
+alertify.alert("Passwords do not match!");
+return false;
+}
+
+if(document.getElementById("question1").value=="o")
+{
+alertify.alert("Please choose the first Security Question!");
+return false;
+}
+
+if(document.myform.answer1.value=="")
+{
+alertify.alert("Enter an  answer for Security Question 1!");
+return false;
+}
+
+if(document.getElementById("question2").value=="o")
+{
+alertify.alert("Please choose the second Security Question!");
+return false;
+}
+
+if(document.myform.answer2.value=="")
+{
+alertify.alert("Enter an  answer for Security Question 2!");
+return false;
+}
+
+if(document.myform.question1.value==document.myform.question2.value)
+{
+alertify.alert("Select two different Security Questions!");
+return false;
+}
+
+if(document.myform.about.value=="")
+{
+alertify.alert("Don't be shy. Tell us something about yourself!");
+return false;
+}
+
+return true;
+}
+
+$(document).ready(function()
+{
+
+$("#tab_account").addClass("current");
+
+
+	if($_GET["second"]==2)
+	{
+		alertify.alert("Registration Successful!");
+	}
+	else if($_GET["second"]==4)
+	{
+		alertify.alert("Sorry, the username is already taken!");
+	}
+
+	$("#username").blur(function()
+	{
+		document.getElementById("checking").style.visibility="visible";
+		$.get("checkusername.php",{ uname:$(this).val() } ,function(data)
+        		{
+			if(data==1)
+			{
+				alertify.alert("Oops! Username already taken!");
+				document.myform.username.value="";
+          			document.getElementById("checking").style.visibility="hidden";
+			}
+			else
+			{
+				document.getElementById("checking").style.visibility="hidden";	
+			}
+				
+        		});
+		
+	});
+});
+
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51930404-1', 'quillonparchment.in');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body link="#000000" vlink="#000000" alink="#000000" background="Images/parch.jpg" style="background-repeat:repeat;">
+<center>
+
+<br>
+<table>
+<tr>
+<td><img src="Images/logo.png" width=150 height=150/></td>
+<td><img src="Images/name.png" width=700 height=150/></td>
+</tr>
+</table>
+
+
+<?php include 'tabs.php'; ?>
+
+
+<br>
+
+<div id="thediv" name="thediv" class="burn">
+<br><br><br><br><br><br>
+<form name="myform" onsubmit="return validate()" action="insertuser.php" method="post">
+<font face="Hand" size="5" style="color:#1f0300;text-shadow:-1px 1px 1px #000;">First Name</font><br>
+<input type="text" class="input" name="firstname" style="color:#000;" maxlength=40/><br><br>
+
+<font face="Hand" size="5" style="color:#1f0300;text-shadow:-1px 1px 1px #000;">Last Name</font><br>
+<input type="text" class="input" name="lastname" style=";color:#000;" maxlength=40/><br><br>
+
+<font face="Hand" size="5" style="color:#1f0300;text-shadow:-1px 1px 1px #000;">Gender</font><br>
+<select name="gender" class="input">
+<option value="M">Male</option>
+<option value="F">Female</option>
+<option value="O">Other</option>
+</select><br><br>
+
+<font face="Hand" size="5" style="color:#1f0300;text-shadow:-1px 1px 1px #000;">Date of Birth</font><br>
+<select name="date" class="inputyo">
+<option value="none">D</option>
+<option value="01">1</option>
+<option value="02">2</option>
+<option value="03">3</option>
+<option value="04">4</option>
+<option value="05">5</option>
+<option value="06">6</option>
+<option value="07">7</option>
+<option value="08">8</option>
+<option value="09">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>
+<select style="margin-left:20px" name="month" class="inputyo">
+<option value="none">M</option>
+<option value="Jan">Jan</option>
+<option value="Feb">Feb</option>
+<option value="Mar">Mar</option>
+<option value="Apr">Apr</option>
+<option value="May">May</option>
+<option value="Jun">Jun</option>
+<option value="Jul">Jul</option>
+<option value="Aug">Aug</option>
+<option value="Sep">Sep</option>
+<option value="Oct">Oct</option>
+<option value="Nov">Nov</option>
+<option value="Dec">Dec</option>
+</select><br><br>
+<input type="text" name="year" style="text-align:center" maxlength=4 class="inputyo"><br><br>
+
+
+
+<font face="Hand" size="5" style="color:#1f0300;text-shadow:-1px 1px 1px #000;">Profession</font><br>
+<select name="profession" class="input">
+<option value="S">Student</option>
+<option value="W">Working</option>
+<option value="O">Other</option>
+</select><br><br>
+
+<font face="Hand" size="5" style="color:#1f0300;text-shadow:-1px 1px 1px #000;">Country</font><br>
+<input type="text" class="input" name="country" style=";color:#000;" maxlength=50/><br><br>
+
+<font face="Hand" size="5" style="color:#1f0300;text-shadow:-1px 1px 1px #000;">City</font><br>
+<input type="text" class="input" name="city" style=";color:#000;" maxlength=50/><br><br>
+
+<font face="Hand" size="5" style="color:#1f0300;text-shadow:-1px 1px 1px #000;">Email Address</font><br>
+<input type="text" class="inputa" name="email" style="color:#000;" maxlength=75/><br><br>
+
+<font face="Hand" size="5" style="color:#1f0300;text-shadow:-1px 1px 1px #000;">User Name</font><br>
+<input type="text" class="inputa" name="username" id="username" maxlength=50/>
+<div id="checking" name="checking" style = "visibility:hidden;font-family:Hand;font-size:20;"><strong>Checking...</strong></div>
+
+
+<font face="Hand" size="5" style="color:#1f0300;text-shadow:-1px 1px 1px #000;">Password</font><br>
+<input type="password" class="inputa" name="pass" style="color:#000;" maxlength=16/><br><br>
+
+<font face="Hand" size="5" style="color:#1f0300;text-shadow:-1px 1px 1px #000;">Repeat your Password</font><br>
+<input type="password" class="inputa" name="password" style="color:#000;" maxlength=16/><br><br>
+
+<font face="Hand" size="5" style="color:#1f0300;text-shadow:-1px 1px 1px #000;">Security Question 1:</font><br>
+<select name="question1" id="question1" class="input">
+<option value="o">Select-</option>
+<option value="a">What school did you attend for sixth grade?</option>
+<option value="b">Who was your favorite childhood friend?</option>
+<option value="c">Where was your parents' wedding reception held?</option>
+<option value="d">What was your childhood nickname?</option>
+<option value="e">What time of the day were you born?</option>
+<option value="f">What is your oldest sibling's birth month and year?</option>
+</select><br><br>
+
+<font face="Hand" size="5" style="color:#1f0300;text-shadow:-1px 1px 1px #000;">Your answer:</font><br>
+<input name="answer1" type="text" class="inputa" maxlength=100/><br><br>
+
+<font face="Hand" size="5" style="color:#1f0300;text-shadow:-1px 1px 1px #000;">Security Question 2:</font><br>
+<select name="question2" id="question2" class="input">
+<option value="o">Select-</option>
+<option value="a">What school did you attend for sixth grade?</option>
+<option value="b">Who was your favorite childhood friend?</option>
+<option value="c">Where was your parents' wedding reception held?</option>
+<option value="d">What was your childhood nickname?</option>
+<option value="e">What time of the day were you born?</option>
+<option value="f">What is your oldest sibling's birth month and year?</option>
+</select><br><br>
+
+<font face="Hand" size="5" style="color:#1f0300;text-shadow:-1px 1px 1px #000;">Your answer:</font><br>
+<input name="answer2" type="text" class="inputa" maxlength=100/><br><br>
+
+<br><br><font face="Hand" size="5" style="color:#1f0300;text-shadow:-1px 1px 1px #000;">About Me. Make it short and sweet!</font><br>
+<input name="about" type="text" class="inputa" maxlength=500/><br><br><br>
+
+<input type="submit" id="button" name="button" class="submt2" value="">
+
+</form>
+</div>
+
+<br><br>
+
+
+</body>
+</html>

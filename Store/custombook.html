@@ -1,0 +1,113 @@
+<html>
+<head>
+
+<title>Store</title>
+<link rel="icon" type="image/png" href="../Images/favicon.png">
+<link rel="stylesheet" type="text/css" href="../mycss.css">
+<link rel="stylesheet" href="../alertify.core.css" />
+<link rel="stylesheet" href="../alertify.default.css" id="toggleCSS" />
+
+<style>
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+     background:rgba(0,0,0,0.5);
+     border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+img{ 
+-webkit-filter: drop-shadow(-1px 1px 1px #000); 
+filter: drop-shadow(-1px 1px 1px #000);
+}
+
+.design{
+background-image:url("../Images/store.jpg");
+width:80%;
+box-shadow:-5px 5px 5px #000;
+}
+
+
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51930404-1', 'quillonparchment.in');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body link="#000000" vlink="#000000" alink="#000000" background="../Images/parch.jpg" style="background-repeat:repeat;">
+
+<center>
+
+<br>
+<table>
+<tr>
+<td><img src="../Images/logo.png" width=150 height=150/></td>
+<td><img src="../Images/name.png" width=700 height=150/></td>
+</tr>
+</table>
+
+<?php include '../tabs1.php'; ?>
+
+<div id="maindiv" class="design">
+
+<br><br><br><br>
+<font style="font-family:Hand;font-size:2.2em;color:#fff">
+<u>Customized Books</u>
+</font><br><br>
+<font style="font-family:Hand;font-size:1.5em;color:#fff">
+So, you're a writer and you'd like to have a personal copy of a book having the collection of all your stories?<br>
+Or, do you have a writer-friend to whom you'd like to gift a book of his/her stories/poems?<br>
+QoP Store prints such Customized Books for you!<br><br>
+
+Send us the following details-<br>
+Your Full Name<br>
+Your Address-with Area, City, State, Pincode & Landmark if any<br>
+Contact Number<br>
+Quantity<br><br>
+Along with THE ARTICLES THAT YOU WANT PRINTED IN THE BOOK attached, to-<br><br>
+</font>
+<font style="font-family:Hand;font-size:2em;color:#fff">
+quillonparchment@gmail.com
+</font>
+<font style="font-family:Hand;font-size:1.5em;color:#fff">
+<br><br>We'll get back to you soon!<br>The cost of one such Book depends on the content you give us.<br>Contact us at +918220121550 for further details!</font>
+<br><br><br>
+
+</div>
+
+</center>
+
+<script src="../Scripts/jquery-1.9.1.min.js"></script>
+<script src="../Scripts/alertify.min.js"></script>
+
+<script>
+$("#tab_store").addClass("current");
+</script>
+
+<script>
+$("#signout").on("click",function()
+{
+alertify.confirm("Are you sure you want to Sign Out?", function (e) {
+    if (e) {
+        window.open("../signout.php","_self");
+    }
+});
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,551 @@
+<?php
+session_start();
+$_SESSION['aid']=3;
+?>
+<html>
+<head>
+
+
+<link rel="icon" type="image/png" href="../Images/favicon.png">
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5397319a7ce18a61"></script>
+<script type="text/JavaScript">
+function killCopy(e){
+return false
+}
+function reEnable(){
+return true
+}
+document.onselectstart=new Function("return false")
+if (window.sidebar){
+document.onmousedown=killCopy
+document.onclick=reEnable
+}
+</script>
+
+
+<title>Others - Chennai Express</title>
+<link rel="stylesheet" type="text/css" href="../mycss.css">
+<link rel="stylesheet" href="../alertify.core.css" />
+<link rel="stylesheet" href="../alertify.default.css" id="toggleCSS" />
+
+<style>
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+     background:rgba(0,0,0,0.5);
+     border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+
+}
+img{ 
+-webkit-filter: drop-shadow(-1px 1px 1px #000); 
+filter: drop-shadow(-1px 1px 1px #000); 
+}
+
+.design{
+background-image:url("../Images/texture.jpg");
+background-repeat:repeat;
+box-shadow: -5px 5px 5px #000;
+padding:60px;
+}
+
+.likebtn{
+background:#1a0d04;
+-webkit-filter: drop-shadow(-5px 5px 5px #000); 
+filter: drop-shadow(-5px 5px 5px #000); 
+color:#fff;
+font-family:Hand;
+font-size:1.8em;
+width:100px;
+height:50px;
+border:0px;
+}
+
+.likebtn:active{
+-webkit-filter: drop-shadow(-3px 3px 3px #000); 
+filter: drop-shadow(-3px 3px 3px #000); 
+}
+
+
+.tarea
+{
+    background:#1a0d04;
+    box-shadow: 0px 3px 3px #000;
+    color:#9b6c28; 
+    border:0px;
+    padding:15px;
+    font-family: Hand,serif;
+    font-size:20px;
+}
+.tarea:focus{
+   outline: 0;
+}
+
+.submt
+{
+background:#1a0d04;
+font-family:Hand;
+font-size:1.2em;
+color:#9b6c28;
+width:100px;
+height:40px;
+box-shadow:0px 6px 6px #000;
+border:0px;
+}
+.submt:active
+{
+box-shadow:-0px 3px 3px #000;
+}
+
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51930404-1', 'quillonparchment.in');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body link="#000000" vlink="#000000" alink="#000000" background="../Images/parch.jpg" style="background-repeat:repeat;">
+<center>
+
+<br>
+<table>
+<tr>
+<td><img src="../Images/logo.png" width=150 height=150/></td>
+<td><img src="../Images/name.png" width=700 height=150/></td>
+</tr>
+</table>
+
+	<nav>
+	<ul><h4>
+    	<li><a href="../index.html">HOME</a></li>
+
+	<li><a href="../Stories/index.html">STORIES</a>
+	<ul class="sub-menu">
+	<li><a href="../Stories/general"><strong>General</strong></a></li>
+	<li><a href="../Stories/love"><strong>Love and Romance</strong></a></li>
+	<li><a href="../Stories/suspense"><strong>Suspence and Thriller</strong></a></li>
+	<li><a href="../Stories/drama"><strong>Drama and Tragedy</strong></a></li>
+	<li><a href="../Stories/scifi"><strong>Science Fiction</strong></a></li>
+	<li><a href="../Stories/nonfiction"><strong>Non Fiction</strong></a></li>
+	<li><a href="../Stories/tamil"><strong>Tamil</strong></a></li>	
+</ul>
+	</li>
+	<li><a href="../Poems">POEMS</a><ul class="sub-menu">
+<li><a href="../Poems"><strong>English</strong></a></li>
+	<li><a href="../Poems/tamil"><strong>Tamil</strong></a></li>
+	</ul></li>
+	<li><a href="../Reviews">REVIEWS</a>
+	<ul class="sub-menu">
+	<li><a href="../Reviews/books"><strong>Books</strong></a></li>
+	<li><a href="../Reviews/movies"><strong>Movies</strong></a></li>
+	<li><a href="../Reviews/television"><strong>Television</strong></a></li>
+	<li><a href="../Reviews/music"><strong>Music</strong></a></li>
+	</ul>
+	</li>
+	<li><a href="../Travel">TRAVEL</a></li>
+	<li><a href="../Food">FOOD</a></li>
+	<li><a class="current" href="../Others">OTHERS</a></li>
+	<li><a href="../Store">STORE</a></li>
+	<li><a style="cursor:hand">ACCOUNT</a>
+	<ul class="sub-menu">
+	<li name="si" id="si"><a href="../login.html"><strong>Sign In</strong></a></li>
+	<li name="su" id="su"><a href="../register.html?case=2"><strong>Sign Up</strong></a></li>
+	<li name="vp" id="vp"><a href="../viewprofile.html"><strong>View Profile</strong></a></li>
+	<li name="se" id="se"><a href="../submitentry.html"><strong>Sumbit Entry</strong></a></li>
+	<li name="me" id="me"><a href="../myentries.html"><strong>My Entries</strong></a></li>
+	<li name="so" id="so"><a id="signout" style="cursor:hand"><strong>Sign Out</strong></a></li>
+	</ul>
+	</li>
+	
+	
+	</ul></h4>
+	</nav>
+
+<div class="design">
+<br><br>
+
+<h1 style="font-family:Hand;font-size:4em;color:#000;text-shadow:-3px 3px 3px #000"><?php include '../returntitle.php'; ?></h1>
+
+<h4 style="font-family:Hand;font-size:1.8em;color:#000;">
+- <a href="../profile.html?id=<?php include '../returnauthorid.php'; ?>"><?php include '../returnauthor.php'; ?></a>
+</h4>
+
+<h3 style="font-family:Hand">( Published on: <?php include '../returndate.php'; ?> )</h3>
+<br><br>
+
+<img src="../Images/3.jpg" width=500 height=300 style="border: 4px black solid;">
+
+<br><strong><font style="font-family:Hand;font-size:1em;">
+<a href="https://www.flickr.com/photos/mattbeckwith/4485330575/in/photolist-7QmuvM-3n3Da-6oE8Cf-6oAFAB-6oE1Kj-95h8gu-n2oKaV-h4GUk-hhkhZ-e8hRQ7-hhkhY-mGhBUN-7kr8jQ-6jBtmv-hLrV7-95e38R-dEzviH-95e3nv-9naX6d-6oDZZf-6fwaFg-e7jCAt-aowVqU-7jr5qN-9YGtND-e8kiW1-6vCn6G-e877Kt-95h8wA-e8zRBD-5oJEgd-95h8h1-9n7Ujv-9v6YMu-95h89u-9yuf1t-9WfKPC-fadkRd-f9Y6Ue-f9Y9xk-f9Y8EM-f9Y63z-fadohy-6MCF9i-95e3b4-bv8gWK-9afsej-dFUQ8a-Jo9hX-HhzaX">Photo</a> by 
+<a href="https://www.flickr.com/photos/mattbeckwith/">Author</a> is licensed under 
+<a href="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC BY 2.0</a></font></strong><br><br>
+
+<h4 style="text-align:justify;font-family:Nyala;font-size:1.3em;color:#000;">
+
+<p>Unlike the movie, this particular Chennai express actually did change my life, in a way that is almost unfathomable. The day was Jan 2nd 2014. One whole day after the New Year began. This year was going to be about me achieving my dreams, I told to myself. It was going to be a life-changing year, in the sense that I will be my most focused self in all the years past. The journey opened up a new side of me.</p><p>I was in Secunderabad Junction, heading back to Chennai from my trip to Hyderabad. The trip was amazing, but this isn’t the travelogue. I was going to travel by train no. 12604 Chennai Express from Hyderabad to Chennai Central. The train pulled into the station at 17:35, already 20 minutes late. S9 23 was my reserved seat. I got in, said my goodbyes to my friend and her grandmother who came to drop me off. Set my suitcase down and prepared to go back home to the land of warm winters, cursing, of course, the fact that I got side lower, which is probably my least favorite berth. This, of course, is not even about how much side lower berth sucks and how awesome upper berth is. This is about my co-passengers, a child of barely 3 years and his family.</p><p>It was a reasonably large family. Mom, Dad, an elder sister of age 13 (I would guess), two other sisters between age 2 and 5 and, of course, him. I wouldn’t be able to disclose their names because, frankly, I don’t know them. I’m a person that prefers not communicating to my co-passengers as a rule but would politely respond to their questions as an exception. Anyway the train pulled out of Secunderabad junction and toward Chennai Central. The kids being kids were hyperactive, screaming and playing their own games in their own world, and I was being me, silently reading on as if oblivious to the outside world.</p><p>At around 20:45, well past dinner time and seemingly much closer to most of the compartments’ bedtime, the berths were being set-up and lights were being switched off, as in my cubicle. The mother sat opposite me with her son on her lap. That’s when I noticed he was talking in gibberish. Not as much talking as uttering gabble. ‘Children! Always throwing tantrums’ I thought. She tried to calm him down as he continued on with his tantrums, which involved violent and consistent screaming and hitting his head on objects and sometimes his own hand. Thinking back, I wonder why it didn’t hit me then. Anyway, she took her time calming him down, often coercively holding his hands from hitting himself and singing him to sleep. While on the opposite end was me, insensitive me, becoming restless and wanting to lie down. I guess the mother noticed that. She politely asked for 5 more minutes and I nodded in agreement, albeit half-heartedly. She finished her song and he was asleep. She laid him down on her berth and went to sleep beside him. I laid the seats’ backrests down and lied down, cozily pulling my blanket over me preparing to fall asleep.</p><p>I closed my eyes. Then it hit me. He was autistic. Of course. Why didn’t I realize this before? I felt miserable immediately; for being restless, for not understanding, for all the times I ever complained about the “misery” in my life. I spent the night reading up on autism. Autism is a neural development disorder that means a lot of things among which, most disturbingly for me, are impaired communicative skills, inability to as much as take care of oneself and self-injury, the three signs that were for me to recognize in the child, the three that I refused to.</p><p>The thing about autism is that it is one disease we know practically nothing about. There is no exhaustive set of causes; diagnosis is based on behavior rather than causes and mechanism; no defined method of treatment or cure and, most wrenching of all, the inability of doctors to say with absolute certainty if it can be cured or not, there have been cases of both complete cure and no cure at all, both for reasons unknown. For all their lives, people with autism and their families live in the worst possible limbo of all, hope and despair together. According to recent studies, 1 in 150 people in the world are autistic. That is a total of, approximately, 46 million people suffering from autism worldwide. This number is not certain for the following reasons:</p><p>•	the definition of autism is in itself uncertain</p><p>•	there is no consistent international data</p><p>•	there are many cases of autism that are incorrectly diagnosed, which is in turn related to uncertain definition of autism</p><p>I woke up unsure of when I had fallen asleep and noticed it was morning; if the train were on time we should have reached Central by now. But it wasn’t on time, late by almost a whole hour, so we were still journeying on. Everyone in the compartment had woken up from their slumber. It was perhaps the noise of people scrambling about preparing to descend the train that scared him, or perhaps a nightmare, I wouldn’t know. Whatever it was, he got up, screaming and gabbling and hurting himself again. This time I was quick to respond. I offered to get up so that the mother can sit comfortably and calm him down, perhaps hoping to feel less miserable about my behavior the previous night. He calmed down, but not my mind. I was deeply hurt by my insensitivity. Hurt beyond words’ description. To my list of fears, there was a new addition this day, fear of my insensitivity taking over me again. I vowed to make myself feel better, by any means possible, because that is what will give me mental peace, which I so desire. I decided I would save up and donate to a charity that supports people with autism in India. And one day, I promised on any part of me that was still human, that I would get over my fear and volunteer in one of these organizations.</p><p>They say that people with autism will not be able to look another person in the eye. I disagree. He was looking me in the eye alright. Throughout the journey he was looking me in the eye. It was I that didn’t look him in the eye and I will forever regret it. His face is etched in my mind; I never wish to forget it, for he will be the inspiration and motivation for me to overcome my fear.</p><p></p>
+
+</h4>
+
+<br><br>
+<h3 style="font-family:Hand">---End Of Article---</h3>
+<br>
+
+
+<div style="position:relative;">
+<input type="submit" id="likebtn" value="Like" class="likebtn"><br><br>
+
+
+<!--Rating-->
+
+<div id="ratingstuff">
+<br><br>
+<h3 style="font-family:Hand;font-size:1.4em"><div id="ratethestory">Rate the Article!</div></h3>
+<img src="../Images/star.png" id="star1"/>
+<img src="../Images/star.png" id="star2"/>
+<img src="../Images/star.png" id="star3"/>
+<img src="../Images/star.png" id="star4"/>
+<img src="../Images/star.png" id="star5"/>
+</div>
+
+<br>
+<h3 style="font-family:Hand;font-size:1.4em"><div>Average Viewer Rating</div></h3>
+<h3 style="font-family:Hand;font-size:1.4em;position:relative;top:-10px"><?php include '../returnaverage.php'; ?><font style="font-size:2em"> / 5</font></h3>
+
+<h3 style="position:absolute;top:-15px;left:190px;font-family:Hand;font-size:1.4em"><tot>Total Likes<br><div id="likediv"><?php include '../returnlikes.php'; ?></div></tot></h3>
+<h3 style="position:absolute;top:-15px;left:1000px;font-family:Hand;font-size:1.4em"><tot>Total Views<br><?php include '../returnreads.php'; ?></tot></h3>
+</div>
+
+<br><br>
+<div style="text-align:center"><h3 style="font-family:Hand"><a href="#top">Back to Top</a></h3></div>
+<br>
+
+<h3 style="font-size:1.5em;font-family:Hand"><u>COMMENTS</u></h3>
+
+<div id="thediv" style="text-align:left;height:300px;width:850px;border:1px solid #000;overflow:auto;background:#1a0d04;padding:20px;box-shadow:0px 2px 2px #000;font-size:1.2em;font-family:Hand;color:#9b6c28">
+
+</div>
+
+<br>
+<textarea class="tarea" id="ctarea" name="ctarea" rows="3" cols="40" spellcheck="false" style="resize:none">
+</textarea>
+<br>
+<input type="submit" id="cbtn" value="Comment" class="submt" >
+
+<br><br>
+<h3 style="font-family:Hand"><a href="#top">Back to Top</a></h3></div>
+
+</center>
+
+
+
+
+
+
+<script src="../Scripts/jquery-1.9.1.min.js"></script>
+<script src="../Scripts/alertify.min.js"></script>
+
+<script>
+function update()
+{
+$.get("../displaycomments.php", {aid:3} , function(data)
+{
+$("#thediv").html(data);
+window.setTimeout(update,10000);
+ });
+}
+</script>
+
+
+<script>
+$("#cbtn").on("click",function()
+{
+var cmtvar=document.getElementById("ctarea");
+var pbox=$('thediv');
+
+if(cmtvar.value!="")
+{
+$.post("../sendcomment.php", {comment:cmtvar.value,aid:3} ,function(){});
+$("#thediv").append('<br><name style="font-size:1.3em;text-shadow:-5px 5px 5px #000">' + '<u><?php echo $_SESSION['firstname']; ?>:</u></name> ' + cmtvar.value + '<br>');
+$("#thediv").stop().animate({scrollTop: $("#thediv")[0].scrollHeight},800);
+
+cmtvar.value="";
+}
+
+});
+</script>
+
+<script>
+$("#likebtn").on("click",function()
+{
+
+if(this.value=="Like")
+{
+this.value="Liked";
+this.style.color="#b67d2d";
+$.get("../likestory.php",{aid:3}, function(data)
+{
+$("#likediv").html(data);
+});
+}
+else if(this.value=="Liked")
+{
+this.value="Like";
+this.style.color="#fff";
+$.get("../unlikestory.php",{aid:3}, function(data)
+{
+$("#likediv").html(data);
+});
+}
+
+});
+</script>
+
+<script>
+var hover=true;
+$(document).ready(function()
+{
+var si=document.getElementById("si");
+var su=document.getElementById("su");
+var vp=document.getElementById("vp");
+var so=document.getElementById("so");
+var se=document.getElementById("se");
+var me=document.getElementById("me");
+var likebtn=document.getElementById("likebtn");
+var ctarea=document.getElementById("ctarea");
+var cbtn=document.getElementById("cbtn");
+var rating=document.getElementById("ratingstuff");
+
+$.get("../checksession.php", function(data)
+{
+if(data==1)
+{
+	si.style.display="none";
+	su.style.display="none";
+}
+else
+{
+	vp.style.display="none";
+	so.style.display="none";
+	se.style.display="none";
+	me.style.display="none";
+	likebtn.style.display="none";
+	ctarea.style.display="none";
+	cbtn.style.display="none";	
+	rating.style.display="none";
+}
+});
+
+$.get("../updatereads.php" , {abc:'7'} , function(data){});
+
+$.get("../checklike.php" , {abc:'7'} , function(data)
+{
+if(data==1)
+{
+document.getElementById("likebtn").value="Liked";
+document.getElementById("likebtn").style.color="#b67d2d";
+}
+else
+{
+document.getElementById("likebtn").value="Like";
+document.getElementById("likebtn").style.color="#fff";
+}
+});
+
+$("#thediv").scrollTop($("#thediv")[0].scrollHeight);
+update();
+
+$.ajax( {url:"../getrating.php", success:function(data)
+{
+if(data==1)
+{
+hover=false;
+$("#ratethestory").html('Your Rating!');
+$("#star1").attr("src","../Images/star2.png");
+}
+else if(data==2)
+{
+hover=false;
+$("#ratethestory").html('Your Rating!');
+$("#star1").attr("src","../Images/star2.png");
+$("#star2").attr("src","../Images/star2.png");
+}
+else if(data==3)
+{
+hover=false;
+$("#ratethestory").html('Your Rating!');
+$("#star1").attr("src","../Images/star2.png");
+$("#star2").attr("src","../Images/star2.png");
+$("#star3").attr("src","../Images/star2.png");
+}
+else if(data==4)
+{
+hover=false;
+$("#ratethestory").html('Your Rating!');
+$("#star1").attr("src","../Images/star2.png");
+$("#star2").attr("src","../Images/star2.png");
+$("#star3").attr("src","../Images/star2.png");
+$("#star4").attr("src","../Images/star2.png");
+}
+else if(data==5)
+{
+hover=false;
+$("#ratethestory").html('Your Rating!');
+$("#star1").attr("src","../Images/star2.png");
+$("#star2").attr("src","../Images/star2.png");
+$("#star3").attr("src","../Images/star2.png");
+$("#star4").attr("src","../Images/star2.png");
+$("#star5").attr("src","../Images/star2.png");
+}
+}});
+
+
+});
+</script>
+
+<script>
+$("#signout").on("click",function()
+{
+alertify.confirm("Are you sure you want to Sign Out?", function (e) {
+    if (e) {
+        window.open("../signout.php","_self");
+    }
+});
+});
+</script>
+
+<script>
+$("#star1").hover(
+function(){
+if(hover==true) $("#star1").attr("src","../Images/star2.png");
+},
+function(){
+if(hover==true) $("#star1").attr("src","../Images/star.png");
+}
+);
+
+$("#star2").hover(
+function(){
+if(hover==true){
+$("#star1").attr("src","../Images/star2.png");
+$("#star2").attr("src","../Images/star2.png");
+}
+},
+function(){
+if(hover==true){
+$("#star1").attr("src","../Images/star.png");
+$("#star2").attr("src","../Images/star.png");
+}
+}
+);
+
+
+$("#star3").hover(
+function(){
+if(hover==true){
+$("#star1").attr("src","../Images/star2.png");
+$("#star2").attr("src","../Images/star2.png");
+$("#star3").attr("src","../Images/star2.png");
+}
+},
+function(){
+if(hover==true){
+$("#star1").attr("src","../Images/star.png");
+$("#star2").attr("src","../Images/star.png");
+$("#star3").attr("src","../Images/star.png");
+}
+}
+);
+
+
+
+$("#star4").hover(
+function(){
+if(hover==true){
+$("#star1").attr("src","../Images/star2.png");
+$("#star2").attr("src","../Images/star2.png");
+$("#star3").attr("src","../Images/star2.png");
+$("#star4").attr("src","../Images/star2.png");
+}
+},
+function(){
+if(hover==true){
+$("#star1").attr("src","../Images/star.png");
+$("#star2").attr("src","../Images/star.png");
+$("#star3").attr("src","../Images/star.png");
+$("#star4").attr("src","../Images/star.png");
+}
+}
+);
+
+
+
+$("#star5").hover(
+function(){
+if(hover==true){
+$("#star1").attr("src","../Images/star2.png");
+$("#star2").attr("src","../Images/star2.png");
+$("#star3").attr("src","../Images/star2.png");
+$("#star4").attr("src","../Images/star2.png");
+$("#star5").attr("src","../Images/star2.png");
+}
+},
+function(){
+if(hover==true){
+$("#star1").attr("src","../Images/star.png");
+$("#star2").attr("src","../Images/star.png");
+$("#star3").attr("src","../Images/star.png");
+$("#star4").attr("src","../Images/star.png");
+$("#star5").attr("src","../Images/star.png");
+}
+}
+);
+
+
+
+$('#star1').click(function()
+{
+if(hover==true) $.get("../sendrating.php", {rate:'1' , aid:3 } , function(){});
+hover=false;
+});
+
+$('#star2').click(function()
+{
+if(hover==true) $.get("../sendrating.php", {rate:'2' , aid:3 } , function(){});
+hover=false;
+});
+
+$('#star3').click(function()
+{
+if(hover==true) $.get("../sendrating.php", {rate:'3' , aid:3 } , function(){});
+hover=false;
+});
+
+$('#star4').click(function()
+{
+if(hover==true) $.get("../sendrating.php", {rate:'4' , aid:3 } , function(){});
+hover=false;
+});
+
+$('#star5').click(function()
+{
+if(hover==true) $.get("../sendrating.php", {rate:'5' , aid:3 } , function(){});
+hover=false;
+});
+
+</script>
+
+</body>
+</html>

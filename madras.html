@@ -1,0 +1,263 @@
+<?php
+session_start();
+?>
+<html>
+<head>
+
+<title>The Madras Day Celebrations</title>
+
+<link rel="icon" type="image/png" href="Images/favicon.png">
+<link rel="stylesheet" type="text/css" href="mycss.css">
+<link rel="stylesheet" href="alertify.core.css" />
+<link rel="stylesheet" href="alertify.default.css" id="toggleCSS" />
+
+<style>
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+     background:rgba(0,0,0,0.5);
+     border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+
+}
+
+
+.input
+{
+    height:30px;
+    width:220px;
+    background:#1a0d04;
+    box-shadow: 0px 3px 3px #000;
+color:#9b6c28; 
+    border:0px;
+    padding-left:15px;
+    padding-right:15px; 
+    font-family: Hand,serif;
+    font-size:17px;
+}
+.input:focus{
+   outline: 0;
+}
+
+.inputa
+{
+    height:30px;
+    width:220px;
+    background:#1a0d04;
+    box-shadow: 0px 3px 3px #000;
+    color:#9b6c28; 
+    border:0px;
+    padding-left:15px;
+    padding-right:15px; 
+    font-family: Hand,serif;
+    font-size:17px;
+}
+.inputa:focus{
+   outline: 0;
+}
+.tarea
+{
+    background:#1a0d04;
+    box-shadow: 0px 3px 3px #000;
+    color:#9b6c28; 
+    border:0px;
+    padding:15px;
+    font-family: Hand,serif;
+    font-size:20px;
+}
+.tarea:focus{
+   outline: 0;
+}
+.tarea2
+{
+    background:#1a0d04;
+    box-shadow: 0px 3px 3px #000;
+    color:#9b6c28; 
+    border:0px;
+    padding:15px;
+    font-family: Hand,serif;
+    font-size:20px;
+}
+.tarea2:focus{
+   outline: 0;
+}
+.submt
+{
+background-image:url("Images/submit.png");
+width:200px;
+height:40px;
+box-shadow:0px 6px 6px #000;
+border:0px;
+}
+.submt:active
+{
+box-shadow:-0px 3px 3px #000;
+}
+
+
+
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51930404-1', 'quillonparchment.in');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body link="#000000" vlink="#000000" alink="#000000" background="Images/parch.jpg" style="background-repeat:repeat;">
+
+<center>
+
+<br>
+<table>
+<tr>
+<td><img src="Images/logo.png" width=150 height=150/></td>
+<td><img src="Images/name.png" width=700 height=150/></td>
+</tr>
+</table>
+
+
+<?php include 'tabs.php'; ?>
+
+
+
+
+<font style="font-family:Quill;font-size:5em">The Madras Day Celebrations</font>
+<br><br>
+
+<div style="box-shadow:0px 0px 10px 1px #000;background-image:url(Images/mdbg.jpg);color:000;width:960px;">
+<div style="padding:60px;text-align:justify">
+<font style="font-weight:bold;font-family:Stylis;font-size:1.2em">
+<br>
+A city deserves to celebrate its birthday.
+And this year, Madras celebrates its 375th birthday.
+Madras Day was an idea that three people put together - the city’s famed historian S. Muthiah, journalist Sashi Nair and publisher Vincent D’ Souza. Later, they were joined by three others - senior journalist & editor Sushila Ravindranath, journalist & web site entrepreneur Revathi R and entrepreneur & writer-historian V. Sriram! And this year, QoP joins hands with them.
+We had asked the writers to share their anecdotes, tales, quirks, reminiscences, anything that they would like to share about the city of Madras - in exactly 375 words - no more no less.
+So, here are the winners! <br><br>
+<center>
+<br>
+<a href="madrasresults.html" style="font-family:Stylis;font-weight:bold;font-size:2em">MADRAS DAY RESULTS</a><br><br><br>
+Official Facebook Partners<br>
+<a href="http://www.facebook.com/madrasmemoirs"><img style="border:2px black solid" src="Images/mmlogo.jpg" width=200 height=130></a>
+<br>
+<a href="http://www.themadrasday.in">www.themadrasday.in</a><br>
+<a href="http://www.facebook.com/madrasday">www.facebook.com/madrasday</a>
+</center>
+</font>
+</div>
+</div>
+
+<br><br><br><br><br><br>
+
+
+</center>
+
+
+<script type="text/javascript">
+var $_GET = {};
+document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function () {
+    function decode(s) {
+        return decodeURIComponent(s.split("+").join(" "));
+    }
+
+    $_GET[decode(arguments[1])] = decode(arguments[2]);
+});
+
+    function myfunc(q,s) { 
+        s = s ? s : window.location.search; 
+        var re = new RegExp('&'+q+'(?:=([^&]*))?(?=&|$)','i'); 
+        return (s=s.replace(/^?/,'&').match(re)) ? (typeof s[1] == 'undefined' ? '' : decodeURIComponent(s[1])) : undefined; 
+    } 
+
+function countWords(){
+	s = document.getElementById("article").value;
+	s = s.replace(/(^\s*)|(\s*$)/gi,"");
+	s = s.replace(/[ ]{2,}/gi," ");
+	s = s.replace(/\n /,"\n");
+	return s.split(' ').length;
+}
+
+function validate()
+{
+if(document.myform.name.value=="")
+{
+alertify.alert("Enter your Name!");
+return false;
+}
+if(document.myform.email.value=="")
+{
+alertify.alert("Enter your Email Address!");
+return false;
+}
+var x=document.forms["myform"]["email"].value;
+var atpos=x.indexOf("@");
+var dotpos=x.lastIndexOf(".");
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+{
+  alertify.alert("Enter a valid Email Address!");
+  return false;
+}
+if(document.myform.phone.value=="")
+{
+alertify.alert("Enter your Phone number!");
+return false;
+}
+if(isNaN(document.myform.phone.value) || (document.myform.phone.value.length!=10 && document.myform.phone.value!=8))
+{
+alertify.alert("Enter a valid phone number!");
+return false;
+}
+
+if(document.myform.article.value=="")
+{
+alertify.alert("Enter your Passage in the space provided!");
+return false;
+}
+
+return true;
+}
+</script>
+
+
+<script src="Scripts/jquery-1.9.1.min.js"></script>
+<script src="Scripts/alertify.min.js"></script>
+
+<script>
+$(document).ready(function()
+{
+
+$("#tab_home").addClass("current");
+
+if($_GET["no"]==2)
+{
+	alertify.alert("Your entry was successfully submitted!");
+}
+
+});
+</script>
+
+<script>
+$("#signout").on("click",function()
+{
+alertify.confirm("Are you sure you want to Sign Out?", function (e) {
+    if (e) {
+        window.open("signout.php","_self");
+    }
+});
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,546 @@
+<?php
+session_start();
+$_SESSION['aid']=61;
+?>
+<html>
+<head>
+
+
+<link rel="icon" type="image/png" href="../Images/favicon.png">
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5397319a7ce18a61"></script>
+<script type="text/JavaScript">
+function killCopy(e){
+return false
+}
+function reEnable(){
+return true
+}
+document.onselectstart=new Function("return false")
+if (window.sidebar){
+document.onmousedown=killCopy
+document.onclick=reEnable
+}
+</script>
+
+
+<title>Others - Assassin's Creed - The Late Review</title>
+<link rel="stylesheet" type="text/css" href="../mycss.css">
+<link rel="stylesheet" href="../alertify.core.css" />
+<link rel="stylesheet" href="../alertify.default.css" id="toggleCSS" />
+
+<style>
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+     background:rgba(0,0,0,0.5);
+     border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+
+}
+img{ 
+-webkit-filter: drop-shadow(-1px 1px 1px #000); 
+filter: drop-shadow(-1px 1px 1px #000); 
+}
+
+.design{
+background-image:url("../Images/texture.jpg");
+background-repeat:repeat;
+box-shadow: -5px 5px 5px #000;
+padding:60px;
+}
+
+.likebtn{
+background:#1a0d04;
+-webkit-filter: drop-shadow(-5px 5px 5px #000); 
+filter: drop-shadow(-5px 5px 5px #000); 
+color:#fff;
+font-family:Hand;
+font-size:1.8em;
+width:100px;
+height:50px;
+border:0px;
+}
+
+.likebtn:active{
+-webkit-filter: drop-shadow(-3px 3px 3px #000); 
+filter: drop-shadow(-3px 3px 3px #000); 
+}
+
+
+.tarea
+{
+    background:#1a0d04;
+    box-shadow: 0px 3px 3px #000;
+    color:#9b6c28; 
+    border:0px;
+    padding:15px;
+    font-family: Hand,serif;
+    font-size:20px;
+}
+.tarea:focus{
+   outline: 0;
+}
+
+.submt
+{
+background:#1a0d04;
+font-family:Hand;
+font-size:1.2em;
+color:#9b6c28;
+width:100px;
+height:40px;
+box-shadow:0px 6px 6px #000;
+border:0px;
+}
+.submt:active
+{
+box-shadow:-0px 3px 3px #000;
+}
+
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51930404-1', 'quillonparchment.in');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body link="#000000" vlink="#000000" alink="#000000" background="../Images/parch.jpg" style="background-repeat:repeat;">
+<center>
+
+<br>
+<table>
+<tr>
+<td><img src="../Images/logo.png" width=150 height=150/></td>
+<td><img src="../Images/name.png" width=700 height=150/></td>
+</tr>
+</table>
+
+	<nav>
+	<ul><h4>
+    	<li><a href="../index.html">HOME</a></li>
+
+	<li><a href="../Stories/index.html">STORIES</a>
+	<ul class="sub-menu">
+	<li><a href="../Stories/general"><strong>General</strong></a></li>
+	<li><a href="../Stories/love"><strong>Love and Romance</strong></a></li>
+	<li><a href="../Stories/suspense"><strong>Suspence and Thriller</strong></a></li>
+	<li><a href="../Stories/drama"><strong>Drama and Tragedy</strong></a></li>
+	<li><a href="../Stories/scifi"><strong>Science Fiction</strong></a></li>
+	<li><a href="../Stories/nonfiction"><strong>Non Fiction</strong></a></li>
+	<li><a href="../Stories/tamil"><strong>Tamil</strong></a></li>	
+</ul>
+	</li>
+	<li><a href="../Poems">POEMS</a><ul class="sub-menu">
+<li><a href="../Poems"><strong>English</strong></a></li>
+	<li><a href="../Poems/tamil"><strong>Tamil</strong></a></li>
+	</ul></li>
+	<li><a href="../Reviews">REVIEWS</a>
+	<ul class="sub-menu">
+	<li><a href="../Reviews/books"><strong>Books</strong></a></li>
+	<li><a href="../Reviews/movies"><strong>Movies</strong></a></li>
+	<li><a href="../Reviews/television"><strong>Television</strong></a></li>
+	<li><a href="../Reviews/music"><strong>Music</strong></a></li>
+	</ul>
+	</li>
+	<li><a href="../Travel">TRAVEL</a></li>
+	<li><a href="../Food">FOOD</a></li>
+	<li><a class="current" href="../Others">OTHERS</a></li>
+	<li><a href="../Store">STORE</a></li>
+	<li><a style="cursor:hand">ACCOUNT</a>
+	<ul class="sub-menu">
+	<li name="si" id="si"><a href="../login.html"><strong>Sign In</strong></a></li>
+	<li name="su" id="su"><a href="../register.html?case=2"><strong>Sign Up</strong></a></li>
+	<li name="vp" id="vp"><a href="../viewprofile.html"><strong>View Profile</strong></a></li>
+	<li name="se" id="se"><a href="../submitentry.html"><strong>Sumbit Entry</strong></a></li>
+	<li name="me" id="me"><a href="../myentries.html"><strong>My Entries</strong></a></li>
+	<li name="so" id="so"><a id="signout" style="cursor:hand"><strong>Sign Out</strong></a></li>
+	</ul>
+	</li>
+	
+	
+	</ul></h4>
+	</nav>
+
+<div class="design">
+<br><br>
+
+<h1 style="font-family:Hand;font-size:4em;color:#000;text-shadow:-3px 3px 3px #000"><?php include '../returntitle.php'; ?></h1>
+
+<h4 style="font-family:Hand;font-size:1.8em;color:#000;">
+- <a href="../profile.html?id=<?php include '../returnauthorid.php'; ?>"><?php include '../returnauthor.php'; ?></a>
+</h4>
+
+<h3 style="font-family:Hand">( Published on: <?php include '../returndate.php'; ?> )</h3>
+<br><br>
+
+<img src="../Images/61.jpg" width=500 height=300 style="border: 4px black solid;"><br><br>
+
+<h4 style="text-align:justify;font-family:Nyala;font-size:1.3em;color:#000;">
+
+<p>( Reviewed Till present game)</p><p>Okay I write this after playing every possible game and DLC known to me, and available for PC for almost 2 months. Multiplayer excluded, Since pirated.</p><p>Firstly, I played the whole series Chronologically and Read in a few comics, reviews, watched 3 movies to fill in the gaps left by the Game's story line.</p><p>The whole Story of the Assassin's Creed Series inside the animus Happens roughly over 700 years ranging from 12th century to the 18th century. The in-animus and ex-animus Story is almost always about the Assassins vs Templar war, with scenario respective to its time period.</p><p>There are 6 Main games in total available for pc and a HD port from PS vita.</p><p>Though the Assassin's always seem to win every single time, theoretically or practically or psychologically or physically, the Templars seem to come back from the grave even Stronger and more Powerful than last time.</p><p>Right from the first game, comics and movies its always about Assassins killing the Templars and the Templars trying to erase out the Assassins. So This serves as your story line for all your games.</p><p>All games consist of two major parts -the present and the memories relived. For the first 5 games the present day protagonist is a Desmond Miles who supposedly has Assassin and Templar ancestors and relives them by means of the Animus - a machine which decodes ancestor's memories from his DNA. He fights against present day Templars who run the Abstergo industries</p><p>He relives the memory of three ancestor's namely Altaïr Ibn-La'Ahad (AC), Ezio Auditore da Firenze(AC II, AC:BR, AC:R) and Ratonhnhaké:ton or Connor Kenway(AC III).</p><p>Now lets not ponder into the stories of these legends. Desmond, by reliving their memories, finds artifacts called 'Pieces of eden' using the Guidance from the first civilization to prevent earth's destruction on 21-12-2012(I know).</p><p>Now, The first civilization flashes are annoying, irregular and doesn't give you a clue about themselves properly.</p><p>The HD port known as AC Liberation HD has the first female Assassin.</p><p>The Latest game, which is AC Black Flag explores life of Edward Kenway via animus memories.</p><p>Both Liberation HD and Black flag tread from the usual Desmond storyline and explore the memories via Abstergo entertainment.</p><p>The Games as a whole are a delight to play, and each game varies in its own way.</p><p>as a gamer I felt that there was more originality in the first Assassin's Creed and Assassin's creed III. Though some of you would beg to differ these games changed the way Stealth, open world and AC games were played.</p><p>The original AC game you the freedom to execute your target where ever you wanted unlike every other scripted assassinations in other AC games.</p><p>Altair is the most skillful assassin in the creed makes a mistake and is stripped of his weapons and ranks as he becomes the Master assassin of the creed, he finds the apple of eden and hides it later in life.</p><p>The Renaissance Trilogy Showed you the life of Charismatic and Daring Ezio Auditore with new innovations and vehicles.</p><p>Ezio with his Power of influence and skills remade Italy into a beautiful and safe place from the templars.</p><p>There are a lot of Historically important characters in these games and you also Have Leonardo DaVinci.</p><p>Almost all the set pieces were fun and challenging The Double blade was a killer and bombs were fun.</p><p>The games were full of new innovations which were being tested upon innocent players. but some of them like the hook blade were really good.</p><p>The trilogy Gave a powerful story when it lacked in gameplay.</p><p>As a whole the Best game in the trio was definitely AC II with its Solid story and Innovative gameplay.</p><p>In Assassin's Creed III you play as an American Native During the civil unrest in Americas, you are a common enemy for both loyalists and patriots though you help both at times. again you relive the memories to find an artifact to get to the final solution to save the earth in present day.</p><p>The game is surprisingly good looking with eye popping changes in Graphics, and fair changes in gameplay, with naval Battles</p><p>Though the story is weak, the ending in present day is satisfying and twisted.</p><p>There is not much to say about the PC port .i.e. Liberation HD. It serves as a link between AC III and AC Black Flag via Aveline de Grandpre. Aveline is the first and only female AC character till now.</p><p>Black Flag. This possibly might be the most fun game and gripping game in the AC series. but it did lack the punch in the storyline. The game drops you into the beautiful Caribbean sea and its bootyful glory.</p><p>The game takes a detour from usual Assassins vs. Templars concept.</p><p>Edward Kenway, the grandfather of Connor is more of a Pirate than an Assassin.There are Epic Naval battles, which is a major attraction to the game. There is not much to do or learn in the present day part of the game which is in first person view.</p><p>From the series as a whole My favorite was AC II.</p><p>And the upcoming Assassin's Creed: Unity happening during the french revolution Lets hope a Better and stealthier Assassin's Creed From Arno Dorian.</p><p>I take leave as I wish to return to the High Caribbean</p><p>~Comments are welcome.</p><p></p>
+
+</h4>
+
+<br><br>
+<h3 style="font-family:Hand">---End Of Article---</h3>
+<br>
+
+
+<div style="position:relative;">
+<input type="submit" id="likebtn" value="Like" class="likebtn"><br><br>
+
+
+<!--Rating-->
+
+<div id="ratingstuff">
+<br><br>
+<h3 style="font-family:Hand;font-size:1.4em"><div id="ratethestory">Rate the Article!</div></h3>
+<img src="../Images/star.png" id="star1"/>
+<img src="../Images/star.png" id="star2"/>
+<img src="../Images/star.png" id="star3"/>
+<img src="../Images/star.png" id="star4"/>
+<img src="../Images/star.png" id="star5"/>
+</div>
+
+<br>
+<h3 style="font-family:Hand;font-size:1.4em"><div>Average Viewer Rating</div></h3>
+<h3 style="font-family:Hand;font-size:1.4em;position:relative;top:-10px"><?php include '../returnaverage.php'; ?><font style="font-size:2em"> / 5</font></h3>
+
+<h3 style="position:absolute;top:-15px;left:190px;font-family:Hand;font-size:1.4em"><tot>Total Likes<br><div id="likediv"><?php include '../returnlikes.php'; ?></div></tot></h3>
+<h3 style="position:absolute;top:-15px;left:1000px;font-family:Hand;font-size:1.4em"><tot>Total Views<br><?php include '../returnreads.php'; ?></tot></h3>
+</div>
+
+<br><br>
+<div style="text-align:center"><h3 style="font-family:Hand"><a href="#top">Back to Top</a></h3></div>
+<br>
+
+<h3 style="font-size:1.5em;font-family:Hand"><u>COMMENTS</u></h3>
+
+<div id="thediv" style="text-align:left;height:300px;width:850px;border:1px solid #000;overflow:auto;background:#1a0d04;padding:20px;box-shadow:0px 2px 2px #000;font-size:1.2em;font-family:Hand;color:#9b6c28">
+
+</div>
+
+<br>
+<textarea class="tarea" id="ctarea" name="ctarea" rows="3" cols="40" spellcheck="false" style="resize:none">
+</textarea>
+<br>
+<input type="submit" id="cbtn" value="Comment" class="submt" >
+
+<br><br>
+<h3 style="font-family:Hand"><a href="#top">Back to Top</a></h3></div>
+
+</center>
+
+
+
+
+
+
+<script src="../Scripts/jquery-1.9.1.min.js"></script>
+<script src="../Scripts/alertify.min.js"></script>
+
+<script>
+function update()
+{
+$.get("../displaycomments.php", {aid:61} , function(data)
+{
+$("#thediv").html(data);
+window.setTimeout(update,10000);
+ });
+}
+</script>
+
+
+<script>
+$("#cbtn").on("click",function()
+{
+var cmtvar=document.getElementById("ctarea");
+var pbox=$('thediv');
+
+if(cmtvar.value!="")
+{
+$.post("../sendcomment.php", {comment:cmtvar.value,aid:61} ,function(){});
+$("#thediv").append('<br><name style="font-size:1.3em;text-shadow:-5px 5px 5px #000">' + '<u><?php echo $_SESSION['firstname']; ?>:</u></name> ' + cmtvar.value + '<br>');
+$("#thediv").stop().animate({scrollTop: $("#thediv")[0].scrollHeight},800);
+
+cmtvar.value="";
+}
+
+});
+</script>
+
+<script>
+$("#likebtn").on("click",function()
+{
+
+if(this.value=="Like")
+{
+this.value="Liked";
+this.style.color="#b67d2d";
+$.get("../likestory.php",{aid:61}, function(data)
+{
+$("#likediv").html(data);
+});
+}
+else if(this.value=="Liked")
+{
+this.value="Like";
+this.style.color="#fff";
+$.get("../unlikestory.php",{aid:61}, function(data)
+{
+$("#likediv").html(data);
+});
+}
+
+});
+</script>
+
+<script>
+var hover=true;
+$(document).ready(function()
+{
+var si=document.getElementById("si");
+var su=document.getElementById("su");
+var vp=document.getElementById("vp");
+var so=document.getElementById("so");
+var se=document.getElementById("se");
+var me=document.getElementById("me");
+var likebtn=document.getElementById("likebtn");
+var ctarea=document.getElementById("ctarea");
+var cbtn=document.getElementById("cbtn");
+var rating=document.getElementById("ratingstuff");
+
+$.get("../checksession.php", function(data)
+{
+if(data==1)
+{
+	si.style.display="none";
+	su.style.display="none";
+}
+else
+{
+	vp.style.display="none";
+	so.style.display="none";
+	se.style.display="none";
+	me.style.display="none";
+	likebtn.style.display="none";
+	ctarea.style.display="none";
+	cbtn.style.display="none";	
+	rating.style.display="none";
+}
+});
+
+$.get("../updatereads.php" , {abc:'7'} , function(data){});
+
+$.get("../checklike.php" , {abc:'7'} , function(data)
+{
+if(data==1)
+{
+document.getElementById("likebtn").value="Liked";
+document.getElementById("likebtn").style.color="#b67d2d";
+}
+else
+{
+document.getElementById("likebtn").value="Like";
+document.getElementById("likebtn").style.color="#fff";
+}
+});
+
+$("#thediv").scrollTop($("#thediv")[0].scrollHeight);
+update();
+
+$.ajax( {url:"../getrating.php", success:function(data)
+{
+if(data==1)
+{
+hover=false;
+$("#ratethestory").html('Your Rating!');
+$("#star1").attr("src","../Images/star2.png");
+}
+else if(data==2)
+{
+hover=false;
+$("#ratethestory").html('Your Rating!');
+$("#star1").attr("src","../Images/star2.png");
+$("#star2").attr("src","../Images/star2.png");
+}
+else if(data==3)
+{
+hover=false;
+$("#ratethestory").html('Your Rating!');
+$("#star1").attr("src","../Images/star2.png");
+$("#star2").attr("src","../Images/star2.png");
+$("#star3").attr("src","../Images/star2.png");
+}
+else if(data==4)
+{
+hover=false;
+$("#ratethestory").html('Your Rating!');
+$("#star1").attr("src","../Images/star2.png");
+$("#star2").attr("src","../Images/star2.png");
+$("#star3").attr("src","../Images/star2.png");
+$("#star4").attr("src","../Images/star2.png");
+}
+else if(data==5)
+{
+hover=false;
+$("#ratethestory").html('Your Rating!');
+$("#star1").attr("src","../Images/star2.png");
+$("#star2").attr("src","../Images/star2.png");
+$("#star3").attr("src","../Images/star2.png");
+$("#star4").attr("src","../Images/star2.png");
+$("#star5").attr("src","../Images/star2.png");
+}
+}});
+
+
+});
+</script>
+
+<script>
+$("#signout").on("click",function()
+{
+alertify.confirm("Are you sure you want to Sign Out?", function (e) {
+    if (e) {
+        window.open("../signout.php","_self");
+    }
+});
+});
+</script>
+
+<script>
+$("#star1").hover(
+function(){
+if(hover==true) $("#star1").attr("src","../Images/star2.png");
+},
+function(){
+if(hover==true) $("#star1").attr("src","../Images/star.png");
+}
+);
+
+$("#star2").hover(
+function(){
+if(hover==true){
+$("#star1").attr("src","../Images/star2.png");
+$("#star2").attr("src","../Images/star2.png");
+}
+},
+function(){
+if(hover==true){
+$("#star1").attr("src","../Images/star.png");
+$("#star2").attr("src","../Images/star.png");
+}
+}
+);
+
+
+$("#star3").hover(
+function(){
+if(hover==true){
+$("#star1").attr("src","../Images/star2.png");
+$("#star2").attr("src","../Images/star2.png");
+$("#star3").attr("src","../Images/star2.png");
+}
+},
+function(){
+if(hover==true){
+$("#star1").attr("src","../Images/star.png");
+$("#star2").attr("src","../Images/star.png");
+$("#star3").attr("src","../Images/star.png");
+}
+}
+);
+
+
+
+$("#star4").hover(
+function(){
+if(hover==true){
+$("#star1").attr("src","../Images/star2.png");
+$("#star2").attr("src","../Images/star2.png");
+$("#star3").attr("src","../Images/star2.png");
+$("#star4").attr("src","../Images/star2.png");
+}
+},
+function(){
+if(hover==true){
+$("#star1").attr("src","../Images/star.png");
+$("#star2").attr("src","../Images/star.png");
+$("#star3").attr("src","../Images/star.png");
+$("#star4").attr("src","../Images/star.png");
+}
+}
+);
+
+
+
+$("#star5").hover(
+function(){
+if(hover==true){
+$("#star1").attr("src","../Images/star2.png");
+$("#star2").attr("src","../Images/star2.png");
+$("#star3").attr("src","../Images/star2.png");
+$("#star4").attr("src","../Images/star2.png");
+$("#star5").attr("src","../Images/star2.png");
+}
+},
+function(){
+if(hover==true){
+$("#star1").attr("src","../Images/star.png");
+$("#star2").attr("src","../Images/star.png");
+$("#star3").attr("src","../Images/star.png");
+$("#star4").attr("src","../Images/star.png");
+$("#star5").attr("src","../Images/star.png");
+}
+}
+);
+
+
+
+$('#star1').click(function()
+{
+if(hover==true) $.get("../sendrating.php", {rate:'1' , aid:61 } , function(){});
+hover=false;
+});
+
+$('#star2').click(function()
+{
+if(hover==true) $.get("../sendrating.php", {rate:'2' , aid:61 } , function(){});
+hover=false;
+});
+
+$('#star3').click(function()
+{
+if(hover==true) $.get("../sendrating.php", {rate:'3' , aid:61 } , function(){});
+hover=false;
+});
+
+$('#star4').click(function()
+{
+if(hover==true) $.get("../sendrating.php", {rate:'4' , aid:61 } , function(){});
+hover=false;
+});
+
+$('#star5').click(function()
+{
+if(hover==true) $.get("../sendrating.php", {rate:'5' , aid:61 } , function(){});
+hover=false;
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<?php
+session_start();
+?>
+<html>
+<head>
+
+<title>FAQ's</title>
+
+<link rel="icon" type="image/png" href="Images/favicon.png">
+<link rel="stylesheet" type="text/css" href="mycss.css">
+<link rel="stylesheet" href="alertify.core.css" />
+<link rel="stylesheet" href="alertify.default.css" id="toggleCSS" />
+
+<style>
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+     background:rgba(0,0,0,0.5);
+     border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+
+}
+
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51930404-1', 'quillonparchment.in');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body link="#000000" vlink="#000000" alink="#000000" background="Images/parch.jpg" style="background-repeat:repeat;">
+
+<center>
+
+<br>
+<table>
+<tr>
+<td><img src="Images/logo.png" width=150 height=150/></td>
+<td><img src="Images/name.png" width=700 height=150/></td>
+</tr>
+</table>
+
+<?php include 'tabs.php'; ?>
+
+
+
+<font style="font-family:Quill;font-size:5em">Frequently Asked Questions</font>
+
+<div style="padding-left:120px;padding-right:120px;text-align:justify">
+<font style="font-family:Nyala;font-size:1.4em;">
+<br><br><br>
+<b>1) How to publish my article?</b><br>
+First, create a free account with us. Then log-in to your profile and through the ‘Submit Entry’ option in the ‘Account’ tab, you can send in your articles to us.<br><br>
+<b>2) Can an article be written and sent anonymously?</b><br>
+NO. You need to create a profile with us, and only through your profile you can send in your articles. You may use a pen-name, but the other details need to be genuine.<br><br>
+<b>3) I saw in the Facebook page that I need to send the articles through mail to quillonparchment@gmail.com.</b><br>
+We had asked the writers to send in their articles through mail before the website’s launch. Now that the site has been launched, you need to send your articles through your account at the website.<br><br>
+<b>4) How do I post my reviews and thoughts?</b><br>
+You may use the ‘Contact Us’ section in the home page of the website to reach us with your reviews, thoughts and feedback. <br><br>
+<b>5) Why am I not able to like/rate/comment on articles?</b><br>
+You need to log-in to your account and only then you will be able to like/rate/comment on articles.<br><br>
+<b>6) My query isn’t answered here. What do I do?</b><br>
+Fill up the 'Queries' form at the Contact Us section in the home page and post your queries. We’ll reach back to you with the answers in a day or two. <br><br>
+
+</font>
+</div>
+
+
+</center>
+
+
+<script src="Scripts/jquery-1.9.1.min.js"></script>
+<script src="Scripts/alertify.min.js"></script>
+
+<script>
+$("#signout").on("click",function()
+{
+alertify.confirm("Are you sure you want to Sign Out?", function (e) {
+    if (e) {
+        window.open("signout.php","_self");
+    }
+});
+});
+
+$("#tab_home").addClass("current");
+
+</script>
+
+</body>
+</html>

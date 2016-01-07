@@ -1,0 +1,494 @@
+<?php
+session_start();
+$_SESSION['aid']=32;
+?>
+<html>
+<head>
+
+
+<link rel="icon" type="image/png" href="../../Images/favicon.png">
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5397319a7ce18a61"></script>
+<script type="text/JavaScript">
+function killCopy(e){
+return false
+}
+function reEnable(){
+return true
+}
+document.onselectstart=new Function("return false")
+if (window.sidebar){
+document.onmousedown=killCopy
+document.onclick=reEnable
+}
+</script>
+
+
+<title>Stories</title>
+<link rel="stylesheet" type="text/css" href="../../mycss.css">
+<link rel="stylesheet" href="../../alertify.core.css" />
+<link rel="stylesheet" href="../../alertify.default.css" id="toggleCSS" />
+
+<style>
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+     background:rgba(0,0,0,0.5);
+     border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+
+}
+img{ 
+-webkit-filter: drop-shadow(-1px 1px 1px #000); 
+filter: drop-shadow(-1px 1px 1px #000); 
+}
+
+.design{
+background-image:url("../../Images/texture.jpg");
+background-repeat:repeat;
+box-shadow: -5px 5px 5px #000;
+padding:60px;
+}
+
+.likebtn{
+background:#1a0d04;
+-webkit-filter: drop-shadow(-5px 5px 5px #000); 
+filter: drop-shadow(-5px 5px 5px #000); 
+color:#fff;
+font-family:Hand;
+font-size:1.8em;
+width:100px;
+height:50px;
+border:0px;
+}
+
+.likebtn:active{
+-webkit-filter: drop-shadow(-3px 3px 3px #000); 
+filter: drop-shadow(-3px 3px 3px #000); 
+}
+
+
+.tarea
+{
+    background:#1a0d04;
+    box-shadow: 0px 3px 3px #000;
+    color:#9b6c28; 
+    border:0px;
+    padding:15px;
+    font-family: Hand,serif;
+    font-size:20px;
+}
+.tarea:focus{
+   outline: 0;
+}
+
+.submt
+{
+background:#1a0d04;
+font-family:Hand;
+font-size:1.2em;
+color:#9b6c28;
+width:100px;
+height:40px;
+box-shadow:0px 6px 6px #000;
+border:0px;
+}
+.submt:active
+{
+box-shadow:-0px 3px 3px #000;
+}
+
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51930404-1', 'quillonparchment.in');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body link="#000000" vlink="#000000" alink="#000000" background="../../Images/parch.jpg" style="background-repeat:repeat;">
+<center>
+
+<br>
+<table>
+<tr>
+<td><img src="../../Images/logo.png" width=150 height=150/></td>
+<td><img src="../../Images/name.png" width=700 height=150/></td>
+</tr>
+</table>
+
+<?php include '../../tabs2.php'; ?>
+
+<div class="design">
+<br><br>
+
+<h1 style="font-family:Hand;font-size:4em;color:#000;text-shadow:-3px 3px 3px #000"><?php include '../../returntitle.php'; ?></h1>
+
+<h4 style="font-family:Hand;font-size:1.8em;color:#000;">
+- <a href="../../profile.html?id=<?php include '../../returnauthorid.php'; ?>"><?php include '../../returnauthor.php'; ?></a>
+</h4>
+
+<h3 style="font-family:Hand">( Published on: <?php include '../../returndate.php'; ?> )</h3>
+<br>
+
+<img src="../../Images/32.jpg" style="border:6px black solid" width=500 height=300/>
+<br><strong><font style="font-family:Hand;font-size:1em;">
+<a href="https://www.flickr.com/photos/jixxer/4507906844/in/photolist-7SmcDN-baaEBF-baaJh4-baaHq8-baaHZa-baaJYM-baaGjV-baaG2z-baaHHD-baaGzc-baaCQz-baaBHt-baaKhr-baaKwZ-baaC9e-baaBUH-baaDQT-baaCoi-sob9A-acYxsU-dBn22-2SZ3Ju-2SUEQ4-bFUCDv-2SUBSc-2SZ2NY-2SZ48m-2SZ371-2SZ7fJ-2SUFeK-2TTGav-2FtjbW-gmpYY6-2SUGDP-2TY2us-gmq1A6-2SZ4zu-a6VJ3s-88oBFP-a6VBRN-5w7Lwd-9Xdt1P-gmpfF1-4ptgd8-gmprMj-mEx67t-mEx4zF-mEx724-mExrsr-2TTFQz">Photo</a> by 
+<a href="https://www.flickr.com/photos/jixxer/">Author</a> is licensed under 
+<a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">CC BY 2.0</a></font></strong><br><br>
+
+<br>
+
+<h4 style="text-align:justify;font-family:Nyala;font-size:1.3em;color:#000;">
+
+<p>I watched as the fire devoured the dry wood hungrily, flames dancing and jumping against the cloudless night. Dense smoke rose towards the sky leaving behind a fog like trial before disappearing into the dark. I nervously fidgeted with my pocket torch as i stole another glance across the campfire, at the Hibiscus bushes. The grass i sat on was wet with evening dew which emanated a fresh green fragrance. Combined with the rustic smell of burning wood, it produced a tantalizing effect on the olfactory sense. A cold breeze swept across the clearing, rustling the camphor leaves that littered the ground surrounding the tents. The trees swayed to the gentle rhythm of the whispering wind. Crickets seemed to share my restlessness, their nocturnal chirping lending voice to the quiet night.</p><p>I occasionally looked to make sure Mrs.Khanna was still dozing, slumped against her chair. Even otherwise she had her back to the wild bushes and did not notice the three quick flashes of light from amongst them. I had been waiting impatiently for this. The girls were singing and most of the boys were roasting their marshmallows over the fire. None of them noticed the flashes either. I sat a little farther from the fire, away from all the others. I got up and walked back silently to the cluster of trees behind me. Once i was safely into the shadows of the forest, i relaxed a little and took the circuitous route to the other side of the clearing. The hibiscus bushes were right behind a small fresh water pond. I received a rather boisterous welcome from the frogs that inhabited it.</p><p>"They freak me out. Look at them, all slimy and blotted" Vicky complained as he stepped out from behind a tree. </p><p>"Got the spare key?" i enquired as i bent down to pick up one of the frogs which tried to leap over my foot. I rubbed it along its back and put in on my open palm. It stayed there satisfied to croak its approval at me. Animals liked me.</p><p>"Piece of cake" Vicky replied as he wiggled his nose in dislike at our new companion. Vicky and I had been best friends for the most part of our lives. We were both 9.</p><p>I used my free hand to take the key from him. “Are you sure this is the right one?”</p><p>“We will find out soon. You owe me your Naruto cards now” he reminded me.  </p><p>“Not until it opens the gate. Hope you did not mess up Mrs.Khanna’s room. We will both be in big trouble if she finds out you were in there.” I started walking around the pond, towards the east corner of the campsite.</p><p>“Are you sure you want to do this? Mrs.Khanna says nobody is supposed to go in there once they lock the gate in the evening. ” Vicky shouted as he struggled to keep up.</p><p>“Since when did you start listening to what that old hag has to say?”</p><p>We were in our annual junior scout camp at the Madras theosophical society grounds. Mrs.Khanna arranged them every year, although she would rather stay at home and watch her favorite Saas Bahu serials on her comfortable sofa. But then she made a handsome profit from these camps and so she went ahead with them, the jamboree camps as she called them. No one bothered to tell her it required a lot more than the twenty kids who attended her camps, to make a jamboree.</p><p>Mr.Freckles, my new friend from the pond jumped off my hand as we approached the huge compound wall that stood at the end of the campsite. The night chowkidar would have already finished his rounds of the area. People rarely came here. We slowed down as we reached the old Iron Gate. Rusting metal powder fell off it as I placed my palm on the cold metal. Cobwebs covered its hinges. I inserted the key into the keyhole and turned it. The inner lock opened with a loud click. Vicky helped me push the gate open. It groaned and creaked with age. With the gate open both of us hesitated, looking at each other. He reached over and gave a short shove on my shoulder. I grimaced at him as I turned back and led the way past the gate.</p><p>"It doesn’t look that scary, does it" Vicky whispered over my shoulder with ill-disguised fear.</p><p>A narrow stone and gravel path led to an old Palladian mansion. It belonged to the theosophical society however no one lived in it anymore. The mansion had a gothic appearance to it. It was a marriage of European architecture to Indian culture. Elegance met tradition. A column of colonnades extended to the large marble pillars which dominated on either side of the entrance, while a paved patio adjoined the mammoth building. An old Spanish style stone fountain decorated it. The basin was empty and had remained so for a long time. Stubborn weed plants and scrubs grew everywhere. Cinnamon and thorny bougainvillea vines covered the walls and windows. The once magnificent hedge trees were overgrown and anarchic now. The mansion stood at the very edge of the dense thicket forest that grew at the foothills of a weathered Mountain. There was a small domed guest house a little beyond the main structure. In spite of the full-moon painted across the sky, the front portion of the mansion was dark and gloomy. The moon cast its light on the back of the house. Only a single yellow lamp flickered at one of the windows at the guest house. That must be the care-taker.</p><p>“Rather lonely to be living here alone” I thought out loud. </p><p>“I am not sure why anyone in their right mind would live here alone. I am not even sure why we are here in the first place” Vicky replied.</p><p>“Because it is an adventure. Just look at that house. Isn’t it beautiful! It’s amazing to even think about the sort of people who would have lived here. Don’t you want to go inside and explore it?” I tried to convince him.</p><p>“Not really” he whispered back. “Avi, I am scared. I don’t want to go inside. I will wait outside the gate. ”</p><p>“Don’t be such a coward Vicky”</p><p>“But I am. I am not like you. You are mental Avi. You go ahead, I’ll be outside”</p><p>“Alright. If that’s what you want” I started walking alone towards the house. Vicky scampered to get outside the compound.  My shoes made a crunching noise as they dug into the gravel. I was careful to avoid the caretaker’s house. </p><p>I walked past the colonnades and stopped in front of the intimidating mahogany door. The house was in far better condition than what it looked from the distance. There was a key hole in the door but the keychain Vicky had given me had only the one key in it which was too small for the mahogany door. I pushed the door without actually thinking about it. It opened. Very quietly. But I remained rooted to the spot, waiting. For what I wasn’t sure.  </p><p>“You are a little young to be out here in the night aren’t you?” </p><p>I looked around. A woman stood by the Marble pillar looking at me with curiosity.  She was tall and dressed in a plain maroon sari with her long curly hair falling loose over her shoulders. She was barefoot. </p><p>“No. I am ten” I lied. “I go out in the night wherever I want” But I wasn’t scared or worried.  In fact I was glad she was there. </p><p>“You must be very brave then” she winked.</p><p>“I am” I looked back at the open door.</p><p>“Let’s go in then. Shall we!”  She looked at me. She walked up to me and took my hand in hers and walked into the house. Surprisingly, I felt reassured when she did that. And I followed her. </p><p>“Are you the caretaker of the house?”</p><p>“Yes. I do care for the house” the woman smiled at me.</p><p>The suddenness and blunt nature of our encounter did not affect me greatly. It is probably because, as children we are born with the innate ability to trust our fellow human beings and it is only as we grow older that we start to doubt their motives. Whatever it was, I readily went with her into the house.</p><p>Despite the fact, the front portion of the mansion was blanketed in the shadows, considerable light lit the interior. Few candles were burning at the bottom of the grand ceremonial staircase that ascended open into a large terrace surrounded by balustrade. The terrace stood above the surrounding trees allowing moonlight to flood into the house through it. The staircase split the first floor landing at the terrace from where it further spiraled to the next floors.  Large painted glass windows lined the ground floor.  Candle chandeliers hung from the ceiling, even un-lit they added to the exquisite air surrounding the interior. Large canvas paintings adorned the walls. The Spanish and European influence on the house was evident. Even though I was too young to think about any of this at that time, the house did not fail to mesmerize me even then. And it never did stop mesmerizing me. </p><p>“You like it here don’t you!” the woman asked me with evident pride.</p><p>“It’s beautiful” I answered as she gently led me up the stairs. The moon was right on top of the mountain behind the house and as we climbed each step to the terrace some portion of the moon would became visible to us. The intensity of the moon light increased with each ascending step creating a hue of silver across the length of the staircase. Until we were at the very top and out into the terrace where the entire moon awaited us in its full glory. Thin strands of clouds sailed past the moon. The terrace opened wide over the dense canopy of trees intertwined into a tumultuous black sea of leaves. The mountain rose beyond it offering refuge to the descending moon. It was a sight that remains etched in my mind to this day. </p><p>“Look at the stars.” she whispered.</p><p>Her eyes followed the stars with fascination as mine followed hers with wonder.  </p><p>She looked down at me and gave another one of her easy coming smiles. I followed her as she walked to the side of the terrace to pluck a peach fruit from the tree branch that had managed to sneak in between the balustrade. She offered it to me.</p><p>“Who lived here?” I asked her as I bit into the juicy flesh of the fruit.</p><p>“An old Zamindar and his daughter” she answered still gazing at the sky. </p><p>“Oh! What happened to them?”</p><p>“The old man died of a heart attack” she replied matter of factly.</p><p>“That’s sad! What about the daughter?” I questioned further.</p><p>“Her? Hmmm, the Zamindar tried to marry her off to an old and bald British officer” she told me as we sat down on the floor. “He offered his daughter in exchange for tax exemption” </p><p>“Was she happy with the marriage?” </p><p>“They never got married” she grinned. “There was a huge banquet arranged for the British officer and his friends before the wedding. All the rich and the vain were there. The men drank and made merry while the women indulged themselves in gossip. The bride dressed in the expensive silk dress, given to her by the officer was asked to be brought down to be shown to the guests” I leaned back against the wall allowing her to continue with the story.</p><p>“Only she turned up dressed in men’s breeches and barefoot” she chuckled “The hall turned quiet as a graveyard and the poor old Zamindar choked on his chicken” </p><p>“So they cancelled the wedding because she appeared in breeches?” i shook my head.</p><p>“Not really. After all she was the lady of Mylapore. Her father owned the entire tract of land surrounding Mylapore and the officer was not going to let go of an opportunity to get married to her. There is never enough wealth for the rich” </p><p>“So why did they call off the wedding?”</p><p>“Let me think now. Ah, yes! Once the initial shock from her unorthodox arrival had passed, the gallant officer took his bride to be to the dance floor. And he was stupid enough to chastise her while they danced. Because you see, the lady was bit of a free spirit and did not take kindly to be ordered around. And oh yes as for your question, the marriage was called off that same night when she set fire to the officer’s beard” </p><p>I don’t quite remember laughing so much in my life. The thought of a young woman in breeches setting fire to a man’s beard amused me beyond imagination.</p><p>“And then what happened?” I managed between guffaws. </p><p>“The wedding was of course called off. It is said that the British officer never grew his beard after that. Rumors are that he shaved four times a day ever since. Some say that he even forbade his male servants from growing any facial hair since that fateful day”</p><p>Tears came rolling down my eyes as I continued to laugh hard. The woman was thoroughly enjoying herself too.</p><p>“I like her! The lady of Mylapore” I smiled when I finally managed to regain some control.</p><p>“She did not like that title much. She liked the name that the house maids gave her better. Lady of the night! She would many a times disappear into the forest at night and not return for days together. Search parties were futile for she knew the forests and the mountain better than anyone else. Nothing her father did or said discouraged her from sneaking out into the night. In some ways she was just like you” the woman winked at me.</p><p>“Man of the night” I said rather proudly.</p><p>“Boy of the night” she laughed ruffling my hair. </p><p>“Tell me more about the house! And the lady! Tell me more stories”</p><p>And she told me. I listened to her, curled up near the terrace railing, imagining and dreaming about everything she said. The woman told me stories about the moon, the stars, the trees and the singing birds. She told me about the house, the garden and the chrysanthemums that grew at the far East corner. She told me stories about the wind and the cold. She told me stories of the night. She told me stories through the night. And she sang to the night. </p><p>‘Far beyond the edge but never out of reach</p><p>Lonely as one can be when never really alone</p><p>Bright in its purity, the quiet spreading serenity</p><p>Come to me for there I’ll be’ </p><p>She looked up at the stars. I looked up too as her song slowly carried into the wind. She continued to sing, the melody deep and melancholic. The words kept repeating in my mind as I drifted along with her voice into the night, “Come to me, for there I’ll be… “</p><p>***</p><p>“You dirty little scoundrel! Wait till I tell your mother about this” </p><p>I was woken up rather rudely. Mrs.Khanna was fuming. It took me a couple of minutes to gather my thoughts. I was still in the terrace of the mansion. It was morning though. Still early hours but the sun was up. The night chowkidar and Vicky were also there. </p><p>“I am sorry Avi! I was so scared. I waited all night for you. I did not know what to do” he was close to tears.</p><p>“It’s alright Vicky” I told him. Mrs.Khanna helped me up by pulling my ear.</p><p>“Dirty little scoundrel” she announced again as I was escorted back inside and down the stairs.</p><p>Mrs.Khanna held on to my shirt collar as the silent procession climbed down. An old lady supporting a wooden cane in her hand stood waiting at the bottom of the stairs.</p><p>“I am very sorry about this one Mrs.Gummidge. I will make sure this doesn’t happen again” Mrs.Khanna told the old lady.</p><p>She simply nodded back. She moved aside and we started walking towards the door when I caught a glimpse of a life size portrait on the wall to my right.</p><p>“That’s her!” I exclaimed. I startled everyone around me. </p><p>“What is who?” Mrs.Khanna asked.</p><p>I walked to the Portrait and pointed “That’s the woman who was with me last night. She is the care taker of the house”</p><p>Before Mrs.Khanna could open her mouth, the old lady came forward.</p><p>“But that can’t be” she murmured to herself before looking at me carefully “Did you talk to her?”</p><p>“Yes! She told me all these wonderful stories. Do you know where she is?”</p><p>“Not really. What did she tell you?”</p><p>“She told me about the moon. She told me about the lady of Mylapore! I mean the lady of the night” I smiled.</p><p>“I have been the caretaker of this house for more than five decades.” Mrs.Gummidge walked closer to me and bent down to meet my eyes. “She is the Lady of Mylapore. She died many years ago.” She pointed at the portrait.</p><p>“What? But I saw her! I really did!” I was a little taken back. </p><p>“I like her. She sang to me! I mean… Come to me…” I said</p><p>“For there I’ll be” the old lady finished.</p><p>She smiled knowingly at me. I slowly smiled back at her. She stood up straight using her cane and put an arm around my shoulders. We walked past the others in the room who were still in shock. Mrs.Khanna looked like she had seen a ghost.</p><p>“Did she tell you about the beard?” Mrs.Gummidge asked me as we went out into the Verandah.</p><p>“Yes! Officer.Shave-a-lot!” I laughed.</p><p>She joined in with the laughter as we walked down the gravel path. </p><p></p>
+
+</h4>
+<br><br>
+<h3 style="font-family:Hand">---End Of Story---</h3>
+<br>
+
+
+<div style="position:relative;">
+<input type="submit" id="likebtn" value="Like" class="likebtn"><br><br>
+
+
+<!--Rating-->
+
+<div id="ratingstuff">
+<br><br>
+<h3 style="font-family:Hand;font-size:1.4em"><div id="ratethestory">Rate the Story!</div></h3>
+<img src="../../Images/star.png" id="star1"/>
+<img src="../../Images/star.png" id="star2"/>
+<img src="../../Images/star.png" id="star3"/>
+<img src="../../Images/star.png" id="star4"/>
+<img src="../../Images/star.png" id="star5"/>
+</div>
+
+<br>
+<h3 style="font-family:Hand;font-size:1.4em"><div>Average Viewer Rating</div></h3>
+<h3 style="font-family:Hand;font-size:1.4em;position:relative;top:-10px"><?php include '../../returnaverage.php'; ?><font style="font-size:2em"> / 5</font></h3>
+
+<h3 style="position:absolute;top:-15px;left:190px;font-family:Hand;font-size:1.4em"><tot>Total Likes<br><div id="likediv"><?php include '../../returnlikes.php'; ?></div></tot></h3>
+<h3 style="position:absolute;top:-15px;left:1000px;font-family:Hand;font-size:1.4em"><tot>Total Views<br><?php include '../../returnreads.php'; ?></tot></h3>
+</div>
+
+<br><br>
+<div style="text-align:center"><h3 style="font-family:Hand"><a href="#top">Back to Top</a></h3></div>
+<br>
+
+<h3 style="font-size:1.5em;font-family:Hand"><u>COMMENTS</u></h3>
+
+<div id="thediv" style="text-align:left;height:300px;width:850px;border:1px solid #000;overflow:auto;background:#1a0d04;padding:20px;box-shadow:0px 2px 2px #000;font-size:1.2em;font-family:Hand;color:#9b6c28">
+
+</div>
+
+<br>
+<textarea class="tarea" id="ctarea" name="ctarea" rows="3" cols="40" spellcheck="false" style="resize:none">
+</textarea>
+<br>
+<input type="submit" id="cbtn" value="Comment" class="submt" >
+
+<br><br>
+<h3 style="font-family:Hand"><a href="#top">Back to Top</a></h3></div>
+
+</center>
+
+
+
+
+
+
+<script src="../../Scripts/jquery-1.9.1.min.js"></script>
+<script src="../../Scripts/alertify.min.js"></script>
+
+<script>
+function update()
+{
+$.get("../../displaycomments.php",{aid:32}, function(data)
+{
+$("#thediv").html(data);
+window.setTimeout(update,10000);
+ });
+}
+</script>
+
+
+<script>
+$("#cbtn").on("click",function()
+{
+var cmtvar=document.getElementById("ctarea");
+var pbox=$('thediv');
+
+if(cmtvar.value!="")
+{
+$.post("../../sendcomment.php", {comment:cmtvar.value,aid:32} ,function(){});
+$("#thediv").append('<br><name style="font-size:1.3em;text-shadow:-5px 5px 5px #000">' + '<u><?php echo $_SESSION['firstname']; ?>:</u></name> ' + cmtvar.value + '<br>');
+$("#thediv").stop().animate({scrollTop: $("#thediv")[0].scrollHeight},800);
+
+cmtvar.value="";
+}
+
+});
+</script>
+
+<script>
+$("#likebtn").on("click",function()
+{
+
+if(this.value=="Like")
+{
+this.value="Liked";
+this.style.color="#b67d2d";
+$.get("../../likestory.php",{aid:32}, function(data)
+{
+$("#likediv").html(data);
+});
+}
+else if(this.value=="Liked")
+{
+this.value="Like";
+this.style.color="#fff";
+$.get("../../unlikestory.php",{aid:32}, function(data)
+{
+$("#likediv").html(data);
+});
+}
+
+});
+</script>
+
+<script>
+var hover=true;
+$(document).ready(function()
+{
+$("#tab_stories").addClass("current");
+var likebtn=document.getElementById("likebtn");
+var ctarea=document.getElementById("ctarea");
+var cbtn=document.getElementById("cbtn");
+var rating=document.getElementById("ratingstuff");
+
+$.get("../../checksession.php", function(data)
+{
+if(data!=1)
+{
+	likebtn.style.display="none";
+	ctarea.style.display="none";
+	cbtn.style.display="none";	
+	rating.style.display="none";
+}
+});
+
+$.get("../../updatereads.php" , {abc:'7'} , function(data){});
+
+$.get("../../checklike.php" , {abc:'7'} , function(data)
+{
+if(data==1)
+{
+document.getElementById("likebtn").value="Liked";
+document.getElementById("likebtn").style.color="#b67d2d";
+}
+else
+{
+document.getElementById("likebtn").value="Like";
+document.getElementById("likebtn").style.color="#fff";
+}
+});
+
+$("#thediv").scrollTop($("#thediv")[0].scrollHeight);
+update();
+
+$.ajax( {url:"../../getrating.php", success:function(data)
+{
+if(data==1)
+{
+hover=false;
+$("#ratethestory").html('Your Rating!');
+$("#star1").attr("src","../../Images/star2.png");
+}
+else if(data==2)
+{
+hover=false;
+$("#ratethestory").html('Your Rating!');
+$("#star1").attr("src","../../Images/star2.png");
+$("#star2").attr("src","../../Images/star2.png");
+}
+else if(data==3)
+{
+hover=false;
+$("#ratethestory").html('Your Rating!');
+$("#star1").attr("src","../../Images/star2.png");
+$("#star2").attr("src","../../Images/star2.png");
+$("#star3").attr("src","../../Images/star2.png");
+}
+else if(data==4)
+{
+hover=false;
+$("#ratethestory").html('Your Rating!');
+$("#star1").attr("src","../../Images/star2.png");
+$("#star2").attr("src","../../Images/star2.png");
+$("#star3").attr("src","../../Images/star2.png");
+$("#star4").attr("src","../../Images/star2.png");
+}
+else if(data==5)
+{
+hover=false;
+$("#ratethestory").html('Your Rating!');
+$("#star1").attr("src","../../Images/star2.png");
+$("#star2").attr("src","../../Images/star2.png");
+$("#star3").attr("src","../../Images/star2.png");
+$("#star4").attr("src","../../Images/star2.png");
+$("#star5").attr("src","../../Images/star2.png");
+}
+}});
+
+
+});
+</script>
+
+<script>
+$("#signout").on("click",function()
+{
+alertify.confirm("Are you sure you want to Sign Out?", function (e) {
+    if (e) {
+        window.open("../../signout.php","_self");
+    }
+});
+});
+</script>
+
+<script>
+$("#star1").hover(
+function(){
+if(hover==true) $("#star1").attr("src","../../Images/star2.png");
+},
+function(){
+if(hover==true) $("#star1").attr("src","../../Images/star.png");
+}
+);
+
+$("#star2").hover(
+function(){
+if(hover==true){
+$("#star1").attr("src","../../Images/star2.png");
+$("#star2").attr("src","../../Images/star2.png");
+}
+},
+function(){
+if(hover==true){
+$("#star1").attr("src","../../Images/star.png");
+$("#star2").attr("src","../../Images/star.png");
+}
+}
+);
+
+
+$("#star3").hover(
+function(){
+if(hover==true){
+$("#star1").attr("src","../../Images/star2.png");
+$("#star2").attr("src","../../Images/star2.png");
+$("#star3").attr("src","../../Images/star2.png");
+}
+},
+function(){
+if(hover==true){
+$("#star1").attr("src","../../Images/star.png");
+$("#star2").attr("src","../../Images/star.png");
+$("#star3").attr("src","../../Images/star.png");
+}
+}
+);
+
+
+
+$("#star4").hover(
+function(){
+if(hover==true){
+$("#star1").attr("src","../../Images/star2.png");
+$("#star2").attr("src","../../Images/star2.png");
+$("#star3").attr("src","../../Images/star2.png");
+$("#star4").attr("src","../../Images/star2.png");
+}
+},
+function(){
+if(hover==true){
+$("#star1").attr("src","../../Images/star.png");
+$("#star2").attr("src","../../Images/star.png");
+$("#star3").attr("src","../../Images/star.png");
+$("#star4").attr("src","../../Images/star.png");
+}
+}
+);
+
+
+
+$("#star5").hover(
+function(){
+if(hover==true){
+$("#star1").attr("src","../../Images/star2.png");
+$("#star2").attr("src","../../Images/star2.png");
+$("#star3").attr("src","../../Images/star2.png");
+$("#star4").attr("src","../../Images/star2.png");
+$("#star5").attr("src","../../Images/star2.png");
+}
+},
+function(){
+if(hover==true){
+$("#star1").attr("src","../../Images/star.png");
+$("#star2").attr("src","../../Images/star.png");
+$("#star3").attr("src","../../Images/star.png");
+$("#star4").attr("src","../../Images/star.png");
+$("#star5").attr("src","../../Images/star.png");
+}
+}
+);
+
+
+
+$('#star1').click(function()
+{
+if(hover==true) $.get("../../sendrating.php", {rate:'1' , aid:32 } , function(){});
+hover=false;
+});
+
+$('#star2').click(function()
+{
+if(hover==true) $.get("../../sendrating.php", {rate:'2' , aid:32 } , function(){});
+hover=false;
+});
+
+$('#star3').click(function()
+{
+if(hover==true) $.get("../../sendrating.php", {rate:'3' , aid:32 } , function(){});
+hover=false;
+});
+
+$('#star4').click(function()
+{
+if(hover==true) $.get("../../sendrating.php", {rate:'4' , aid:32 } , function(){});
+hover=false;
+});
+
+$('#star5').click(function()
+{
+if(hover==true) $.get("../../sendrating.php", {rate:'5' , aid:32 } , function(){});
+hover=false;
+});
+
+</script>
+
+
+</body>
+</html>

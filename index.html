@@ -1,0 +1,390 @@
+<?php
+session_start();
+?>
+<html>
+<head>
+
+<title>Quill on Parchment</title>
+
+<link rel="icon" type="image/png" href="Images/favicon.png">
+<link rel="stylesheet" type="text/css" href="mycss.css">
+<link rel="stylesheet" href="alertify.core.css" />
+<link rel="stylesheet" href="alertify.default.css" id="toggleCSS" />
+
+<style>
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+     background:rgba(0,0,0,0.5);
+     border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+
+}
+  #slides {
+      display: none
+    }
+
+    #slides .slidesjs-navigation {
+      margin-top:5px;
+    }
+
+    a.slidesjs-next,
+    a.slidesjs-previous,
+    a.slidesjs-play,
+    a.slidesjs-stop {
+      background-image: url(img/btns-next-prev.png);
+      background-repeat: no-repeat;
+      display:block;
+      width:12px;
+      height:18px;
+      overflow: hidden;
+      text-indent: -9999px;
+      float: left;
+      margin-right:5px;
+    }
+
+    a.slidesjs-next {
+      margin-right:10px;
+      background-position: -12px 0;
+    }
+
+    a:hover.slidesjs-next {
+      background-position: -12px -18px;
+    }
+
+    a.slidesjs-previous {
+      background-position: 0 0;
+    }
+
+    a:hover.slidesjs-previous {
+      background-position: 0 -18px;
+    }
+
+    a.slidesjs-play {
+      width:15px;
+      background-position: -25px 0;
+    }
+
+    a:hover.slidesjs-play {
+      background-position: -25px -18px;
+    }
+
+    a.slidesjs-stop {
+      width:18px;
+      background-position: -41px 0;
+    }
+
+    a:hover.slidesjs-stop {
+      background-position: -41px -18px;
+    }
+
+    .slidesjs-pagination {
+      margin: 7px 0 0;
+      float: right;
+      list-style: none;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(Images/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+    #slides a:link,
+    #slides a:visited {
+      color: #333
+    }
+
+    #slides a:hover,
+    #slides a:active {
+      color: #9e2020
+    }
+
+    .navbar {
+      overflow: hidden
+    }
+
+    #slides {
+      display: none
+    }
+
+    .container {
+position:relative;
+z-index:1;
+     width:600px;
+     height=300px;
+    }
+
+.headin{
+margin-top:30px;
+margin-bottom:-10px;
+}
+
+.signin{
+width:300px;
+height:300px;
+margin-left:20px;
+margin-bottom:20px;
+background-image: url(Images/signin_bg.png);
+background-repeat:no-repeat;
+}
+
+.input
+{
+    height:30px;
+    width:220px;
+    background:#e2c886;
+    box-shadow: -3px 3px 3px #000;
+    color:#000; 
+    border:0px;
+    padding-left:15px;
+    padding-right:15px; 
+    font-family: Hand,serif;
+    font-size:17px;
+}
+.input:focus{
+   outline: 0;
+}
+
+.submt
+{
+    height:30px;
+    width:100px;
+background:#1b0202;
+   color:#fff;
+    box-shadow: -5px 5px 5px #000;
+    border:0px;
+    padding-left:15px;
+    padding-right:15px; 
+    font-family: Hand,serif;
+    font-size:18px;
+}
+
+.submt:focus{
+background:#e2c886;
+    color:#000;      
+   outline: 0;
+}
+
+img{ 
+-webkit-filter: drop-shadow(-1px 1px 1px #000); 
+filter: drop-shadow(-1px 1px 1px #000); 
+}
+
+.abootus{
+width:1000px;
+height:700px;
+}
+
+.wood{
+max-width:100%;
+max-height:100%;
+}
+
+.proll{
+width:800px;
+height:260px;
+background-image:url("Images/scrolls.gif");
+white-space: nowrap;
+}
+
+
+  </style>
+
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5397319a7ce18a61"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51930404-1', 'quillonparchment.in');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body link="#000000" vlink="#000000" alink="#000000" background="Images/parch.jpg" style="background-repeat:repeat;">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=650607515034058&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<center>
+
+<br>
+<table>
+<tr>
+<td><img src="Images/logo.png" width=150 height=150/></td>
+<td><img src="Images/name.png" width=700 height=150/></td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+<?php include 'tabs.php'; ?>
+
+<table>
+<tr>
+<td>
+<a href="madras.html"><img style="border: 4px black solid" src="Images/mdbanner.jpg"></a>
+</td>
+</tr>
+</table>
+<br><br>
+
+
+
+
+
+
+
+<table>
+<tr>
+<td>
+    <div class="container">
+    <div id="slides">
+      <a href="contest1.html"><img src="Images/a.jpg"></a>
+      <a href="cornucopia.html"><img src="Images/b.jpg"></a>
+      <img src="Images/c.jpg">
+    </div>
+    </div>
+
+</td>
+
+<td>
+<a style="margin-left:70px;" href="contactus.html">
+<img src="Images/contactus.jpg"/>
+</a>
+</td>
+
+</tr>
+</table>
+
+
+<div style="background-image:url(Images/indexbg.jpg);width:1100px;height:1300px">
+<br><br><br>
+<font style="font-family:Quill;font-size:60;color:#111;"><strong>What's on top this Week!<strong></font><br><img src="Images/line1.png" width="300px" height="13px"><br><br>
+<br>
+<font style="font-family:Quill;font-size:60;color:#111;"><strong>Stories<strong></font><br><img src="Images/line.png" width="150px"><br><br>
+<a style="font-family:Stylis;text-decoration:none;font-size:1.5em;" href="Stories/nonfiction/91persona.html"><b>Persona Nongrata</b></a><br>
+<a style="font-family:Stylis;text-decoration:none;font-size:1.5em;" href="Stories/love/73firstkiss.html"><b>The First Kiss</b></a><br>
+<a style="font-family:Stylis;text-decoration:none;font-size:1.5em;" href="Stories/suspense/87limbo.html"><b>Limbo</a></b><br>
+
+<br>
+
+<font style="font-family:Quill;font-size:60;color:#111;"><strong>Poems<strong></font><br><img src="Images/line.png" width="150px"><br><br>
+<a style="font-family:Stylis;text-decoration:none;font-size:1.5em;" href="Poems/76neverland.html"><b>The People of Neverland</b></a><br>
+<a style="font-family:Stylis;text-decoration:none;font-size:1.5em;" href="Poems/81window.html"><b>Sitting near the window Sill</b></a><br>
+<a style="font-family:Stylis;text-decoration:none;font-size:1.5em;" href="Poems/17monotonousmusic.html"><b>A Monotonous Music Mouthed</b></a><br>
+
+<br>
+
+<font style="font-family:Quill;font-size:60;color:#111;"><strong>Others<strong></font><br><img src="Images/line.png" width="150px"><br><br>
+<a style="font-family:Stylis;text-decoration:none;font-size:1.5em;" href="Travel/80kodaikanal.html"><b>Kodaikanal'14</b></a><br>
+<a style="font-family:Stylis;text-decoration:none;font-size:1.5em;" href="Others/57women.html"><b>Women Empowerment</b></a><br>
+<a style="font-family:Stylis;text-decoration:none;font-size:1.5em;" href="Others/94sachin.html"><b>The farewell speech</b></a><br>
+
+<br>
+
+<font id="aboutus" style="color:#000;font-size:3.5em;font-family:Quill;text-shadow:0.5px 0.5px #000;">About Us</font><br><img src="Images/line.png" width="150px"><br><br>
+<div style="padding-left:100px;padding-right:95px;text-align:justify">
+<font style="font-family:Stylis;font-size:1.2em">Quill on Parchment, or QoP as we would like to call it, had its initial seeds sown when a group of 20-somethings sat down to crib about how they did not have a customized platform to exhibit their literary interests. Few people adore literature in its glorious essence and fewer people make an attempt to create their own literature. In order to ensure a niche space for amateurs who strive to think beyond the staple desi-novels, we decided to bring to you QoP. QoP is for the novice who is inspired to write for the love of itself. It is to show the way forward to those who love art in the form of poetry and prose. As an added impetus to this exciting venture, the team at QoP is in talks with a few publishing houses who might be willing to bring out the Best of Literature at QoP, in the form of a book. Currently, QoP boasts of sections to let your words adorn our page in the form of Poems, Stories, Travelogues, Food-blogs and Reviews. You may record your feedback and suggestions here and help us broaden our repertoire!</font>
+</div>
+<font style="font-family:Stylis;font-size:1.2em">Get scratching with the Quill!</font>
+</div>
+
+
+
+
+
+<div style="position:fixed;z-index:10;left: 0; top: 60;">
+<div class="fb-follow" data-href="http://www.facebook.com/quillonparchment" data-colorscheme="light" data-layout="button" data-show-faces="false"></div><br><br>
+<div class="fb-send" data-href="http://www.facebook.com/quillonparchment" data-colorscheme="light"></div><br><br>
+<div class="fb-like" data-href="http://www.facebook.com/quillonparchment" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+</div>
+
+
+<br><br>
+<a style="margin-left:10px;text-decoration:none;" href="http://www.facebook.com/quillonparchment"><img src="Images/fb.png" title="Like us on Facebook" width=40 height=40>
+<a style="margin-left:10px;text-decoration:none;"href="http://www.twitter.com/QuillOnParch"><img src="Images/tw.png" title="Follow us on Twitter" width=40 height=40>
+<br>
+
+<a href="termsandcondition.html">Terms and Conditions</a><br>
+<a href="privacypolicy.html">Content Privacy</a><br><br>
+</center>
+
+
+<script src="Scripts/validate.js"></script>
+<script src="Scripts/jquery-1.9.1.min.js"></script>
+<script src="Scripts/jquery.slides.min.js"></script>
+<script src="Scripts/alertify.min.js"></script>
+
+<script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 940,
+        height: 528,
+        play: {
+          active: true,
+          auto: true,
+          interval: 2000,
+          swap: true
+        }
+      });
+    });
+</script>
+
+<script>
+$("#signout").on("click", function()
+{
+    alertify.confirm("Are you sure you want to Sign Out?", function (e) {
+    if (e) {
+        window.open("signout.php","_self");
+    }
+});
+});
+
+$("#tab_home").addClass("current");
+
+</script>
+
+</body>
+</html>

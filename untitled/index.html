@@ -1,0 +1,164 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Le Website</title>
+
+<script src="scrpits/respond.min.js"></script>
+<script src="scripts/jquery.js"></script>
+<script src="scripts/jquery.slides.min.js"></script>
+<link href="mycss.css" rel="stylesheet" type="text/css">
+
+<style>
+
+    a.slidesjs-next,
+    a.slidesjs-previous,
+    a.slidesjs-play,
+    a.slidesjs-stop {
+      background-image: url(img/btns-next-prev.png);
+      text-indent: -9999px;
+      float: left;
+    }
+
+    .slidesjs-pagination {
+      margin: 7px 0 0;
+      float: right;
+      list-style: none;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(img/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+    .container {
+     position:relative;
+     z-index:2;
+     width:600px;
+     height=300px;
+    }
+
+
+.divclass{
+background:#33b5e5;
+-webkit-box-shadow: 0 0 2px 20px rgba(0,0,0,0.7);
+box-shadow: 0 0 10px 0px rgba(0,0,0,0.7);
+
+}
+
+.titl{
+font-family:Title;
+color:#0099cc;
+text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+font-size:7em;
+}
+
+.titl2{
+font-family:Title;
+color:#fff;
+text-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+font-size:4em;
+}
+
+.titl3{
+text-align:justify;
+font-family:Title;
+text-shadow: 0px 1px 1px rgba(0,0,0,0.7);
+color:#111;
+font-size:1.7em;
+}
+
+</style>
+</head>
+
+<body>
+<center>
+<br><br>
+
+
+<table>
+<tr>
+<td><div class="gridContainer clearfix"><img src="img/logo.png" width=150px height="200px"></div></td>
+<td><font class="titl">Le Website</font></td>
+</tr>
+</table>
+
+<!--<div class="gridContainer clearfix"><img src="img/title.jpg"></div>-->
+
+<br>
+
+<?php include 'tabs.php'; ?>
+
+<div class="divclass">
+<br><br><br><br><br>
+
+<div class="container">
+<div id="slides">
+<img src="img/a.jpg">
+<img src="img/b.jpg">
+<img src="img/c.jpg">
+</div>
+</div>
+
+<br><br><br>
+
+<font id="about" class="titl2">About Us</font>
+<br><br>
+<div style="padding-left:60px;padding-right:60px;text-align:justify">
+<font id="about" class="titl3">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus neque, blandit eu accumsan a, sollicitudin a turpis. In eget cursus elit, nec condimentum velit. Duis vel ante at dolor tincidunt malesuada id sit amet erat. In a eros tempus, elementum odio vitae, consectetur metus. Proin rhoncus auctor mi vitae convallis. Integer sagittis eros quis nulla tristique, a vestibulum dolor interdum. Nunc vitae libero ipsum.
+Duis ac condimentum magna. Morbi pharetra pellentesque egestas. Maecenas felis mauris, blandit feugiat eros vitae, molestie dictum lacus. Quisque lectus justo, auctor vitae arcu id, ultricies vulputate nisl. Morbi venenatis metus ut lectus aliquet congue. Proin ac faucibus metus, eget blandit mi. Integer eget ullamcorper odio.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus neque, blandit eu accumsan a, sollicitudin a turpis. In eget cursus elit, nec condimentum velit. Duis vel ante at dolor tincidunt malesuada id sit amet erat. In a eros tempus, elementum odio vitae, consectetur metus. Proin rhoncus auctor mi vitae convallis. Integer sagittis eros quis nulla tristique, a vestibulum dolor interdum. Nunc vitae libero ipsum.
+</font>
+</div>
+<br><br><br><br><br>
+</div>
+
+<br><br><br><br>
+</center>
+
+
+ 
+<script>
+$("#tab_home").addClass("current");
+</script>
+
+<script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 940,
+        height: 528,
+        play: {
+          active: true,
+          auto: true,
+          interval: 2000,
+          swap: true
+        }
+      });
+    });
+</script>
+
+</body>
+</html>

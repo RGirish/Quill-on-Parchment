@@ -1,0 +1,492 @@
+<?php
+session_start();
+$_SESSION['aid']=70;
+?>
+<html>
+<head>
+
+
+<link rel="icon" type="image/png" href="../Images/favicon.png">
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5397319a7ce18a61"></script>
+<script type="text/JavaScript">
+function killCopy(e){
+return false
+}
+function reEnable(){
+return true
+}
+document.onselectstart=new Function("return false")
+if (window.sidebar){
+document.onmousedown=killCopy
+document.onclick=reEnable
+}
+</script>
+
+
+<title>Food - Live to Eat!</title>
+<link rel="stylesheet" type="text/css" href="../mycss.css">
+<link rel="stylesheet" href="../alertify.core.css" />
+<link rel="stylesheet" href="../alertify.default.css" id="toggleCSS" />
+
+<style>
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+     background:rgba(0,0,0,0.5);
+     border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+
+}
+img{ 
+-webkit-filter: drop-shadow(-1px 1px 1px #000); 
+filter: drop-shadow(-1px 1px 1px #000); 
+}
+
+.design{
+background-image:url("../Images/texture.jpg");
+background-repeat:repeat;
+box-shadow: -5px 5px 5px #000;
+padding:60px;
+}
+
+.likebtn{
+background:#1a0d04;
+-webkit-filter: drop-shadow(-5px 5px 5px #000); 
+filter: drop-shadow(-5px 5px 5px #000); 
+color:#fff;
+font-family:Hand;
+font-size:1.8em;
+width:100px;
+height:50px;
+border:0px;
+}
+
+.likebtn:active{
+-webkit-filter: drop-shadow(-3px 3px 3px #000); 
+filter: drop-shadow(-3px 3px 3px #000); 
+}
+
+
+.tarea
+{
+    background:#1a0d04;
+    box-shadow: 0px 3px 3px #000;
+    color:#9b6c28; 
+    border:0px;
+    padding:15px;
+    font-family: Hand,serif;
+    font-size:20px;
+}
+.tarea:focus{
+   outline: 0;
+}
+
+.submt
+{
+background:#1a0d04;
+font-family:Hand;
+font-size:1.2em;
+color:#9b6c28;
+width:100px;
+height:40px;
+box-shadow:0px 6px 6px #000;
+border:0px;
+}
+.submt:active
+{
+box-shadow:-0px 3px 3px #000;
+}
+
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51930404-1', 'quillonparchment.in');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body link="#000000" vlink="#000000" alink="#000000" background="../Images/parch.jpg" style="background-repeat:repeat;">
+<center>
+
+<br>
+<table>
+<tr>
+<td><img src="../Images/logo.png" width=150 height=150/></td>
+<td><img src="../Images/name.png" width=700 height=150/></td>
+</tr>
+</table>
+
+<?php include '../tabs1.php'; ?>
+
+<div class="design">
+<br><br>
+
+<h1 style="font-family:Hand;font-size:4em;color:#000;text-shadow:-3px 3px 3px #000"><?php include '../returntitle.php'; ?></h1>
+
+<h4 style="font-family:Hand;font-size:1.8em;color:#000;">
+- <a href="../profile.html?id=<?php include '../returnauthorid.php'; ?>"><?php include '../returnauthor.php'; ?></a>
+</h4>
+
+<h3 style="font-family:Hand">( Published on: <?php include '../returndate.php'; ?> )</h3>
+<br><br>
+
+<img src="../Images/70.jpg" width=500 height=333 style="border: 4px black solid;">
+
+<br><strong><font style="font-family:Hand;font-size:1em;"><a href="https://www.flickr.com/photos/su-lin/2091641255">Photo</a> by 
+<a href="https://www.flickr.com/photos/su-lin/">Su-lin</a> is licensed under 
+<a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">CC BY 2.0</a></font></strong>
+
+<br><br><br><br>
+<h4 style="text-align:justify;font-family:Nyala;font-size:1.3em;color:#000;">
+
+<p>Food, the fuel for life and sustenance becomes one of the most primal needs of any life form. From beast to barons , all need food alike, while those animals that roam the densest of forests, prey on raw flesh to satisfy their needs, mankind by divine grace and the sheer genius of intellect , have stood apart(at least as far as food is concerned). Cooking as I see it, is the most wonderful of arts that bestows upon us, splendid delicacies, that when partaken, fires up a euphoria of delight. Even the simplest of dishes when cooked meticulously, becomes in taste that which I can only equate to my perception of the heavenly ambrosia. At a loss of decision, I find myself spoilt for choice among the many divine delicacies I have come across in my yet young life, so I decide thus to describe in wonder, the food I have grown up with, the typical “iyer-aathu saapadu”.</p><p>Even though, the radio blares repeatedly of the Vishnu sahasranamam, I wake up only to the shrill whistle of the cooker and to the aroma of the filter coffee. By the time the decoction has percolated through the filter, my ablutions are done, and I reach right in time for a cup of froth filled filter coffee, brewed from the choicest coffee, made in an old shop from which my grand-father started buying. The first sip is always a new experience and each time an indescribable sensation runs from top to toe, leaving me yearning for more and more. Over at least 2 cups, I move to the table where my mother, with unbounded love serves 2 heaps of steaming hot pongal, a dish made by a mixture of rice and dhal in perfect proportions and garnished with jeera and pepper, sauntered to perfection in abundance of ghee. To accompany this divine delicacy, is a supply of coconut chutney with a paste-like consistency, and a cup of sambhar, the famous dish made from a mixture of a variety of masalas with onions and drumsticks, in water, boiled to perfection. And to add to my sins of indulgence, I partake in another round of filter coffee, only to be overwhelmed by that feeling, which words cannot describe. I settle in a state of satisfaction, which forces me to implore my mother for an account of the preparations for lunch. </p><p>To my delight, there is rasam, a cousin to sambhar, only much stronger because of a perfect excess of pepper and tomatoes garnished to perfection with coriander leaves and a dash of lemon, however less thicker than sambhar. This enables us to rather drink it, as an appetizer apart from using it as a mix. The next surprise comes in the form of my favorite among vegetables, potatoes, which will be made to immaculate taste by frying it with oil until it is roasted golden brown and with a dash of chili powder, asafotaedia, turmeric powder, garam masala, dhania powder and garnished with curry leaves. The morning sambhar is a given of course!  And there is curd. When the table is set, I see vessels of rasam, sambhar, curd and potato curry and of course steaming rice. I help myself to an abundance of these dishes. A heap of rice, two spoons of ghee and mash the rice up, then add to it cups of rasam. To accompany the already inviting palate, I add my share of the potato curry. I must tell you, add more rasam to make the rice loose. Once the rice is done, the rasam that remains must be drunk. The mashed rice that mixes with the rasam gives it a special taste that must be experienced personally and not merely read. Now, round two! Sambhar Rice and vadaams, to accompany it. Vadaams are Indian fryums, that are crisp and flavored. And at last, curd rice, the crown jewel of any Brahmin household, to cool the inferno of desire and to go with it, the perfect homemade mango pickle. This is the mark of the culmination of a splendid feast, fit for gods but meant for man.</p><p> The experience is however complete only after I drink a glass of paanagam. This drink is made by mixing jaggery with water and a dash of dry ginger powder and camphor. This is that nectar which extinguishes the thirst after a sumptuous meal. However in time as a fuel runs out in a machine, hunger begins to creep in. And lo! There is dosa, the famous dish of the south that needs no description, and along with it chili powder, different from the one used as a masala, this has toor dal in it, which somehow makes it crispier and rather docile. Mixed with two spoons of gingelly oil, it makes as good as any chutney for dosa. If you have a sweet tooth, add a pinch of sugar to it! The taste is heavenly. </p><p>The day must end at any cost and a meal is a must to survive the night. For dinner there is yet much delight. Simple as it seems, puliyotharai and paruppu podi rice, but the taste is rather grand. Puliyotharai is essentially rice mixed with tamarind, chilly and oil. Savor every moment when you eat it, search for the enigmatic sourness in the might of chillies. The balance between the tastes must be precariously maintained by the expertise of an experienced cook. Paruppu podi is dal powder, made spicy. Mix it with rice and ghee (or even gingelly oil) and that taste is exhilarating. There is appalam to take care of accompanying these wonderful courses. Before going to bed, I fulfill my day with a glass of buttermilk, dashed with chillies, ginger, salt and asafotaedia. One glass of this drink transports you magically to a state of trance, a fulfillment that only culminates with a sound sleep and wonderful dreams.</p><p>The routine of food in case of festivals are much more exciting and scintillating, but I shall deal with that another time. For now I shall rejoice the memories of such sumptuous routines and stand by one philosophy I have always looked up to- Live to eat!</p><p></p>
+
+</h4>
+
+<br><br>
+<h3 style="font-family:Hand">---End Of Article---</h3>
+<br>
+
+
+<div style="position:relative;">
+<input type="submit" id="likebtn" value="Like" class="likebtn"><br><br>
+
+
+<!--Rating-->
+
+<div id="ratingstuff">
+<br><br>
+<h3 style="font-family:Hand;font-size:1.4em"><div id="ratethestory">Rate the Article!</div></h3>
+<img src="../Images/star.png" id="star1"/>
+<img src="../Images/star.png" id="star2"/>
+<img src="../Images/star.png" id="star3"/>
+<img src="../Images/star.png" id="star4"/>
+<img src="../Images/star.png" id="star5"/>
+</div>
+
+<br>
+<h3 style="font-family:Hand;font-size:1.4em"><div>Average Viewer Rating</div></h3>
+<h3 style="font-family:Hand;font-size:1.4em;position:relative;top:-10px"><?php include '../returnaverage.php'; ?><font style="font-size:2em"> / 5</font></h3>
+
+<h3 style="position:absolute;top:-15px;left:190px;font-family:Hand;font-size:1.4em"><tot>Total Likes<br><div id="likediv"><?php include '../returnlikes.php'; ?></div></tot></h3>
+<h3 style="position:absolute;top:-15px;left:1000px;font-family:Hand;font-size:1.4em"><tot>Total Views<br><?php include '../returnreads.php'; ?></tot></h3>
+</div>
+
+<br><br>
+<div style="text-align:center"><h3 style="font-family:Hand"><a href="#top">Back to Top</a></h3></div>
+<br>
+
+<h3 style="font-size:1.5em;font-family:Hand"><u>COMMENTS</u></h3>
+
+<div id="thediv" style="text-align:left;height:300px;width:850px;border:1px solid #000;overflow:auto;background:#1a0d04;padding:20px;box-shadow:0px 2px 2px #000;font-size:1.2em;font-family:Hand;color:#9b6c28">
+
+</div>
+
+<br>
+<textarea class="tarea" id="ctarea" name="ctarea" rows="3" cols="40" spellcheck="false" style="resize:none">
+</textarea>
+<br>
+<input type="submit" id="cbtn" value="Comment" class="submt" >
+
+<br><br>
+<h3 style="font-family:Hand"><a href="#top">Back to Top</a></h3></div>
+
+</center>
+
+
+
+
+
+
+<script src="../Scripts/jquery-1.9.1.min.js"></script>
+<script src="../Scripts/alertify.min.js"></script>
+
+<script>
+function update()
+{
+$.get("../displaycomments.php", {aid:70} , function(data)
+{
+$("#thediv").html(data);
+window.setTimeout(update,10000);
+ });
+}
+</script>
+
+
+<script>
+$("#cbtn").on("click",function()
+{
+var cmtvar=document.getElementById("ctarea");
+var pbox=$('thediv');
+
+if(cmtvar.value!="")
+{
+$.post("../sendcomment.php", {comment:cmtvar.value,aid:70} ,function(){});
+$("#thediv").append('<br><name style="font-size:1.3em;text-shadow:-5px 5px 5px #000">' + '<u><?php echo $_SESSION['firstname']; ?>:</u></name> ' + cmtvar.value + '<br>');
+$("#thediv").stop().animate({scrollTop: $("#thediv")[0].scrollHeight},800);
+
+cmtvar.value="";
+}
+
+});
+</script>
+
+<script>
+$("#likebtn").on("click",function()
+{
+
+if(this.value=="Like")
+{
+this.value="Liked";
+this.style.color="#b67d2d";
+$.get("../likestory.php",{aid:70}, function(data)
+{
+$("#likediv").html(data);
+});
+}
+else if(this.value=="Liked")
+{
+this.value="Like";
+this.style.color="#fff";
+$.get("../unlikestory.php",{aid:70}, function(data)
+{
+$("#likediv").html(data);
+});
+}
+
+});
+</script>
+
+<script>
+var hover=true;
+$(document).ready(function()
+{
+$("#tab_food").addClass("current");
+var likebtn=document.getElementById("likebtn");
+var ctarea=document.getElementById("ctarea");
+var cbtn=document.getElementById("cbtn");
+var rating=document.getElementById("ratingstuff");
+
+$.get("../checksession.php", function(data)
+{
+if(data!=1)
+{
+	likebtn.style.display="none";
+	ctarea.style.display="none";
+	cbtn.style.display="none";	
+	rating.style.display="none";
+}
+});
+
+$.get("../updatereads.php" , {abc:'7'} , function(data){});
+
+$.get("../checklike.php" , {abc:'7'} , function(data)
+{
+if(data==1)
+{
+document.getElementById("likebtn").value="Liked";
+document.getElementById("likebtn").style.color="#b67d2d";
+}
+else
+{
+document.getElementById("likebtn").value="Like";
+document.getElementById("likebtn").style.color="#fff";
+}
+});
+
+$("#thediv").scrollTop($("#thediv")[0].scrollHeight);
+update();
+
+$.ajax( {url:"../getrating.php", success:function(data)
+{
+if(data==1)
+{
+hover=false;
+$("#ratethestory").html('Your Rating!');
+$("#star1").attr("src","../Images/star2.png");
+}
+else if(data==2)
+{
+hover=false;
+$("#ratethestory").html('Your Rating!');
+$("#star1").attr("src","../Images/star2.png");
+$("#star2").attr("src","../Images/star2.png");
+}
+else if(data==3)
+{
+hover=false;
+$("#ratethestory").html('Your Rating!');
+$("#star1").attr("src","../Images/star2.png");
+$("#star2").attr("src","../Images/star2.png");
+$("#star3").attr("src","../Images/star2.png");
+}
+else if(data==4)
+{
+hover=false;
+$("#ratethestory").html('Your Rating!');
+$("#star1").attr("src","../Images/star2.png");
+$("#star2").attr("src","../Images/star2.png");
+$("#star3").attr("src","../Images/star2.png");
+$("#star4").attr("src","../Images/star2.png");
+}
+else if(data==5)
+{
+hover=false;
+$("#ratethestory").html('Your Rating!');
+$("#star1").attr("src","../Images/star2.png");
+$("#star2").attr("src","../Images/star2.png");
+$("#star3").attr("src","../Images/star2.png");
+$("#star4").attr("src","../Images/star2.png");
+$("#star5").attr("src","../Images/star2.png");
+}
+}});
+
+
+});
+</script>
+
+<script>
+$("#signout").on("click",function()
+{
+alertify.confirm("Are you sure you want to Sign Out?", function (e) {
+    if (e) {
+        window.open("../signout.php","_self");
+    }
+});
+});
+</script>
+<script>
+$("#star1").hover(
+function(){
+if(hover==true) $("#star1").attr("src","../Images/star2.png");
+},
+function(){
+if(hover==true) $("#star1").attr("src","../Images/star.png");
+}
+);
+
+$("#star2").hover(
+function(){
+if(hover==true){
+$("#star1").attr("src","../Images/star2.png");
+$("#star2").attr("src","../Images/star2.png");
+}
+},
+function(){
+if(hover==true){
+$("#star1").attr("src","../Images/star.png");
+$("#star2").attr("src","../Images/star.png");
+}
+}
+);
+
+
+$("#star3").hover(
+function(){
+if(hover==true){
+$("#star1").attr("src","../Images/star2.png");
+$("#star2").attr("src","../Images/star2.png");
+$("#star3").attr("src","../Images/star2.png");
+}
+},
+function(){
+if(hover==true){
+$("#star1").attr("src","../Images/star.png");
+$("#star2").attr("src","../Images/star.png");
+$("#star3").attr("src","../Images/star.png");
+}
+}
+);
+
+
+
+$("#star4").hover(
+function(){
+if(hover==true){
+$("#star1").attr("src","../Images/star2.png");
+$("#star2").attr("src","../Images/star2.png");
+$("#star3").attr("src","../Images/star2.png");
+$("#star4").attr("src","../Images/star2.png");
+}
+},
+function(){
+if(hover==true){
+$("#star1").attr("src","../Images/star.png");
+$("#star2").attr("src","../Images/star.png");
+$("#star3").attr("src","../Images/star.png");
+$("#star4").attr("src","../Images/star.png");
+}
+}
+);
+
+
+
+$("#star5").hover(
+function(){
+if(hover==true){
+$("#star1").attr("src","../Images/star2.png");
+$("#star2").attr("src","../Images/star2.png");
+$("#star3").attr("src","../Images/star2.png");
+$("#star4").attr("src","../Images/star2.png");
+$("#star5").attr("src","../Images/star2.png");
+}
+},
+function(){
+if(hover==true){
+$("#star1").attr("src","../Images/star.png");
+$("#star2").attr("src","../Images/star.png");
+$("#star3").attr("src","../Images/star.png");
+$("#star4").attr("src","../Images/star.png");
+$("#star5").attr("src","../Images/star.png");
+}
+}
+);
+
+
+
+$('#star1').click(function()
+{
+if(hover==true) $.get("../sendrating.php", {rate:'1' , aid:70 } , function(){});
+hover=false;
+});
+
+$('#star2').click(function()
+{
+if(hover==true) $.get("../sendrating.php", {rate:'2' , aid:70 } , function(){});
+hover=false;
+});
+
+$('#star3').click(function()
+{
+if(hover==true) $.get("../sendrating.php", {rate:'3' , aid:70 } , function(){});
+hover=false;
+});
+
+$('#star4').click(function()
+{
+if(hover==true) $.get("../sendrating.php", {rate:'4' , aid:70 } , function(){});
+hover=false;
+});
+
+$('#star5').click(function()
+{
+if(hover==true) $.get("../sendrating.php", {rate:'5' , aid:70 } , function(){});
+hover=false;
+});
+
+</script>
+
+</body>
+</html>

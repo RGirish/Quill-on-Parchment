@@ -1,0 +1,207 @@
+<?php
+session_start();
+?>
+<html>
+<head>
+<title>My Profile</title>
+<link rel="icon" type="image/png" href="Images/favicon.png">
+<link rel="stylesheet" type="text/css" href="mycss.css">
+<link rel="stylesheet" href="alertify.core.css" />
+<link rel="stylesheet" href="alertify.default.css" id="toggleCSS" />
+
+<style>
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+     background:rgba(0,0,0,0.5);
+     border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+
+}
+
+img{ 
+-webkit-filter: drop-shadow(-1px 1px 1px #000); 
+filter: drop-shadow(-1px 1px 1px #000); 
+}
+
+.signin{
+width:300px;
+height:300px;
+margin-left:20px;
+margin-bottom:20px;
+background-image: url(Images/signin_bg.png);
+background-repeat:no-repeat;
+}
+
+.input
+{
+    height:30px;
+    width:220px;
+    background:#e2c886;
+    box-shadow: -3px 3px 3px #000;
+    color:#000; 
+    border:0px;
+    padding-left:15px;
+    padding-right:15px; 
+    font-family: Hand,serif;
+    font-size:17px;
+}
+.input:focus{
+   outline: 0;
+}
+
+.submt
+{
+    height:30px;
+    width:100px;
+    background:#1b0202;
+    color:#fff;
+    box-shadow: -5px 5px 5px #000;
+    border:0px;
+    padding-left:15px;
+    padding-right:15px; 
+    font-family: Hand,serif;
+    font-size:18px;
+}
+
+.submt:focus{
+background:#e2c886;
+    color:#000;      
+   outline: 0;
+}
+
+.design{
+background-image:url("Images/profilebg.png");
+background-repeat:no;
+width:1024px;
+height:875px;
+}
+
+.editbtn
+{
+box-shadow:0px 6px 6px #000;
+}
+.editbtn:active
+{
+box-shadow:-0px 3px 3px #000;
+}
+
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51930404-1', 'quillonparchment.in');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body link="#000000" vlink="#000000" alink="#000000" background="Images/parch.jpg" style="background-repeat:repeat;">
+<center>
+
+<br>
+<table>
+<tr>
+<td><img src="Images/logo.png" width=150 height=150/></td>
+<td><img src="Images/name.png" width=700 height=150/></td>
+</tr>
+</table>
+
+
+<?php include 'tabs.php'; ?>
+
+<div class="design">
+<br><br><br><br><br>
+<div>
+<h4 name="welcome" id="welcome" style="font-family:Hand;font-size:2em;">Hello <?php echo $_SESSION['username']; ?>!</h4>
+<img style="margin-top:-40px;" src="Images/line1.png"/>
+</div>
+<h4 style="font-family:Stylis;font-size:1.5em">
+<fld style="text-shadow:-0.5px 0.5px 0.5px #000;font-size:1.6em">Name:</fld><afield id="firstname"><?php echo $_SESSION['firstname']; ?> </afield><afield id="lastname"><?php echo $_SESSION['lastname']; ?></afield><br><br>
+<fld style="text-shadow:-0.5px 0.5px 0.5px #000;font-size:1.6em">Gender:</fld><afield id="fgender">
+<?php 
+if($_SESSION['gender']=="M")
+{
+echo "Male";
+}
+else if($_SESSION['gender']=="F")
+{
+echo "Female";
+} 
+else
+{
+echo "Other";
+}
+?>
+</afield><br><br>
+<fld style="text-shadow:-0.5px 0.5px 0.5px #000;font-size:1.6em">Date of Birth:</fld><afield id="fdob"><?php echo $_SESSION['dob']; ?></afield><br><br>
+<fld style="text-shadow:-0.5px 0.5px 0.5px #000;font-size:1.6em">Profession:</fld><afield id="fprofession">
+<?php 
+if($_SESSION['profession']=="S")
+{
+echo "Student";
+}
+else if($_SESSION['profession']=="W")
+{
+echo "Working";
+} 
+else
+{
+echo "Other";
+}
+?>
+</afield><br><br>
+<fld style="text-shadow:-0.5px 0.5px 0.5px #000;font-size:1.6em">Email Address:</fld><afield id="femail"><?php echo $_SESSION['email']; ?></afield><br><br>
+<fld style="text-shadow:-0.5px 0.5px 0.5px #000;font-size:1.6em">Country:</fld><afield id="fcountry"><?php echo $_SESSION['country']; ?></afield><br><br>
+<fld style="text-shadow:-0.5px 0.5px 0.5px #000;font-size:1.6em">City:</fld><afield id="fcity"><?php echo $_SESSION['city']; ?></afield><br><br>
+</h4>
+
+<a href="editprofile.html"><img class="editbtn" src="Images/edit.png"/></a>
+
+</div>
+
+</center>
+
+<script src="Scripts/jquery-1.9.1.min.js"></script>
+<script src="Scripts/alertify.min.js"></script>
+<script>
+$("#signout").on("click",function()
+{
+alertify.confirm("Are you sure you want to Sign Out?", function (e) {
+    if (e) {
+        window.open("signout.php","_self");
+    }
+});
+});
+</script>
+
+<script>
+$(document).ready(function()
+{
+
+$("#tab_account").addClass("current");
+
+$.get("checksession.php", function(data)
+{
+if(data!=1)
+{
+window.open("index.html","_self");
+}
+});
+
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,496 @@
+<?php
+session_start();
+$_SESSION['aid']=37;
+?>
+<html>
+<head>
+
+
+<link rel="icon" type="image/png" href="../../Images/favicon.png">
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5397319a7ce18a61"></script>
+<script type="text/JavaScript">
+function killCopy(e){
+return false
+}
+function reEnable(){
+return true
+}
+document.onselectstart=new Function("return false")
+if (window.sidebar){
+document.onmousedown=killCopy
+document.onclick=reEnable
+}
+</script>
+
+
+<title>Stories</title>
+<link rel="stylesheet" type="text/css" href="../../mycss.css">
+<link rel="stylesheet" href="../../alertify.core.css" />
+<link rel="stylesheet" href="../../alertify.default.css" id="toggleCSS" />
+
+<style>
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+     background:rgba(0,0,0,0.5);
+     border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+
+}
+img{ 
+-webkit-filter: drop-shadow(-1px 1px 1px #000); 
+filter: drop-shadow(-1px 1px 1px #000); 
+}
+
+.design{
+background-image:url("../../Images/texture.jpg");
+background-repeat:repeat;
+box-shadow: -5px 5px 5px #000;
+padding:60px;
+}
+
+.likebtn{
+background:#1a0d04;
+-webkit-filter: drop-shadow(-5px 5px 5px #000); 
+filter: drop-shadow(-5px 5px 5px #000); 
+color:#fff;
+font-family:Hand;
+font-size:1.8em;
+width:100px;
+height:50px;
+border:0px;
+}
+
+.likebtn:active{
+-webkit-filter: drop-shadow(-3px 3px 3px #000); 
+filter: drop-shadow(-3px 3px 3px #000); 
+}
+
+
+.tarea
+{
+    background:#1a0d04;
+    box-shadow: 0px 3px 3px #000;
+    color:#9b6c28; 
+    border:0px;
+    padding:15px;
+    font-family: Hand,serif;
+    font-size:20px;
+}
+.tarea:focus{
+   outline: 0;
+}
+
+.submt
+{
+background:#1a0d04;
+font-family:Hand;
+font-size:1.2em;
+color:#9b6c28;
+width:100px;
+height:40px;
+box-shadow:0px 6px 6px #000;
+border:0px;
+}
+.submt:active
+{
+box-shadow:-0px 3px 3px #000;
+}
+
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51930404-1', 'quillonparchment.in');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body link="#000000" vlink="#000000" alink="#000000" background="../../Images/parch.jpg" style="background-repeat:repeat;">
+<center>
+
+<br>
+<table>
+<tr>
+<td><img src="../../Images/logo.png" width=150 height=150/></td>
+<td><img src="../../Images/name.png" width=700 height=150/></td>
+</tr>
+</table>
+
+<?php include '../../tabs2.php'; ?>
+
+<div class="design">
+<br><br>
+
+<h1 style="font-family:Hand;font-size:4em;color:#000;text-shadow:-3px 3px 3px #000"><?php include '../../returntitle.php'; ?></h1>
+
+<h4 style="font-family:Hand;font-size:1.8em;color:#000;">
+- <a href="../../profile.html?id=<?php include '../../returnauthorid.php'; ?>"><?php include '../../returnauthor.php'; ?></a>
+</h4>
+
+<h3 style="font-family:Hand">( Published on: <?php include '../../returndate.php'; ?> )</h3>
+<br>
+
+<img src="../../Images/37.jpg" style="border:6px black solid" width=500 height=300/>
+<br><strong><font style="font-family:Hand;font-size:1em;">
+<a href="https://www.flickr.com/photos/josefstuefer/8174784/in/photolist-HU5y-4ctzh9-7d1Fi1-aaB23d-6Q9aCk-5YGWQH-5QnSu8-7U3wh7-n6AqH-dV99K3-594B8n-aSdpfn-2kzXs-4iDu18-MsHbZ-nfLfVt-HHVtv-b9pAXF-bpcqNp-4U48mS-9kqZEr-5qJx6i-khV4jX-boVWFF-ncn5L3-9xtKMd-ipM9Ee-7bdowd-nQa6eu-bx2T6e-4NrQSz-9m6Crw-sgPpb-6fgA7k-8Hg5U4-7AVCDf-8CDcGw-5v8iCK-6mDG1T-mM8Swx-76vqzc-azakfc-7qKc4E-j4pRED-cW5P6-6nt5X1-8ymrXZ-bEcsBo-6a5TND-mVofD">Photo</a> by 
+<a href="https://www.flickr.com/photos/josefstuefer/">Author</a> is licensed under 
+<a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></font></strong><br><br>
+
+
+
+<br>
+
+<h4 style="text-align:justify;font-family:Nyala;font-size:1.3em;color:#000;">
+
+<p>Going to the park and looking at how the leaves danced to the wind was becoming a daily routine for me. In fact, it was becoming all that I liked to do. I sat down on the stone bench; my usual seat. I could feel the cold of the stone through my jean. The thirty degree downside leaf watch had become a customary by then. Sometimes the leaves swayed; sometimes they danced and sometimes they just blew away, and never came back. </p><p>***</p><p>The heavy glistening of the sun through my window glaze pestered my eyes lids. I was forced to wake up every morning in the same way. But when Mr. Sun didn’t come up, UH OH! It goes five minutes this way or that for my alarm clock to strike, and today I raced it to sunshine. Living alone definitely had its own pros and cons.</p><p>I had my quick shower, giving more time to admire myself, as well be a critique at what I had to look at the mirror every morning. I liked my hair wet. The ends of the wet curls just rested on my shoulder and the scent of the conditioner travelled through the whole room. I slipped on a jean, but then came the problem. WHAT COLOUR SHIRT? I went through my tiny wardrobe a hundred times and finally made up my mind on one. I scooped my bag up and hurried to the living. </p><p>I stared at the clock for some time and walked to the calendar. I could feel my eyes getting damp. </p><p>“I can change the clock, but what the hell am I supposed to do without a calendar?” I mumbled to myself and left the tiny apartment that I had all to myself. I clicked the heavy globe lock and pulled it twice to make sure it locked well. It did its job just fine. </p><p>......</p><p>I was waiting in the reception. The floral patterned wall paper did justice to the lavishly spent wooden flooring. I looked up and down and around the waiting.</p><p>“Neethu?” The receptionist called out.</p><p>“Yea!” I bounced up off the couch waking up from my look around trance state.</p><p>“The doctor will see you now” she finished with a warm smile as her long fingers pushed a file to me on the counter. I took it and sighed at the spelling mistake and started walking to the doctor’s room.</p><p>Vishnu was my psychiatrist for almost three years now. He has been more than just helpful to me. And I made a point to stick to my appointments just to see his cute little face. ‘Three years is a long time to see such a cute guy and not do anything about it’ I thought. Sigh.</p><p>“Doctor?” I knocked on the partially open door.</p><p>Vishnu stopped his sincere scribbling on his notepad and lifted his face almost instantly. I couldn’t resist but smile wide at him. He slightly pushed the squeaky chair and got up. </p><p>“Neethu. We have to hurry. I have to take you somewhere.” He pushed me out of the room even before I could enter it.”</p><p>“What? Vishnu wait.” I laughed at his clumsy hurry. He held my wrist and walked me to the lobby without uttering another word. </p><p>Vishnu and I had become quite close ever since my first appointment with him. The very first moment I saw him, I knew he was something special, but I never knew if he felt the same way towards me. </p><p>We walked down to the car park and Vishnu held the door open for me to get in. I got in the car and Strapped on my seat belt while he went around and got in as well. He started the engine and I gave him a cold look.</p><p>“What?” He asked like he had no clue.</p><p>“Okay! Stop looking at me like that.” He mumbled as he wore his seat belt. </p><p>I leaned on the glass window and looked at each building run behind. </p><p>“I won’t tell you where we are going.” Vishnu smirked at me.</p><p>“I never asked” I turned to look at him and pouted.</p><p>The silence in the car was broken by the intermittent reception of the radio. </p><p>“Vishnu?” </p><p>“Yeah Neethu?”</p><p>“Tell me about my condition once more?”</p><p>“Is it really necessary now?” He asked concerned juggling his looks between me and the road.</p><p>“Yes. Please?”</p><p>“Fine. The condition you have is known as Grapheme-colour synesthesia. To put it in simple words, your perception of numbers and alphabets is associated with colours.”</p><p>“I see fucking colours everywhere.” I said and stared more beadily yet absently outside the window. </p><p>Vishnu chuckled and had no reply. A few minutes later he stopped the car outside a building and pulled the hand break. He signalled me to get out of the car and I followed his instruction. I looked at the building from top to bottom. It looked like an old apartment. Probably 15 to 20 years old. Vishnu held my hand and started walking. We went inside the building. </p><p>We waited for the elevator which finally came after an eternity and as soon as I opened the door, the annoying voice of the lady who kept saying “Please close the door” went on. </p><p>Vishnu closed the door, pressed 5 and looked at me. I smiled at him. I just wanted to hug him right there. But I had no clue what was in his mind.</p><p>We finally reached the fifth floor in the noisy elevator which again started announcing to close the door. Vishnu closed the door of the elevator and walked straight to a closed door of an apartment. I followed him looking around. He fished his pocket and finally took out a key and unlocked the door. </p><p>“ Okay come here.” He called out.</p><p>I was too curious about what was happening and hence I stay put. Vishnu pulled me closer to him and covered my eyes with his hands. </p><p>“You ready?” he asked. I loved the little excitement that he had in his voice.</p><p>I chuckled and nodded my head. </p><p>Vishnu led me into the apartment. We walked a few step and then stopped. He took off his hands. I opened my eyes.</p><p>The sight was too much to handle. There were numbers and alphabets everywhere. Clocks, posters, calendars, wall frames. There were too many colours going on.</p><p>I gave a puzzled look at Vishnu. </p><p>“What is all his about Vishnu?”</p><p>“Every little number; every little alphabet you see in here, is exactly how I see it.” Vishnu said and leaned against the wall with his hands crossed.</p><p>“What? I don’t get it. I have synesthesia. How could you possibly see what I am seeing here?”</p><p>“I know. You remember the first day you walked into my clinic? That day was the day I felt something I have never felt in my life. From that very day I’ve been analysing your condition and finally built this. I made a list of the colours you see for respective numbers or alphabets. You always kept telling me that you wanted to see the world from normal eyes. I couldn’t help you with that. But I was sure I could see something from your eyes. So here it is. It is everything you see. Exactly how I see it.” He said and added his cute little smile to it.</p><p>I could not explain how much this meant to me. How much I wanted to see something from a pair of normal eyes. I turned around and wiped my eyes with the long shirt sleeve as I felt his hand rest on my shoulder. I turned and hugged him as tight as I could. He slowly leaned and whispered into my ear “Neethu?”</p><p>I looked up into his dark brown eyes. He wiped my damp cheek with his fingers.</p><p>“I...” he started. Before he could continue I rested my fingers on his lips.</p><p>“I love you Vishnu” </p><p>He bent down and came closer. Within seconds our lips met and the magic spread all the way across the room through the lovely colours.</p><p></p>
+
+</h4>
+<br><br>
+<h3 style="font-family:Hand">---End Of Story---</h3>
+<br>
+
+
+<div style="position:relative;">
+<input type="submit" id="likebtn" value="Like" class="likebtn"><br><br>
+
+
+<!--Rating-->
+
+<div id="ratingstuff">
+<br><br>
+<h3 style="font-family:Hand;font-size:1.4em"><div id="ratethestory">Rate the Story!</div></h3>
+<img src="../../Images/star.png" id="star1"/>
+<img src="../../Images/star.png" id="star2"/>
+<img src="../../Images/star.png" id="star3"/>
+<img src="../../Images/star.png" id="star4"/>
+<img src="../../Images/star.png" id="star5"/>
+</div>
+
+<br>
+<h3 style="font-family:Hand;font-size:1.4em"><div>Average Viewer Rating</div></h3>
+<h3 style="font-family:Hand;font-size:1.4em;position:relative;top:-10px"><?php include '../../returnaverage.php'; ?><font style="font-size:2em"> / 5</font></h3>
+
+<h3 style="position:absolute;top:-15px;left:190px;font-family:Hand;font-size:1.4em"><tot>Total Likes<br><div id="likediv"><?php include '../../returnlikes.php'; ?></div></tot></h3>
+<h3 style="position:absolute;top:-15px;left:1000px;font-family:Hand;font-size:1.4em"><tot>Total Views<br><?php include '../../returnreads.php'; ?></tot></h3>
+</div>
+
+<br><br>
+<div style="text-align:center"><h3 style="font-family:Hand"><a href="#top">Back to Top</a></h3></div>
+<br>
+
+<h3 style="font-size:1.5em;font-family:Hand"><u>COMMENTS</u></h3>
+
+<div id="thediv" style="text-align:left;height:300px;width:850px;border:1px solid #000;overflow:auto;background:#1a0d04;padding:20px;box-shadow:0px 2px 2px #000;font-size:1.2em;font-family:Hand;color:#9b6c28">
+
+</div>
+
+<br>
+<textarea class="tarea" id="ctarea" name="ctarea" rows="3" cols="40" spellcheck="false" style="resize:none">
+</textarea>
+<br>
+<input type="submit" id="cbtn" value="Comment" class="submt" >
+
+<br><br>
+<h3 style="font-family:Hand"><a href="#top">Back to Top</a></h3></div>
+
+</center>
+
+
+
+
+
+
+<script src="../../Scripts/jquery-1.9.1.min.js"></script>
+<script src="../../Scripts/alertify.min.js"></script>
+
+<script>
+function update()
+{
+$.get("../../displaycomments.php", {aid:37},function(data)
+{
+$("#thediv").html(data);
+window.setTimeout(update,10000);
+ });
+}
+</script>
+
+
+<script>
+$("#cbtn").on("click",function()
+{
+var cmtvar=document.getElementById("ctarea");
+var pbox=$('thediv');
+
+if(cmtvar.value!="")
+{
+$.post("../../sendcomment.php", {comment:cmtvar.value,aid:37} ,function(){});
+$("#thediv").append('<br><name style="font-size:1.3em;text-shadow:-5px 5px 5px #000">' + '<u><?php echo $_SESSION['firstname']; ?>:</u></name> ' + cmtvar.value + '<br>');
+$("#thediv").stop().animate({scrollTop: $("#thediv")[0].scrollHeight},800);
+
+cmtvar.value="";
+}
+
+});
+</script>
+
+<script>
+$("#likebtn").on("click",function()
+{
+
+if(this.value=="Like")
+{
+this.value="Liked";
+this.style.color="#b67d2d";
+$.get("../../likestory.php",{aid:37}, function(data)
+{
+$("#likediv").html(data);
+});
+}
+else if(this.value=="Liked")
+{
+this.value="Like";
+this.style.color="#fff";
+$.get("../../unlikestory.php",{aid:37}, function(data)
+{
+$("#likediv").html(data);
+});
+}
+
+});
+</script>
+
+<script>
+var hover=true;
+$(document).ready(function()
+{
+$("#tab_stories").addClass("current");
+var likebtn=document.getElementById("likebtn");
+var ctarea=document.getElementById("ctarea");
+var cbtn=document.getElementById("cbtn");
+var rating=document.getElementById("ratingstuff");
+
+$.get("../../checksession.php", function(data)
+{
+if(data!=1)
+{
+	likebtn.style.display="none";
+	ctarea.style.display="none";
+	cbtn.style.display="none";	
+	rating.style.display="none";
+}
+});
+
+$.get("../../updatereads.php" , {abc:'7'} , function(data){});
+
+$.get("../../checklike.php" , {abc:'7'} , function(data)
+{
+if(data==1)
+{
+document.getElementById("likebtn").value="Liked";
+document.getElementById("likebtn").style.color="#b67d2d";
+}
+else
+{
+document.getElementById("likebtn").value="Like";
+document.getElementById("likebtn").style.color="#fff";
+}
+});
+
+$("#thediv").scrollTop($("#thediv")[0].scrollHeight);
+update();
+
+$.ajax( {url:"../../getrating.php", success:function(data)
+{
+if(data==1)
+{
+hover=false;
+$("#ratethestory").html('Your Rating!');
+$("#star1").attr("src","../../Images/star2.png");
+}
+else if(data==2)
+{
+hover=false;
+$("#ratethestory").html('Your Rating!');
+$("#star1").attr("src","../../Images/star2.png");
+$("#star2").attr("src","../../Images/star2.png");
+}
+else if(data==3)
+{
+hover=false;
+$("#ratethestory").html('Your Rating!');
+$("#star1").attr("src","../../Images/star2.png");
+$("#star2").attr("src","../../Images/star2.png");
+$("#star3").attr("src","../../Images/star2.png");
+}
+else if(data==4)
+{
+hover=false;
+$("#ratethestory").html('Your Rating!');
+$("#star1").attr("src","../../Images/star2.png");
+$("#star2").attr("src","../../Images/star2.png");
+$("#star3").attr("src","../../Images/star2.png");
+$("#star4").attr("src","../../Images/star2.png");
+}
+else if(data==5)
+{
+hover=false;
+$("#ratethestory").html('Your Rating!');
+$("#star1").attr("src","../../Images/star2.png");
+$("#star2").attr("src","../../Images/star2.png");
+$("#star3").attr("src","../../Images/star2.png");
+$("#star4").attr("src","../../Images/star2.png");
+$("#star5").attr("src","../../Images/star2.png");
+}
+}});
+
+
+});
+</script>
+
+<script>
+$("#signout").on("click",function()
+{
+alertify.confirm("Are you sure you want to Sign Out?", function (e) {
+    if (e) {
+        window.open("../../signout.php","_self");
+    }
+});
+});
+</script>
+
+<script>
+$("#star1").hover(
+function(){
+if(hover==true) $("#star1").attr("src","../../Images/star2.png");
+},
+function(){
+if(hover==true) $("#star1").attr("src","../../Images/star.png");
+}
+);
+
+$("#star2").hover(
+function(){
+if(hover==true){
+$("#star1").attr("src","../../Images/star2.png");
+$("#star2").attr("src","../../Images/star2.png");
+}
+},
+function(){
+if(hover==true){
+$("#star1").attr("src","../../Images/star.png");
+$("#star2").attr("src","../../Images/star.png");
+}
+}
+);
+
+
+$("#star3").hover(
+function(){
+if(hover==true){
+$("#star1").attr("src","../../Images/star2.png");
+$("#star2").attr("src","../../Images/star2.png");
+$("#star3").attr("src","../../Images/star2.png");
+}
+},
+function(){
+if(hover==true){
+$("#star1").attr("src","../../Images/star.png");
+$("#star2").attr("src","../../Images/star.png");
+$("#star3").attr("src","../../Images/star.png");
+}
+}
+);
+
+
+
+$("#star4").hover(
+function(){
+if(hover==true){
+$("#star1").attr("src","../../Images/star2.png");
+$("#star2").attr("src","../../Images/star2.png");
+$("#star3").attr("src","../../Images/star2.png");
+$("#star4").attr("src","../../Images/star2.png");
+}
+},
+function(){
+if(hover==true){
+$("#star1").attr("src","../../Images/star.png");
+$("#star2").attr("src","../../Images/star.png");
+$("#star3").attr("src","../../Images/star.png");
+$("#star4").attr("src","../../Images/star.png");
+}
+}
+);
+
+
+
+$("#star5").hover(
+function(){
+if(hover==true){
+$("#star1").attr("src","../../Images/star2.png");
+$("#star2").attr("src","../../Images/star2.png");
+$("#star3").attr("src","../../Images/star2.png");
+$("#star4").attr("src","../../Images/star2.png");
+$("#star5").attr("src","../../Images/star2.png");
+}
+},
+function(){
+if(hover==true){
+$("#star1").attr("src","../../Images/star.png");
+$("#star2").attr("src","../../Images/star.png");
+$("#star3").attr("src","../../Images/star.png");
+$("#star4").attr("src","../../Images/star.png");
+$("#star5").attr("src","../../Images/star.png");
+}
+}
+);
+
+
+
+$('#star1').click(function()
+{
+if(hover==true) $.get("../../sendrating.php", {rate:'1' , aid:37 } , function(){});
+hover=false;
+});
+
+$('#star2').click(function()
+{
+if(hover==true) $.get("../../sendrating.php", {rate:'2' , aid:37 } , function(){});
+hover=false;
+});
+
+$('#star3').click(function()
+{
+if(hover==true) $.get("../../sendrating.php", {rate:'3' , aid:37 } , function(){});
+hover=false;
+});
+
+$('#star4').click(function()
+{
+if(hover==true) $.get("../../sendrating.php", {rate:'4' , aid:37 } , function(){});
+hover=false;
+});
+
+$('#star5').click(function()
+{
+if(hover==true) $.get("../../sendrating.php", {rate:'5' , aid:37 } , function(){});
+hover=false;
+});
+
+</script>
+
+
+</body>
+</html>

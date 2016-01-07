@@ -1,0 +1,365 @@
+<?php
+session_start();
+?>
+<html>
+<meta charset="UTF-8"></meta>
+<head>
+
+<title>Submit Entry</title>
+<link rel="icon" type="image/png" href="Images/favicon.png">
+<link rel="stylesheet" type="text/css" href="mycss.css"/>
+<link rel="stylesheet" href="alertify.core.css" />
+<link rel="stylesheet" href="alertify.default.css" id="toggleCSS" />
+
+<style>
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+     background:rgba(0,0,0,0.5);
+     border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+
+}
+.design{
+background-image:url("Images/profilebg2.png");
+background-repeat:no;
+width:1024px;
+height:1450px;
+}
+.input
+{
+    height:30px;
+    width:220px;
+    background:#1a0d04;
+    box-shadow: 0px 3px 3px #000;
+color:#9b6c28; 
+    border:0px;
+    padding-left:15px;
+    padding-right:15px; 
+    font-family: Hand,serif;
+    font-size:17px;
+}
+.input:focus{
+   outline: 0;
+}
+
+.inputa
+{
+    height:30px;
+    width:220px;
+    background:#1a0d04;
+    box-shadow: 0px 3px 3px #000;
+    color:#9b6c28; 
+    border:0px;
+    padding-left:15px;
+    padding-right:15px; 
+    font-family: Hand,serif;
+    font-size:17px;
+}
+.inputa:focus{
+   outline: 0;
+}
+.tarea
+{
+    background:#1a0d04;
+    box-shadow: 0px 3px 3px #000;
+    color:#9b6c28; 
+    border:0px;
+    padding:15px;
+    font-family: Hand,serif;
+    font-size:20px;
+}
+.tarea:focus{
+   outline: 0;
+}
+.tarea2
+{
+    background:#1a0d04;
+    box-shadow: 0px 3px 3px #000;
+    color:#9b6c28; 
+    border:0px;
+    padding:15px;
+    font-family: Hand,serif;
+    font-size:20px;
+}
+.tarea2:focus{
+   outline: 0;
+}
+.submt
+{
+background-image:url("Images/submit.png");
+width:200px;
+height:40px;
+box-shadow:0px 6px 6px #000;
+border:0px;
+}
+.submt:active
+{
+box-shadow:-0px 3px 3px #000;
+}
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51930404-1', 'quillonparchment.in');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body link="#000000" vlink="#000000" alink="#000000" background="Images/parch.jpg" style="background-repeat:repeat;">
+<center>
+
+<br>
+<table>
+<tr>
+<td><img src="Images/logo.png" width=150 height=150/></td>
+<td><img src="Images/name.png" width=700 height=150/></td>
+</tr>
+</table>
+
+
+<?php include 'tabs.php'; ?>
+
+
+<br>
+
+<div name="thediv" class="design">
+<br><br><br><br><br><br>
+<div>
+<h4 style="font-family:Hand;font-size:2em;">Submit Your Work!</h4>
+<img style="margin-top:-40px;" src="Images/line1.png"/>
+</div>
+
+<form name="myform" action="submitentry.php" onsubmit="return validate()" method="post">
+
+<h4 style="text-shadow:-1px 1px 1px #000;font-family:Hand;font-size:1.6em;">What language article is it?</h4>
+<select class="input" name="languageselect" id="languageselect">
+<option value="s" selected>-</option>
+<option value="e">English</option>
+<option value="o">Tamil</option>
+</select>
+
+
+
+<div id="englishdiv" name="englishdiv" style="display:none">
+<h4 style="text-shadow:-1px 1px 1px #000;font-family:Hand;font-size:1.6em;">Select what kind of an entry yours is:</h4>
+<select class="input" name="mainselect" id="mainselect">
+<option value="z" selected>Select Your Type</option>
+<option value="s">Stories</option>
+<option value="p">Poems</option>
+<option value="r">Reviews</option>
+<option value="t">Travel</option>
+<option value="f">Food</option>
+<option value="o">Others</option>
+</select>
+
+<br><br>
+
+<select class="input" name="storyselect" id="storyselect" style="display:none;">
+<option value="o" selected>Select Your Genre</option>
+<option value="gn">General</option>
+<option value="lr">Love and Romance</option>
+<option value="st">Suspense and Thriller</option>
+<option value="dt">Drama and Tragedy</option>
+<option value="sf">Science Fiction</option>
+<option value="nf">Non Fiction</option>
+</select>
+
+<select class="input" name="reviewselect" id="reviewselect" style="display:none;">
+<option value="o" selected>Select Your Genre</option>
+<option value="bk">Books</option>
+<option value="mv">Movies</option>
+<option value="tv">Television</option>
+<option value="ms">Music</option>
+</select>
+
+<!--TITLE-->
+<h4 style="text-shadow:-1px 1px 1px #000;font-family:Hand;font-size:1.6em;">Give it a Title!</h4>
+<input type="text" class="input" style="font-family:Hand;text-align:center;" name="title" spellcheck="false">
+<br><br>
+
+<h4 style="text-shadow:-1px 1px 1px #000;font-family:Hand;font-size:1.6em;">Give a small description about the article!</h4>
+<textarea spellcheck="false" class="tarea2" maxlength="500" id="leadline" name="leadline" rows=3 cols=40 style="resize:none">
+</textarea>
+<br><br>
+
+<textarea spellcheck="false" class="tarea" id="article" name="article" rows=10 cols=80 style="resize:none">
+</textarea>
+<br><br>
+
+<input type="checkbox" id="accept" name="accept" required="required">
+<b><font style="font-family:Hand;font-size:1.2em">By sending in your articles, you accept to agree to our <a href="termsandcondition.html">Terms and Conditions</a> and <a href="privacypolicy.html">Privacy Policy</a>.</font><b>
+<br><br>
+
+<input type="submit" class="submt" value="">
+
+
+
+
+
+</form>
+
+<br><br>
+
+
+</div> <!--englishdiv-->
+
+
+<div id="otherdiv" name="otherdiv" style="display:none">
+<br><br>
+<h4 style="text-shadow:-1px 1px 1px #000;font-family:Hand;font-size:1.4em;">Along with the following-</h4>
+<h4 style="text-shadow:-1px 1px 1px #000;font-family:Hand;font-size:1.4em;">
+Your Username<br>
+Article Type (Story/Poem)<br>
+A Small Description about the article(in Tamil)<br>
+The Title<br>
+</h4>
+<h4 style="text-shadow:-1px 1px 1px #000;font-family:Hand;font-size:1.4em;">send your article to</h4>
+<h4 style="text-shadow:-1px 1px 1px #000;font-family:Hand;font-size:2em;">'<a href="mailto:quillonparchment@gmail.com">quillonparchment@gmail.com</a>'</h4>
+<h4 style="text-shadow:-1px 1px 1px #000;font-family:Hand;font-size:1.4em;">Thank You!</h4>
+
+</div>
+
+
+
+</div>
+</center>
+
+<script src="Scripts/jquery-1.9.1.min.js"></script>
+<script src="Scripts/alertify.min.js"></script>
+
+<script>
+function validate()
+{
+
+var s1=document.getElementById("mainselect");
+if(s1.options[s1.selectedIndex].value=="z")
+{
+alertify.alert("Select a Type for your Entry!");
+return false;
+}
+
+var s2=document.getElementById("storyselect");
+if(s1.options[s1.selectedIndex].value=="s")
+{
+if(s2.options[s2.selectedIndex].value=="o")
+{
+alertify.alert("Select a Genre for your Story!");
+return false;
+}
+}
+
+var s3=document.getElementById("reviewselect");
+if(s1.options[s1.selectedIndex].value=="r")
+{
+if(s3.options[s3.selectedIndex].value=="o")
+{
+alertify.alert("Select a Genre for your Review!");
+return false;
+}
+}
+
+if(document.myform.title.value=="")
+{
+alertify.alert("Give a Title to your Entry!");
+return false;
+}
+if(document.myform.leadline.value=="")
+{
+alertify.alert("Give a description about your Entry!");
+return false;
+}
+if(document.getElementById("article").value=="")
+{
+alertify.alert("Type your Entry in the space provided!");
+return false;
+}
+
+return true;
+}
+</script>
+
+<script>
+$("#mainselect").change(function(evnt){
+if(this.value=="s")
+{
+document.getElementById("reviewselect").style.display="none";
+document.getElementById("storyselect").style.display="block";
+}
+else if(this.value=="r")
+{
+document.getElementById("storyselect").style.display="none";
+document.getElementById("reviewselect").style.display="block";
+}
+else
+{
+document.getElementById("storyselect").style.display="none";
+document.getElementById("reviewselect").style.display="none";
+}
+});
+
+$("#languageselect").change(function(evnt){
+if(this.value=="s")
+{
+document.getElementById("englishdiv").style.display="none";
+document.getElementById("otherdiv").style.display="none";
+}
+else if(this.value=="e")
+{
+document.getElementById("englishdiv").style.display="block";
+document.getElementById("otherdiv").style.display="none";
+}
+else
+{
+document.getElementById("englishdiv").style.display="none";
+document.getElementById("otherdiv").style.display="block";
+}
+});
+
+
+</script>
+
+<script>
+
+$(document).ready(function()
+{
+
+$.get("checksession.php", function(data)
+{
+if(data!=1)
+{
+window.open("index.html","_self");
+}
+});
+
+});
+
+</script>
+
+
+
+<script>
+$("#tab_account").addClass("current");
+$("#signout").on("click",function()
+{
+alertify.confirm("Are you sure you want to Sign Out?", function (e) {
+    if (e) {
+        window.open("signout.php","_self");
+    }
+});
+});
+</script>
+
+</body>
+</html>

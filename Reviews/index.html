@@ -1,0 +1,395 @@
+<?php
+session_start();
+?>
+<html>
+<head>
+<title>Reviews</title>
+<link rel="icon" type="image/png" href="../Images/favicon.png">
+<link rel="stylesheet" type="text/css" href="../mycss.css">
+<link rel="stylesheet" href="../alertify.core.css" />
+<link rel="stylesheet" href="../alertify.default.css" id="toggleCSS" />
+
+<style>
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+     background:rgba(0,0,0,0.5);
+     border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+.headin{
+margin-top:30px;
+margin-bottom:-10px;
+}
+
+.input2
+{
+    height:30px;
+    width:230px;
+    background:#0b0202;
+    box-shadow: -1px 1px 1px #000;
+    color:#e2c886;
+    border:0px;
+    padding-left:15px;
+    padding-right:15px; 
+    font-family: Hand,serif;
+    font-size:17px;
+}
+
+.input2:focus{
+   outline: 0;
+}
+
+.input3
+{
+    height:30px;
+    width:150px;
+    background:#0b0202;
+    box-shadow: -1px 1px 1px #000;
+    color:#e2c886;
+    border:0px;
+    padding-left:15px;
+    padding-right:15px; 
+    font-family: Hand,serif;
+    font-size:17px;
+}
+
+.input3:focus{
+   outline: 0;
+}
+
+.submt2
+{
+    height:30px;
+    width:50px;
+    background:#0b0202;
+    color:#e2c886;
+    box-shadow: -2px 2px 2px #000;
+    border:0px;
+    padding-left:15px;
+    padding-right:15px; 
+    font-family: Hand,serif;
+    font-size:18px;
+}
+
+.submt2:active{
+    box-shadow: -1px 1px 1px #000;
+    outline: 0;
+}
+
+img{ 
+-webkit-filter: drop-shadow(-1px 1px 1px #000); 
+filter: drop-shadow(-1px 1px 1px #000); 
+}
+
+.design{
+background-image:url("../Images/reviewsbg.jpg");
+width:80%;
+box-shadow:-5px 5px 5px #000;
+}
+
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51930404-1', 'quillonparchment.in');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body link="#000000" vlink="#000000" alink="#000000" background="../Images/parch.jpg" style="background-repeat:repeat;">
+
+<center>
+
+<br>
+<table>
+<tr>
+<td><img src="../Images/logo.png" width=150 height=150/></td>
+<td><img src="../Images/name.png" width=700 height=150/></td>
+</tr>
+</table>
+
+<?php include '../tabs1.php'; ?>
+
+<font style="text-shadow:-1px 1px 1px #000;font-family:Hand;font-size:1.6em;">Sort by:&nbsp;</font>
+
+<select class="input2" name="sortselect" id="sortselect">
+<option value="s" selected>-</option>
+<option value="d">Published Date</option>
+<option value="t">Title</option>
+<option value="a">Author</option>
+<option value="v">Views</option>
+<option value="l">Likes</option>
+</select>&nbsp;
+
+
+<font style="margin-left:100px;text-shadow:-1px 1px 1px #000;font-family:Hand;font-size:1.6em;">Search by:&nbsp;</font>
+<input type="radio" name="srch" value="a"><font style="text-shadow:-0.5px 0.51px 0.51px #000;font-family:Hand;font-size:1.2em;">Author</font>
+<input type="radio" name="srch" value="t" checked><font style="text-shadow:-0.5px 0.51px 0.51px #000;font-family:Hand;font-size:1.2em;">Title</font>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="text" class="input3" spellcheck="false" name="searchbar" id="searchbar">
+&nbsp;&nbsp;
+<input type="button" class="submt2" value="Go" onclick="onclickgo()">
+
+<br><br>
+
+<div id="maindiv" class="design">
+<br><br><br><br>
+<?php include 'returnallreviews.php'; ?>
+</div>
+
+<br><br>
+<div id="morediv" onclick="more()" style="cursor:hand;background:#000;width:80%;">
+<font style="color:#fff;background:#000;text-align:left;font-family:Hand;font-size:1.8em">More...</font></div>
+
+<br>
+<a href="#top" style="font-family:Hand;font-size:1.2em;text-shadow:-0.5px 0.5px 0.5px">Back to top</a>
+
+</center>
+
+<script src="../Scripts/jquery-1.9.1.min.js"></script>
+<script src="../Scripts/alertify.min.js"></script>
+
+<script>
+function onclickgo()
+{
+if(document.getElementById("searchbar").value=="")
+{
+alertify.alert("Don't leave the search bar empty!");
+return;
+}
+
+document.getElementById("morediv").style.display="block";
+var keyy=document.getElementById("searchbar").value;
+
+
+if(document.querySelector('input[name="srch"]:checked').value=="a")
+{
+$("#maindiv").empty();
+$("#maindiv").addClass("design");
+$("#maindiv").append("<br><br><br><br>");
+$.get( 
+    'searcharticle.php',
+    { by: "a" , key:keyy }, 
+    function( data )
+    {
+	if(data=="")
+	{
+		$("#maindiv").append("<font style=\"color:#fff;text-shadow:-1px 1px 1px #000;font-family:Hand;font-size:1.6em;\">No matching articles found!</font><br><br><br><br>");
+		document.getElementById("morediv").style.display="none";
+	}
+        else
+	{
+		$("#maindiv").append(data);
+	}
+    });
+}
+else if(document.querySelector('input[name="srch"]:checked').value=="t")
+{
+$("#maindiv").empty();
+$("#maindiv").addClass("design");
+$("#maindiv").append("<br><br><br><br>");
+$.get( 
+    'searcharticle.php',
+    { by: "t" , key:keyy }, 
+    function( data )
+    {
+        if(data=="")
+	{
+		$("#maindiv").append("<font style=\"color:#fff;text-shadow:-1px 1px 1px #000;font-family:Hand;font-size:1.6em;\">No matching articles found!</font><br><br><br><br>");
+		document.getElementById("morediv").style.display="none";
+	}
+        else
+	{
+		$("#maindiv").append(data);
+	}
+    });
+}
+
+}
+</script>
+
+
+<script>
+var sort="none";
+</script>
+
+<script>
+$("#sortselect").change(function(evnt){
+if(this.value=="d")
+{
+sort="d";
+start=0;
+$("#maindiv").empty();
+$("#maindiv").addClass("design");
+$("#maindiv").append("<br><br><br><br>");
+$.get( 
+    'returnallreviews.php',
+    { sort: "d" }, 
+    function( data )
+    {
+        $("#maindiv").append(data);
+    });
+document.getElementById("morediv").style.display="block";
+}
+else if(this.value=="a")
+{
+start=0;
+sort="a";
+$("#maindiv").empty();
+$("#maindiv").addClass("design");
+$("#maindiv").append("<br><br><br><br>");
+$.get( 
+    'returnallreviews.php',
+    { sort: "a" }, 
+    function( data )
+    {
+        $("#maindiv").append(data);
+    });
+document.getElementById("morediv").style.display="block";
+}
+else if(this.value=="t")
+{
+start=0;
+sort="t";
+$("#maindiv").empty();
+$("#maindiv").addClass("design");
+$("#maindiv").append("<br><br><br><br>");
+$.get( 
+    'returnallreviews.php',
+    { sort: "t" }, 
+    function( data )
+    {
+        $("#maindiv").append(data);
+    });
+document.getElementById("morediv").style.display="block";
+}
+else if(this.value=="l")
+{
+start=0;
+sort="l";
+$("#maindiv").empty();
+$("#maindiv").addClass("design");
+$("#maindiv").append("<br><br><br><br>");
+$.get( 
+    'returnallreviews.php',
+    { sort: "l" }, 
+    function( data )
+    {
+        $("#maindiv").append(data);
+    });
+document.getElementById("morediv").style.display="block";
+}
+else if(this.value=="v")
+{
+start=0;
+sort="v";
+$("#maindiv").empty();
+$("#maindiv").addClass("design");
+$("#maindiv").append("<br><br><br><br>");
+$.get( 
+    'returnallreviews.php',
+    { sort: "v" }, 
+    function( data )
+    {
+        $("#maindiv").append(data);
+    });
+document.getElementById("morediv").style.display="block";
+}
+
+});
+</script>
+
+<script>
+start=0;
+number=10;
+</script>
+
+<script>
+function checktohide()
+{
+$.get("returncount.php" , {abc:'0'} , function(data)
+{
+if(start>=data) document.getElementById("morediv").style.display="none";
+});
+}
+</script>
+
+<script>
+function more()
+{
+start=start+10;
+if(sort=="none")
+{
+$.get("returnallreviews.php" , {top:start , bottom:number} , function(data){$("#maindiv").append(data);});
+}
+else if(sort=="d")
+{
+$.get("returnallreviews.php" , {top:start , bottom:number , sort:"d"} , function(data){$("#maindiv").append(data);});
+}
+else if(sort=="a")
+{
+$.get("returnallreviews.php" , {top:start , bottom:number , sort:"a"} , function(data){$("#maindiv").append(data);});
+}
+else if(sort=="t")
+{
+$.get("returnallreviews.php" , {top:start , bottom:number , sort:"t"} , function(data){$("#maindiv").append(data);});
+}
+else if(sort=="l")
+{
+$.get("returnallreviews.php" , {top:start , bottom:number , sort:"l"} , function(data){$("#maindiv").append(data);});
+}
+else if(sort=="v")
+{
+$.get("returnallreviews.php" , {top:start , bottom:number , sort:"v"} , function(data){$("#maindiv").append(data);});
+}
+
+checktohide();
+}
+</script>
+
+<script>
+$(document).ready(function()
+{
+
+$.get("returncount.php" , {abc:'0'} , function(data)
+{
+if(data==0)
+{
+$("#maindiv").append('<font style="font-family:Hand;font-size:2em;color:#fff;">No articles to display!</font><br><br><br><br>');
+document.getElementById("morediv").style.display="none";
+}
+});
+
+$("#tab_reviews").addClass("current");
+
+checktohide();
+
+});
+</script>
+
+<script>
+$("#signout").on("click",function()
+{
+alertify.confirm("Are you sure you want to Sign Out?", function (e) {
+    if (e) {
+        window.open("../signout.php","_self");
+    }
+});
+});
+</script>
+
+</body>
+</html>
